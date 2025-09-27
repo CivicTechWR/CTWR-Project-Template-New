@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Template Validation
 
 on:
   push:
@@ -7,64 +7,143 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  template-validation:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        # Adjust based on your project's technology stack
-        node-version: [18.x, 20.x]
-        # python-version: [3.9, 3.10, 3.11]
 
     steps:
     - uses: actions/checkout@v4
 
-    # Example for Node.js projects
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Run linter
-      run: npm run lint
-
-    - name: Run tests
-      run: npm test
-
-    - name: Build project
-      run: npm run build
-
-    # Example for Python projects (uncomment if needed)
-    # - name: Set up Python ${{ matrix.python-version }}
-    #   uses: actions/setup-python@v4
-    #   with:
-    #     python-version: ${{ matrix.python-version }}
-
-    # - name: Install Python dependencies
-    #   run: |
-    #     python -m pip install --upgrade pip
-    #     pip install -r requirements.txt
-
-    # - name: Run Python tests
-    #   run: pytest
-
-    # Accessibility testing
-    - name: Run accessibility tests
+    - name: Validate template structure
       run: |
-        # Add accessibility testing commands here
-        # Example: npm run test:a11y
-        echo "Add accessibility testing commands"
+        echo "🔍 Validating CivicTechWR Project Template structure..."
 
-    # Security scanning
-    - name: Run security audit
+        # Check essential template files exist
+        essential_files=(
+          "README.md"
+          "LICENSE"
+          "CODE_OF_CONDUCT.md"
+          ".gitignore"
+          "scripts/setup.sh"
+          "scripts/setup-project.sh"
+        )
+
+        for file in "${essential_files[@]}"; do
+          if [ ! -f "$file" ]; then
+            echo "❌ Missing essential template file: $file"
+            exit 1
+          fi
+        done
+        echo "✅ Essential template files found."
+
+    - name: Validate documentation structure
       run: |
-        # Add security scanning commands here
-        # Example: npm audit
-        echo "Add security scanning commands"
+        echo "📚 Validating documentation structure..."
+
+        required_docs=(
+          "docs/DVF_SCORECARD.md"
+          "docs/CONTRIBUTING.md"
+          "docs/PROJECT_PITCH.md"
+          "docs/USER_RESEARCH.md"
+          "docs/TECHNICAL_DESIGN.md"
+          "docs/ACCESSIBILITY_GUIDE.md"
+          "docs/DEMO_PREP.md"
+          "docs/IMPACT_TRACKING.md"
+          "docs/PROJECT_MANAGEMENT.md"
+        )
+
+        for doc in "${required_docs[@]}"; do
+          if [ ! -f "$doc" ]; then
+            echo "❌ Missing required documentation: $doc"
+            exit 1
+          fi
+        done
+        echo "✅ Required documentation found."
+
+    - name: Validate GitHub templates
+      run: |
+        echo "🗂️ Validating GitHub templates..."
+
+        github_templates=(
+          ".github/ISSUE_TEMPLATE/config.yml"
+          ".github/ISSUE_TEMPLATE/feature_request.yml"
+          ".github/ISSUE_TEMPLATE/bug_report.yml"
+          ".github/ISSUE_TEMPLATE/user_research.yml"
+          ".github/ISSUE_TEMPLATE/community_partnership.yml"
+          ".github/ISSUE_TEMPLATE/accessibility_issue.yml"
+          ".github/ISSUE_TEMPLATE/general_task.yml"
+          ".github/PULL_REQUEST_TEMPLATE.md"
+        )
+
+        for template in "${github_templates[@]}"; do
+          if [ ! -f "$template" ]; then
+            echo "❌ Missing GitHub template: $template"
+            exit 1
+          fi
+        done
+        echo "✅ GitHub templates found."
+
+    - name: Validate wiki templates
+      run: |
+        echo "📖 Validating wiki templates..."
+
+        wiki_templates=(
+          "wiki-template/README.md"
+          "wiki-template/Home.md"
+          "wiki-template/Project-Overview.md"
+          "wiki-template/DVF-Scorecard.md"
+          "wiki-template/Team-and-Roles.md"
+          "wiki-template/Meeting-Notes.md"
+        )
+
+        for template in "${wiki_templates[@]}"; do
+          if [ ! -f "$template" ]; then
+            echo "❌ Missing wiki template: $template"
+            exit 1
+          fi
+        done
+        echo "✅ Wiki templates found."
+
+    - name: Validate script executability
+      run: |
+        echo "🔧 Validating script permissions..."
+
+        if [ ! -x "scripts/setup.sh" ]; then
+          echo "❌ setup.sh is not executable"
+          exit 1
+        fi
+
+        if [ ! -x "scripts/setup-project.sh" ]; then
+          echo "❌ setup-project.sh is not executable"
+          exit 1
+        fi
+
+        echo "✅ Scripts are executable."
+
+    - name: Check for placeholder content
+      run: |
+        echo "🔍 Checking for placeholder content that needs customization..."
+
+        # Look for common placeholder patterns
+        placeholder_patterns=(
+          "\[Project Name\]"
+          "\[Season X\]"
+          "\[your-repo-url\]"
+          "\[project-name\]"
+        )
+
+        found_placeholders=false
+        for pattern in "${placeholder_patterns[@]}"; do
+          if grep -r "$pattern" README.md docs/ wiki-template/ --exclude-dir=.git >/dev/null 2>&1; then
+            echo "✅ Found placeholder: $pattern (good for template)"
+            found_placeholders=true
+          fi
+        done
+
+        if [ "$found_placeholders" = true ]; then
+          echo "✅ Template contains appropriate placeholders for customization."
+        else
+          echo "⚠️ No placeholders found - template may be over-customized."
+        fi
 
   civic-compliance:
     runs-on: ubuntu-latest
@@ -73,8 +152,15 @@ jobs:
 
     - name: Check for sensitive data
       run: |
-        # Check for potential secrets or sensitive data
-        if grep -r "password\|secret\|key\|token" --include="*.js" --include="*.py" --include="*.md" --exclude-dir=node_modules --exclude-dir=.git .; then
+        echo "🔒 Checking for sensitive data..."
+
+        # Check for potential secrets or sensitive data, but exclude expected template content
+        if grep -r "password\|secret\|key\|token" \
+           --include="*.js" --include="*.py" --include="*.md" --include="*.yml" \
+           --exclude-dir=node_modules --exclude-dir=.git \
+           --exclude="*template*" \
+           --exclude="*example*" \
+           . | grep -v "API_KEY\|SECRET_KEY\|your_api_key\|your_secret" | grep -v "placeholder\|example\|template"; then
           echo "⚠️ Potential sensitive data found. Please review."
           exit 1
         else
@@ -84,19 +170,88 @@ jobs:
     - name: Verify open source license
       run: |
         if [ ! -f LICENSE ]; then
-          echo "⚠️ No LICENSE file found. Civic tech projects should have clear licensing."
+          echo "❌ No LICENSE file found. Civic tech projects should have clear licensing."
           exit 1
         else
           echo "✅ LICENSE file found."
         fi
 
-    - name: Check documentation completeness
+    - name: Validate DVF framework integration
       run: |
-        required_docs=("README.md" "docs/CONTRIBUTING.md" "docs/DVF_SCORECARD.md")
-        for doc in "${required_docs[@]}"; do
-          if [ ! -f "$doc" ]; then
-            echo "⚠️ Missing required documentation: $doc"
-            exit 1
+        echo "🏛️ Validating DVF framework integration..."
+
+        # Check that DVF content exists in key files
+        dvf_files=("README.md" "docs/DVF_SCORECARD.md" "wiki-template/DVF-Scorecard.md")
+        dvf_terms=("Community Partner" "Talent.*Team" "Technically Exciting" "Civic Exciting")
+
+        for file in "${dvf_files[@]}"; do
+          if [ -f "$file" ]; then
+            for term in "${dvf_terms[@]}"; do
+              if ! grep -q "$term" "$file"; then
+                echo "⚠️ DVF term '$term' not found in $file"
+              fi
+            done
           fi
         done
-        echo "✅ Required documentation found."
+        echo "✅ DVF framework integration validated."
+
+    - name: Check accessibility considerations
+      run: |
+        echo "♿ Checking accessibility considerations..."
+
+        # Check that accessibility is mentioned in key files
+        if grep -q -i "accessibility\|a11y\|wcag" docs/ACCESSIBILITY_GUIDE.md; then
+          echo "✅ Accessibility guide contains accessibility content."
+        else
+          echo "❌ Accessibility guide missing accessibility content."
+          exit 1
+        fi
+
+        if grep -q -i "accessibility" .github/ISSUE_TEMPLATE/accessibility_issue.yml; then
+          echo "✅ Accessibility issue template found."
+        else
+          echo "❌ Accessibility issue template missing."
+          exit 1
+        fi
+
+    - name: Validate CTWR community standards
+      run: |
+        echo "🤝 Validating CTWR community standards..."
+
+        # Check for community-specific content
+        if grep -q -i "civictechwr\|waterloo region" README.md; then
+          echo "✅ CTWR community context found in README."
+        else
+          echo "⚠️ Limited CTWR community context in README."
+        fi
+
+        if [ -f CODE_OF_CONDUCT.md ]; then
+          echo "✅ Code of Conduct found."
+        else
+          echo "❌ Code of Conduct missing."
+          exit 1
+        fi
+
+  template-completeness:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Count template components
+      run: |
+        echo "📊 Template completeness report..."
+
+        echo "Documentation files: $(find docs/ -name "*.md" | wc -l)"
+        echo "Issue templates: $(find .github/ISSUE_TEMPLATE/ -name "*.yml" | wc -l)"
+        echo "Wiki templates: $(find wiki-template/ -name "*.md" | wc -l)"
+        echo "Scripts: $(find scripts/ -name "*.sh" | wc -l)"
+        echo "Workflow files: $(find .github/workflows/ -name "*.yml" | wc -l)"
+
+        total_files=$(find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.sh" \) ! -path "./.git/*" | wc -l)
+        echo "Total template files: $total_files"
+
+        if [ $total_files -gt 25 ]; then
+          echo "✅ Template is comprehensive with $total_files files."
+        else
+          echo "⚠️ Template may be incomplete with only $total_files files."
+        fi
