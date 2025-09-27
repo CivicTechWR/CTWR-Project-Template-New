@@ -114,6 +114,11 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for how to get involved.
 - [Demo Slides Template](docs/DEMO_PREP.md) - 8-step presentation guide
 - [Impact Tracking](docs/IMPACT_TRACKING.md) - Metrics and story collection
 
+### Project Wiki Templates
+- [Wiki Template Guide](wiki-template/README.md) - Complete GitHub Wiki setup
+- [DVF Scorecard Wiki](wiki-template/DVF-Scorecard.md) - Assessment tracking page
+- [Team & Roles Wiki](wiki-template/Team-and-Roles.md) - Team documentation page
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
