@@ -2,6 +2,8 @@
 
 **CivicTechWR Season X Project**
 
+> **🚀 New to this template?** Start with the **[Getting Started Guide](GETTING_STARTED.md)** for a 5-minute overview and step-by-step instructions.
+
 > **Quick Start:** Replace this template with your project details and run your DVF assessment in Week 1-3.
 
 ## DVF Assessment Score: [ /20]
@@ -78,6 +80,10 @@ Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across f
 
 ## Getting Started
 
+**🆕 First time using this template?**
+
+📖 **[Read the Getting Started Guide](GETTING_STARTED.md)** - Complete overview with step-by-step instructions
+
 ### Quick Setup
 ```bash
 # Clone the repository
@@ -106,6 +112,7 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for how to get involved.
 
 ### Development
 - [Technical Design Document](docs/TECHNICAL_DESIGN.md) - Architecture decisions
+- [Security Guide](docs/SECURITY_GUIDE.md) - Security best practices for civic tech
 - [Accessibility Guide](docs/ACCESSIBILITY_GUIDE.md) - WCAG 2.1 compliance
 - [Contributing Guidelines](docs/CONTRIBUTING.md) - How to get involved
 - [Project Management](docs/PROJECT_MANAGEMENT.md) - GitHub Projects with DVF tracking
