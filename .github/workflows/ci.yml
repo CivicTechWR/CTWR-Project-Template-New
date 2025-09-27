@@ -155,13 +155,29 @@ jobs:
         echo "🔒 Checking for sensitive data..."
 
         # Check for potential secrets or sensitive data, but exclude expected template content
-        if grep -r "password\|secret\|key\|token" \
-           --include="*.js" --include="*.py" --include="*.md" --include="*.yml" \
+        # Look for actual sensitive patterns while excluding documentation and templates
+        sensitive_found=false
+
+        # Check for actual API keys, passwords, tokens (not documentation examples)
+        if grep -r -E "(password|secret|key|token)\s*[=:]\s*['\"][^'\"]{8,}" \
+           --include="*.js" --include="*.py" --include="*.json" --include="*.env" \
            --exclude-dir=node_modules --exclude-dir=.git \
-           --exclude="*template*" \
-           --exclude="*example*" \
-           . | grep -v "API_KEY\|SECRET_KEY\|your_api_key\|your_secret" | grep -v "placeholder\|example\|template"; then
-          echo "⚠️ Potential sensitive data found. Please review."
+           --exclude-dir=wiki-template --exclude-dir=tests \
+           . 2>/dev/null; then
+          echo "⚠️ Found potential hardcoded sensitive data"
+          sensitive_found=true
+        fi
+
+        # Check for actual credential patterns
+        if grep -r -E "(gh[ps]_[a-zA-Z0-9]{36}|sk-[a-zA-Z0-9]{48})" \
+           --exclude-dir=node_modules --exclude-dir=.git \
+           . 2>/dev/null; then
+          echo "⚠️ Found potential API keys or tokens"
+          sensitive_found=true
+        fi
+
+        if [ "$sensitive_found" = true ]; then
+          echo "Please review potential sensitive data above."
           exit 1
         else
           echo "✅ No obvious sensitive data found."
