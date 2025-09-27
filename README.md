@@ -78,14 +78,17 @@ Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across f
 
 ## Getting Started
 
-### For Developers
+### Quick Setup
 ```bash
 # Clone the repository
 git clone [your-repo-url]
 cd [project-name]
 
-# Run setup script
+# Set up development environment
 ./scripts/setup.sh
+
+# Set up GitHub Project with DVF tracking
+./scripts/setup-project.sh
 
 # Start development
 [technology-specific commands]
@@ -105,6 +108,7 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for how to get involved.
 - [Technical Design Document](docs/TECHNICAL_DESIGN.md) - Architecture decisions
 - [Accessibility Guide](docs/ACCESSIBILITY_GUIDE.md) - WCAG 2.1 compliance
 - [Contributing Guidelines](docs/CONTRIBUTING.md) - How to get involved
+- [Project Management](docs/PROJECT_MANAGEMENT.md) - GitHub Projects with DVF tracking
 
 ### Demo Day Preparation
 - [Demo Slides Template](docs/DEMO_PREP.md) - 8-step presentation guide
