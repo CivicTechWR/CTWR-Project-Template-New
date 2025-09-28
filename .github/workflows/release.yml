@@ -75,15 +75,14 @@ jobs:
           fi
 
       - name: Create GitHub Release
-        uses: ncipollo/create-release@v1
-        with:
-          tag: ${{ steps.package-version.outputs.version }}
-          name: 'CivicTechWR Project Template ${{ steps.package-version.outputs.version }}'
-          bodyFile: release_notes.md
-          draft: false
-          prerelease: false
-          generateReleaseNotes: true
-          discussionCategory: 'Template Releases'
+        run: |
+          VERSION="${{ steps.package-version.outputs.version }}"
+          gh release create "$VERSION" \
+            --title "CivicTechWR Project Template $VERSION" \
+            --notes-file release_notes.md \
+            --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Update README badge (if exists)
         run: |
@@ -111,7 +110,7 @@ jobs:
       - name: Checkout released version
         uses: actions/checkout@v4
         with:
-          ref: ${{ needs.create-release.outputs.version || github.ref }}
+          ref: ${{ github.ref }}
 
       - name: Validate template structure
         run: |
@@ -177,7 +176,7 @@ jobs:
     steps:
       - name: Create release announcement
         run: |
-          VERSION="${{ needs.create-release.outputs.version || github.ref_name }}"
+          VERSION="${{ github.ref_name }}"
           echo "📢 CivicTechWR Project Template $VERSION has been released!"
           echo "🔗 Release: https://github.com/CivicTechWR/CTWR-Project-Template-New/releases/tag/$VERSION"
           echo "📚 Documentation: https://civictechwr.github.io/CTWR-Project-Template-New/"
