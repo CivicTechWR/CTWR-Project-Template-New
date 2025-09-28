@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2025-09-28
+
+### Fixed
+- Fixed all workflow failures and YAML syntax errors
+- Resolved Create Release workflow issues with GitHub CLI
+- Enhanced CI validation with comprehensive checks
+- Completed linting fixes across all file types
+
 ### Added
 - Semantic versioning support with package.json
 - Release automation workflow for GitHub Releases
