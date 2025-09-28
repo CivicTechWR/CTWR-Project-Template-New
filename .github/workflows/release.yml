@@ -1,0 +1,185 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., v1.0.0)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  discussions: write
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Get version from package.json
+        id: package-version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+          else
+            VERSION="${GITHUB_REF#refs/tags/}"
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "version_no_v=${VERSION#v}" >> $GITHUB_OUTPUT
+
+      - name: Validate version format
+        run: |
+          VERSION="${{ steps.package-version.outputs.version }}"
+          if [[ ! $VERSION =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Error: Version must follow format v1.2.3"
+            exit 1
+          fi
+
+      - name: Extract changelog for version
+        id: changelog
+        run: |
+          VERSION="${{ steps.package-version.outputs.version_no_v }}"
+
+          # Extract changelog section for this version
+          awk -v version="$VERSION" '
+          /^## \[/ {
+            if ($0 ~ "\\[" version "\\]") {
+              found = 1
+              next
+            } else if (found) {
+              exit
+            }
+          }
+          found && /^## \[/ { exit }
+          found { print }
+          ' CHANGELOG.md > release_notes.md
+
+          # Check if we found content
+          if [ ! -s release_notes.md ]; then
+            echo "No changelog entry found for version $VERSION"
+            echo "Please add a changelog entry in CHANGELOG.md"
+            exit 1
+          fi
+
+      - name: Create GitHub Release
+        uses: ncipollo/create-release@v1
+        with:
+          tag: ${{ steps.package-version.outputs.version }}
+          name: 'CivicTechWR Project Template ${{ steps.package-version.outputs.version }}'
+          bodyFile: release_notes.md
+          draft: false
+          prerelease: false
+          generateReleaseNotes: true
+          discussionCategory: 'Template Releases'
+
+      - name: Update README badge (if exists)
+        run: |
+          VERSION="${{ steps.package-version.outputs.version }}"
+          if [ -f README.md ]; then
+            # Update version badge if it exists
+            sed -i "s/template-v[0-9]\+\.[0-9]\+\.[0-9]\+/template-$VERSION/g" README.md || true
+
+            # Check if changes were made
+            if git diff --quiet README.md; then
+              echo "No version badge found in README.md to update"
+            else
+              git config --local user.email "action@github.com"
+              git config --local user.name "GitHub Action"
+              git add README.md
+              git commit -m "Update README version badge to $VERSION"
+              git push
+            fi
+          fi
+
+  validate-template:
+    runs-on: ubuntu-latest
+    needs: create-release
+    steps:
+      - name: Checkout released version
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.create-release.outputs.version || github.ref }}
+
+      - name: Validate template structure
+        run: |
+          echo "🔍 Validating template structure for release..."
+
+          # Check required files exist
+          required_files=(
+            "README.md"
+            "GETTING_STARTED.md"
+            "CHANGELOG.md"
+            "package.json"
+            "docs/_config.yml"
+            ".github/workflows/pages-jekyll.yml"
+          )
+
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ Missing required file: $file"
+              exit 1
+            else
+              echo "✅ Found: $file"
+            fi
+          done
+
+          # Validate DVF documentation exists
+          dvf_files=(
+            "docs/DVF_SCORECARD.md"
+            "docs/PROJECT_PITCH.md"
+            "docs/TECHNICAL_DESIGN.md"
+          )
+
+          for file in "${dvf_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ Missing DVF file: $file"
+              exit 1
+            else
+              echo "✅ Found DVF: $file"
+            fi
+          done
+
+          echo "🎉 Template validation completed successfully!"
+
+      - name: Test Jekyll build
+        run: |
+          echo "🔍 Testing Jekyll documentation build..."
+          cd docs
+
+          # Install Ruby and dependencies
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+
+          # Install bundler and build
+          gem install bundler
+          bundle install
+          bundle exec jekyll build --verbose
+
+          echo "✅ Jekyll build successful!"
+
+  notify-community:
+    runs-on: ubuntu-latest
+    needs: [create-release, validate-template]
+    if: always() && needs.create-release.result == 'success'
+    steps:
+      - name: Create release announcement
+        run: |
+          VERSION="${{ needs.create-release.outputs.version || github.ref_name }}"
+          echo "📢 CivicTechWR Project Template $VERSION has been released!"
+          echo "🔗 Release: https://github.com/CivicTechWR/CTWR-Project-Template-New/releases/tag/$VERSION"
+          echo "📚 Documentation: https://civictechwr.github.io/CTWR-Project-Template-New/"
+          echo ""
+          echo "New project teams can now use this stable template version."

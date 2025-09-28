@@ -1,0 +1,47 @@
+{
+  "name": "@civictechwr/project-template",
+  "version": "1.0.0",
+  "description": "CivicTechWR comprehensive project template with DVF framework, 12-week lifecycle, and GitHub automation",
+  "keywords": [
+    "civic-tech",
+    "template",
+    "dvf-framework",
+    "government",
+    "community",
+    "github-template"
+  ],
+  "homepage": "https://civictechwr.github.io/CTWR-Project-Template-New/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CivicTechWR/CTWR-Project-Template-New.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CivicTechWR/CTWR-Project-Template-New/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "CivicTechWR",
+    "email": "noreply@civictechwr.org",
+    "url": "https://civictechwr.org"
+  },
+  "contributors": [
+    {
+      "name": "CivicTechWR Community",
+      "url": "https://civictechwr.org"
+    }
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "version": "echo 'Template version:' $npm_package_version",
+    "changelog": "echo 'See CHANGELOG.md for release notes'",
+    "release": "echo 'Use GitHub Releases for official releases'"
+  },
+  "civictechwr": {
+    "template_version": "1.0.0",
+    "dvf_framework": "2024",
+    "season_lifecycle": "12-weeks",
+    "last_updated": "2025-09-28"
+  }
+}
