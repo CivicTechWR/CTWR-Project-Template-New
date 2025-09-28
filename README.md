@@ -117,6 +117,7 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for how to get involved.
 - [Accessibility Guide](docs/ACCESSIBILITY_GUIDE.md) - WCAG 2.1 compliance
 - [Contributing Guidelines](docs/CONTRIBUTING.md) - How to get involved
 - [Project Management](docs/PROJECT_MANAGEMENT.md) - GitHub Projects with DVF tracking
+- [GitHub Pages Setup](docs/GITHUB_PAGES.md) - Public website hosting and deployment
 
 ### Demo Day Preparation
 - [Demo Slides Template](docs/DEMO_PREP.md) - 8-step presentation guide

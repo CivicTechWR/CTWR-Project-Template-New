@@ -128,6 +128,13 @@ Use the wiki templates to document your project:
 2. Customize with your project details
 3. Keep DVF scorecard and team information updated
 
+### GitHub Pages Setup
+Create a public website for your project:
+1. **Quick Setup**: Follow the [GitHub Pages Guide](docs/GITHUB_PAGES.md)
+2. **Choose Your Approach**: Jekyll site, documentation, or live demo
+3. **Sample Template**: Use the provided Jekyll site in `/docs` folder
+4. **Automated Deployment**: Workflow already configured for easy updates
+
 ## 🔒 Security & Privacy Essentials
 
 **If your project handles any user data, start here:**
@@ -174,6 +181,7 @@ Start with the essentials:
 - DVF Scorecard (required for CTWR)
 - Technical Design (if building software)
 - Security Guide (if handling user data)
+- GitHub Pages setup (if you need a public website)
 
 ### "How do I know if my project is civic tech?"
 Civic tech projects:
