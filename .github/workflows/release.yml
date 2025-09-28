@@ -161,9 +161,11 @@ jobs:
           echo "🔍 Testing Jekyll documentation build..."
           cd docs
 
-          # Install Ruby and dependencies
-          sudo apt-get update
-          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          # Setup Ruby environment for user gems
+          echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+          echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+          export GEM_HOME="$HOME/gems"
+          export PATH="$HOME/gems/bin:$PATH"
 
           # Install bundler and build
           gem install bundler
