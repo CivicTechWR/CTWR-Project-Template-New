@@ -54,6 +54,13 @@ jobs:
         run: |
           VERSION="${{ steps.package-version.outputs.version_no_v }}"
 
+          # Debug information
+          echo "Looking for version: $VERSION"
+          echo "CHANGELOG.md content around version:"
+          grep -A 5 -B 5 "$VERSION" CHANGELOG.md || echo "Version $VERSION not found in CHANGELOG.md"
+          echo "Available versions in CHANGELOG:"
+          grep "^## \[" CHANGELOG.md
+
           # Extract changelog section for this version
           awk -v version="$VERSION" '
           /^## \[/ {
