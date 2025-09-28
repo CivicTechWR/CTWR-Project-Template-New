@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2025-09-28
+
+### Fixed
+- Final fix for Create Release workflow to ensure complete success
+- Verified all three jobs (create-release, validate-template, notify-community) complete successfully
+
 ## [1.0.3] - 2025-09-28
 
 ### Fixed
