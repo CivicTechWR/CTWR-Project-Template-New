@@ -5,6 +5,7 @@ This directory contains all tests for your CivicTechWR project. Comprehensive te
 ## Testing Philosophy
 
 For civic technology projects, testing goes beyond just verifying code works:
+
 - **Reliability**: Community members depend on these tools
 - **Accessibility**: Ensure solutions work for everyone
 - **Security**: Protect user data and system integrity
@@ -12,7 +13,7 @@ For civic technology projects, testing goes beyond just verifying code works:
 
 ## Test Structure
 
-```
+```text
 tests/
 ├── unit/               # Unit tests for individual functions/components
 ├── integration/        # Integration tests for feature workflows
@@ -27,6 +28,7 @@ tests/
 ## Types of Tests
 
 ### 1. Unit Tests
+
 Test individual functions, components, or modules in isolation.
 
 ```javascript
@@ -49,6 +51,7 @@ describe('formatCurrency', () => {
 ```
 
 ### 2. Integration Tests
+
 Test how different parts of your application work together.
 
 ```javascript
@@ -75,6 +78,7 @@ describe('CityServiceSearch Integration', () => {
 ```
 
 ### 3. Accessibility Tests
+
 Ensure your application works with assistive technologies.
 
 ```javascript
@@ -101,6 +105,7 @@ describe('ContactForm Accessibility', () => {
 ```
 
 ### 4. Performance Tests
+
 Verify your application performs well under realistic conditions.
 
 ```javascript
@@ -124,6 +129,7 @@ describe('Data Processing Performance', () => {
 ```
 
 ### 5. Security Tests
+
 Test for common security vulnerabilities.
 
 ```javascript
@@ -150,6 +156,7 @@ describe('Input Validation Security', () => {
 ```
 
 ### 6. User Acceptance Tests
+
 Test complete user workflows to ensure the application meets user needs.
 
 ```javascript
@@ -182,6 +189,7 @@ describe('Citizen Service Request Workflow', () => {
 ## Testing Setup by Technology
 
 ### JavaScript/React Testing
+
 ```json
 {
   "scripts": {
@@ -202,6 +210,7 @@ describe('Citizen Service Request Workflow', () => {
 ```
 
 ### Python/Django Testing
+
 ```python
 # settings/test.py
 from .base import *
@@ -224,6 +233,7 @@ MIGRATION_MODULES = DisableMigrations()
 ```
 
 ### Flutter Testing
+
 ```yaml
 # pubspec.yaml
 dev_dependencies:
@@ -238,6 +248,7 @@ dev_dependencies:
 ## Test Data and Fixtures
 
 ### Creating Realistic Test Data
+
 ```javascript
 // fixtures/sampleData.js
 export const sampleCityServices = [
@@ -263,6 +274,7 @@ export const sampleCityServices = [
 ```
 
 ### Mock External APIs
+
 ```javascript
 // helpers/mockApi.js
 import { rest } from 'msw';
@@ -286,6 +298,7 @@ export const server = setupServer(
 ## Continuous Integration Testing
 
 ### GitHub Actions Configuration
+
 ```yaml
 # .github/workflows/test.yml
 name: Test Suite
@@ -321,6 +334,7 @@ jobs:
 ## Testing Best Practices
 
 ### 1. Test Naming
+
 ```javascript
 // Good: Descriptive test names
 describe('UserRegistration', () => {
@@ -339,12 +353,14 @@ describe('UserRegistration', () => {
 ```
 
 ### 2. Test Organization
+
 - Group related tests with `describe` blocks
 - Use `beforeEach` and `afterEach` for common setup/cleanup
 - Keep tests independent and isolated
 - Test one thing at a time
 
 ### 3. Civic Tech Specific Testing
+
 ```javascript
 // Test for real-world civic tech scenarios
 describe('Emergency Service Directory', () => {
@@ -374,6 +390,7 @@ describe('Emergency Service Directory', () => {
 ## Coverage Goals
 
 Aim for:
+
 - **Unit tests**: 80%+ code coverage
 - **Integration tests**: All critical user workflows
 - **Accessibility tests**: All interactive components
@@ -383,6 +400,7 @@ Aim for:
 ## Running Tests
 
 ### Local Development
+
 ```bash
 # Run all tests
 npm test
@@ -401,6 +419,7 @@ npm run test:a11y
 ```
 
 ### Pre-commit Testing
+
 ```bash
 # Run in pre-commit hook
 npm run test:quick  # Fast subset of tests
@@ -411,12 +430,14 @@ npm run test:a11y   # Accessibility validation
 ## Debugging Tests
 
 ### Common Issues
+
 1. **Async operations**: Use `waitFor` and proper async/await
 2. **DOM cleanup**: Ensure components unmount between tests
 3. **Mock cleanup**: Reset mocks in `afterEach`
 4. **Test isolation**: Don't rely on test execution order
 
 ### Debugging Tools
+
 ```javascript
 // Debug specific test
 test('debug failing test', () => {
@@ -432,12 +453,14 @@ screen.logTestingPlaygroundURL();
 ## Resources
 
 ### Testing Libraries
+
 - [Jest](https://jestjs.io/) - JavaScript testing framework
 - [React Testing Library](https://testing-library.com/react) - React component testing
 - [Playwright](https://playwright.dev/) - End-to-end testing
 - [jest-axe](https://github.com/nickcolley/jest-axe) - Accessibility testing
 
 ### Documentation
+
 - [Testing Best Practices](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
 - [Accessibility Testing Guide](../ACCESSIBILITY_GUIDE.md)
 - [Security Testing Checklist](https://owasp.org/www-project-web-security-testing-guide/)

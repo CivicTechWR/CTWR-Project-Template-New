@@ -72,7 +72,7 @@ This scorecard helps teams decide **what to back, how much to back it, and what 
 
 ## Scoring & Action Framework
 
-**Total Score: ___/20**
+### Total Score: ___/20
 
 ### 17-20 Points: CTWR-Supported
 

@@ -7,7 +7,8 @@ This directory contains the main source code for your CivicTechWR project.
 Organize your code based on your project's technology stack:
 
 ### For Web Applications
-```
+
+```text
 src/
 ├── components/          # Reusable UI components
 ├── pages/              # Page-level components
@@ -21,7 +22,8 @@ src/
 ```
 
 ### For Python Applications
-```
+
+```text
 src/
 ├── models/             # Data models
 ├── views/              # View logic
@@ -34,7 +36,8 @@ src/
 ```
 
 ### For Mobile Applications (Flutter)
-```
+
+```text
 src/
 ├── screens/            # App screens
 ├── widgets/            # Reusable widgets
@@ -48,23 +51,27 @@ src/
 ## Coding Standards
 
 ### General Principles
+
 - **Write readable code** - Use clear variable and function names
 - **Comment complex logic** - Help future contributors understand your code
 - **Follow accessibility best practices** - Ensure your code works for everyone
 - **Secure by default** - Don't expose sensitive data or create vulnerabilities
 
 ### File Naming
+
 - Use lowercase with hyphens for files: `user-profile.js`
 - Use PascalCase for React components: `UserProfile.jsx`
 - Use snake_case for Python files: `user_profile.py`
 
 ### Code Organization
+
 - Keep files small and focused on a single responsibility
 - Group related functionality together
 - Use consistent import/export patterns
 - Add proper error handling
 
 ### Documentation
+
 - Document public APIs and complex functions
 - Include examples in your documentation
 - Keep README files up to date
@@ -73,6 +80,7 @@ src/
 ## Technology-Specific Guidelines
 
 ### JavaScript/TypeScript
+
 ```javascript
 // Good: Clear function names and JSDoc comments
 /**
@@ -103,6 +111,7 @@ function AccessibleButton({ onClick, children, ...props }) {
 ```
 
 ### Python
+
 ```python
 # Good: Clear docstrings and type hints
 from typing import List, Optional
@@ -137,18 +146,21 @@ def fetch_city_data(endpoint: str) -> Optional[dict]:
 ## Security Guidelines
 
 ### Data Protection
+
 - Never commit API keys, passwords, or secrets
 - Use environment variables for sensitive configuration
 - Validate all user input
 - Use HTTPS for all external communications
 
 ### Privacy Considerations
+
 - Minimize data collection to what's necessary
 - Anonymize or pseudonymize personal data
 - Implement proper data retention policies
 - Follow GDPR and privacy best practices
 
 ### Example: Secure configuration
+
 ```javascript
 // Good: Using environment variables
 const config = {
@@ -167,7 +179,8 @@ function validateEmail(email) {
 ## Testing Guidelines
 
 ### Test Structure
-```
+
+```text
 __tests__/
 ├── components/         # Component tests
 ├── services/          # Service/API tests
@@ -177,12 +190,14 @@ __tests__/
 ```
 
 ### Testing Best Practices
+
 - Write tests for all public functions
 - Test error conditions and edge cases
 - Include accessibility tests
 - Test with real data when possible
 
 ### Example Tests
+
 ```javascript
 // Good: Component test with accessibility
 import { render, screen } from '@testing-library/react';
@@ -214,6 +229,7 @@ test('UserProfile renders correctly and is accessible', async () => {
 ## Code Review Guidelines
 
 When reviewing code, check for:
+
 - [ ] Code follows project conventions
 - [ ] Functions are well-documented
 - [ ] Security best practices are followed
@@ -224,6 +240,7 @@ When reviewing code, check for:
 ## Common Patterns for Civic Tech
 
 ### API Integration
+
 ```javascript
 // Good: Robust API service for civic data
 class CivicDataService {
@@ -256,6 +273,7 @@ class CivicDataService {
 ```
 
 ### Data Visualization
+
 ```javascript
 // Good: Accessible chart component
 function AccessibleChart({ data, title, description }) {

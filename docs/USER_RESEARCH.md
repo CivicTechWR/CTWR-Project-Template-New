@@ -12,7 +12,7 @@
 
 ### Interview Structure
 
-**Opening (5 minutes)**
+#### Opening (5 minutes)
 
 - Introduce yourself and the project context
 - Explain how you'll use the information
@@ -30,19 +30,19 @@ Ask about their current context and workflows:
 **Problem Deep-Dive (15 minutes)**
 Focus on understanding their specific pain points:
 
-5. Can you walk me through the last time you [experienced this problem]?
-6. What did you do? What worked? What didn't?
-7. How did that make you feel?
-8. If you had a magic wand, what would you change about this process?
-9. Who else is involved in this process? How do they experience it?
+1. Can you walk me through the last time you [experienced this problem]?
+2. What did you do? What worked? What didn't?
+3. How did that make you feel?
+4. If you had a magic wand, what would you change about this process?
+5. Who else is involved in this process? How do they experience it?
 
 **Solution Validation (10 minutes)**
 Test your assumptions about potential solutions:
 
-10. If there was a [brief solution description], how do you think that would fit into your workflow?
-11. What concerns would you have about that approach?
-12. What would make you trust/use/adopt something like this?
-13. How do you typically learn about new tools or services?
+1. If there was a [brief solution description], how do you think that would fit into your workflow?
+2. What concerns would you have about that approach?
+3. What would make you trust/use/adopt something like this?
+4. How do you typically learn about new tools or services?
 
 **Wrap-up (5 minutes)**
 14. What questions should I have asked but didn't?

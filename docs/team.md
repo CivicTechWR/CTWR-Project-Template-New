@@ -19,7 +19,7 @@ title: Team
 
 ## 🛠️ Core Team Members
 
-### [Name] - [Role]
+### [Team Member 1] - [Role]
 
 - **GitHub**: [@username](https://github.com/username)
 - **Skills**: [Key technical or domain skills]
@@ -27,7 +27,7 @@ title: Team
 - **Background**: [Relevant experience]
 - **Fun fact**: [Something interesting about them]
 
-### [Name] - [Role]
+### [Team Member 2] - [Role]
 
 - **GitHub**: [@username](https://github.com/username)
 - **Skills**: [Key technical or domain skills]
@@ -35,7 +35,7 @@ title: Team
 - **Background**: [Relevant experience]
 - **Fun fact**: [Something interesting about them]
 
-### [Name] - [Role]
+### [Team Member 3] - [Role]
 
 - **GitHub**: [@username](https://github.com/username)
 - **Skills**: [Key technical or domain skills]

@@ -199,7 +199,7 @@ Track your project's impact throughout the season to demonstrate community value
 
 ### User Engagement Metrics
 
-```
+```text
 Week 1: ___ users
 Week 2: ___ users
 Week 3: ___ users
@@ -212,13 +212,13 @@ Average Session Duration: ___ minutes
 
 ### User Satisfaction Survey Template
 
-**Overall Experience**
+#### Overall Experience
 
 1. How satisfied are you with [project name]? (1-10)
 2. How likely are you to recommend this to others? (1-10)
 3. What problem did this solve for you?
 
-**Specific Impact**
+#### Specific Impact
 4. How much time did this save you?
 
 - [ ] Less than 1 hour
@@ -226,14 +226,14 @@ Average Session Duration: ___ minutes
 - [ ] 5-20 hours
 - [ ] More than 20 hours
 
-5. How much easier is this process now? (1-10)
+1. How much easier is this process now? (1-10)
 
-6. What would you do if this didn't exist?
+2. What would you do if this didn't exist?
 
-**Open Feedback**
-7. What worked best for you?
-8. What could be improved?
-9. What other problems could civic tech help solve?
+#### Open Feedback
+1. What worked best for you?
+2. What could be improved?
+3. What other problems could civic tech help solve?
 
 ### Partner Impact Assessment
 

@@ -17,7 +17,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 
 #### 1. Perceivable
 
-**Users must be able to perceive the information being presented**
+##### Users must be able to perceive the information being presented
 
 - **Text alternatives**: Provide alt text for images
 - **Captions**: Add captions for videos
@@ -26,7 +26,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 
 #### 2. Operable
 
-**Interface components must be operable**
+##### Interface components must be operable
 
 - **Keyboard accessible**: All functionality available via keyboard
 - **No seizures**: Avoid content that causes seizures
@@ -35,7 +35,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 
 #### 3. Understandable
 
-**Information and UI operation must be understandable**
+##### Information and UI operation must be understandable
 
 - **Readable**: Make text readable and understandable
 - **Predictable**: Make content appear and operate predictably
@@ -43,7 +43,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 
 #### 4. Robust
 
-**Content must be robust enough for various assistive technologies**
+##### Content must be robust enough for various assistive technologies
 
 - **Compatible**: Maximize compatibility with assistive technologies
 - **Valid code**: Use valid, semantic HTML

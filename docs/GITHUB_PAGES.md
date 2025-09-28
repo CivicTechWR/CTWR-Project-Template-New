@@ -67,7 +67,7 @@ gh api repos/OWNER/REPO/pages \
 
 Create `/docs` folder structure:
 
-```
+```text
 docs/
 ├── _config.yml          # Jekyll configuration
 ├── index.md            # Home page
@@ -117,7 +117,7 @@ docs/
 
 For React, Vue, Angular, or other built applications:
 
-```
+```text
 project-root/
 ├── src/                # Source code
 ├── public/             # Static assets
@@ -494,7 +494,7 @@ google_analytics: false  # Avoid for civic projects
 
 ### Multi-language Support
 
-```
+```text
 docs/
 ├── en/
 │   ├── index.md
@@ -589,7 +589,7 @@ fetch('/api/status')
 
 ---
 
-**🌐 GitHub Pages makes your civic tech project accessible to the entire community**
+### GitHub Pages makes your civic tech project accessible to the entire community
 
 Use Pages to showcase your work, engage stakeholders, and demonstrate the real-world impact of your civic technology project.
 

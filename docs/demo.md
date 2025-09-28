@@ -3,7 +3,7 @@ layout: default
 title: Demo
 ---
 
-# Live Demo & Presentations
+## Live Demo & Presentations
 
 ## 🎯 Try the Tool
 

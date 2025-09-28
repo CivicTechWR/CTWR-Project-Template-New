@@ -1,6 +1,6 @@
 # [Project Name]
 
-**CivicTechWR Season X Project**
+## CivicTechWR Season X Project
 
 [![Template Version](https://img.shields.io/badge/template-v1.0.0-blue.svg)](https://github.com/CivicTechWR/CTWR-Project-Template-New/releases)
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-brightgreen.svg)](https://civictechwr.github.io/CTWR-Project-Template-New/)

@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-# About This Project
+## About This Project
 
 ## 🎯 Mission Statement
 
@@ -52,7 +52,7 @@ Our project has been evaluated using CivicTechWR's DVF (Desirability-Viability-F
 - **Community Engagement**: [How are affected people involved in the process?]
 - **Systemic Change**: [Does this address root causes or improve civic processes?]
 
-**Total DVF Score: {{ site.civictech.dvf_score }}**
+### Total DVF Score: {{ site.civictech.dvf_score }}
 
 [View our complete DVF assessment]({{ site.github.repository_url }}/blob/main/docs/DVF_SCORECARD.md)
 

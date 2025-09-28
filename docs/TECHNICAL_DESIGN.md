@@ -176,7 +176,7 @@ DELETE /api/[resource]/:id - [Description]
 - **Code Review Process:** [PR requirements]
 - **Deployment Process:** [How code gets to production]
 
-### Testing Strategy
+### Development Testing Strategy
 
 - **Unit Tests:** [Framework/approach]
 - **Integration Tests:** [What you'll test]
@@ -201,7 +201,7 @@ cd [project-name]
 | [Service 1] | [Purpose] | [Free/Paid] | [Alternative] |
 | [Service 2] | [Purpose] | [Free/Paid] | [Alternative] |
 
-### Data Sources
+### Third-Party Data Sources
 
 | Source | Type | Update Frequency | Reliability |
 |--------|------|------------------|-------------|

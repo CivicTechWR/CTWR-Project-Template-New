@@ -318,7 +318,7 @@ Start with the "Quick Security Setup" (5 minutes), then add features as you grow
 
 ---
 
-**🔒 Security is a shared responsibility**
+### Security is a shared responsibility
 
 Every team member should understand basic security practices. Use this guide to build security into your civic tech project from day one.
 
