@@ -85,22 +85,17 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
-      - name: Update README badge (if exists)
+      - name: Check README badge update (informational)
         run: |
           VERSION="${{ steps.package-version.outputs.version }}"
           if [ -f README.md ]; then
-            # Update version badge if it exists
-            sed -i "s/template-v[0-9]\+\.[0-9]\+\.[0-9]\+/template-$VERSION/g" README.md || true
-
-            # Check if changes were made
-            if git diff --quiet README.md; then
-              echo "No version badge found in README.md to update"
+            # Check if version badge exists and what it would be updated to
+            if grep -q "template-v[0-9]\+\.[0-9]\+\.[0-9]\+" README.md; then
+              echo "📝 Version badge found in README.md"
+              echo "🔄 Would update to: template-$VERSION"
+              echo "ℹ️  Manual update recommended due to branch protection"
             else
-              git config --local user.email "action@github.com"
-              git config --local user.name "GitHub Action"
-              git add README.md
-              git commit -m "Update README version badge to $VERSION"
-              git push
+              echo "ℹ️  No version badge found in README.md"
             fi
           fi
 
