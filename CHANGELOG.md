@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2025-09-28
+
+### Fixed
+- Fixed Create Release workflow changelog extraction and branch protection issues
+- Workflow now completes successfully with proper informational status updates
+- Resolved all remaining YAML syntax and workflow execution problems
+
 ## [1.0.2] - 2025-09-28
 
 ### Fixed
