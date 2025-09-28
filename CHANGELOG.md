@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2025-09-28
+
+### Fixed
+- Fixed Jekyll build permissions issue in release workflow validation
+- Complete Create Release workflow now passes all jobs successfully
+
 ## [1.0.4] - 2025-09-28
 
 ### Fixed
