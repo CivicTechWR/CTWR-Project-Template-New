@@ -8,7 +8,9 @@ title: Team
 ## 👥 Project Leadership
 
 ### Project Lead
+
 **[Name]** - Project Lead & [Primary Role]
+
 - **GitHub**: [@username](https://github.com/username)
 - **Focus**: [Primary responsibility - strategy, coordination, etc.]
 - **Background**: [Relevant experience or expertise]
@@ -18,6 +20,7 @@ title: Team
 ## 🛠️ Core Team Members
 
 ### [Name] - [Role]
+
 - **GitHub**: [@username](https://github.com/username)
 - **Skills**: [Key technical or domain skills]
 - **Contribution**: [What they're working on in this project]
@@ -25,6 +28,7 @@ title: Team
 - **Fun fact**: [Something interesting about them]
 
 ### [Name] - [Role]
+
 - **GitHub**: [@username](https://github.com/username)
 - **Skills**: [Key technical or domain skills]
 - **Contribution**: [What they're working on in this project]
@@ -32,6 +36,7 @@ title: Team
 - **Fun fact**: [Something interesting about them]
 
 ### [Name] - [Role]
+
 - **GitHub**: [@username](https://github.com/username)
 - **Skills**: [Key technical or domain skills]
 - **Contribution**: [What they're working on in this project]
@@ -41,6 +46,7 @@ title: Team
 ## 🤝 Community Partners
 
 ### {{ site.civictech.partner }}
+
 - **Contact**: [Name, Role]
 - **Partnership Role**: [How they're involved - advisory, data provider, user testing, etc.]
 - **Domain Expertise**: [What knowledge they bring to the project]
@@ -48,6 +54,7 @@ title: Team
 - **Impact**: [How this partnership benefits both the project and the partner]
 
 ### [Additional Partner Organization]
+
 - **Contact**: [Name, Role]
 - **Partnership Role**: [Their involvement]
 - **Contribution**: [What they provide to the project]
@@ -56,24 +63,28 @@ title: Team
 ## 🎯 Team Roles & Responsibilities
 
 ### Technical Development
+
 - **Frontend Development**: [Who handles user interface]
 - **Backend Development**: [Who handles server-side logic]
 - **Data Engineering**: [Who manages data processing]
 - **DevOps & Deployment**: [Who handles infrastructure]
 
 ### Design & User Experience
+
 - **User Research**: [Who conducts interviews and testing]
 - **UI/UX Design**: [Who creates mockups and interfaces]
 - **Accessibility**: [Who ensures inclusive design]
 - **Content Strategy**: [Who manages messaging and documentation]
 
 ### Community & Partnerships
+
 - **Community Engagement**: [Who manages stakeholder relationships]
 - **Partner Liaison**: [Who coordinates with partner organizations]
 - **User Support**: [Who helps users and collects feedback]
 - **Outreach**: [Who handles communications and promotion]
 
 ### Project Management
+
 - **Planning & Coordination**: [Who manages timelines and milestones]
 - **Quality Assurance**: [Who ensures testing and standards]
 - **Documentation**: [Who maintains project docs]
@@ -82,10 +93,13 @@ title: Team
 ## 🌟 Contributors & Volunteers
 
 ### Regular Contributors
+
 [List people who contribute regularly but aren't core team members]
 
 ### One-time Contributors
+
 We appreciate everyone who has contributed to this project:
+
 - [Name] - [Contribution]
 - [Name] - [Contribution]
 - [Name] - [Contribution]
@@ -95,36 +109,42 @@ We appreciate everyone who has contributed to this project:
 ## 📅 Team Meetings & Communication
 
 ### Regular Schedule
+
 - **Weekly Team Meetings**: [Day/time]
 - **CTWR Wednesday Meetings**: Every Wednesday at [time]
 - **Partner Check-ins**: [Frequency with community partners]
 - **User Testing Sessions**: [When and how often]
 
 ### Communication Channels
+
 - **GitHub Issues**: Primary place for technical discussions
 - **[Team Chat Platform]**: Day-to-day coordination
 - **Email**: [Team email for external communications]
 - **Video Calls**: [Platform used for meetings]
 
 ### Meeting Notes & Documentation
+
 - [Link to meeting notes repository or folder]
 - [Link to decision log or project documentation]
 
 ## 🚀 How to Join Our Team
 
 ### We're Looking For
+
 - [ ] **[Specific skill 1]** - [What you'd work on]
 - [ ] **[Specific skill 2]** - [What you'd work on]
 - [ ] **Community Members** - [How community members can get involved]
 - [ ] **Domain Experts** - [Subject matter expertise we need]
 
 ### Getting Started as a Contributor
+
 1. **Join CTWR**: Attend a [Wednesday meeting](https://civictechwr.org) to meet the community
 2. **Explore the Project**: Read our [Contributing Guide]({{ site.github.repository_url }}/blob/main/docs/CONTRIBUTING.md)
 3. **Start Small**: Look for [good first issues]({{ site.github.repository_url }}/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 4. **Connect with Team**: Introduce yourself in a GitHub issue or at a CTWR meeting
 
 ### Time Commitment Options
+
 - **Core Team Member**: 8-12 hours/week throughout the season
 - **Regular Contributor**: 3-5 hours/week on specific features
 - **Occasional Helper**: 1-2 hours/week on documentation, testing, feedback
@@ -133,12 +153,14 @@ We appreciate everyone who has contributed to this project:
 ## 🎓 Learning & Development
 
 ### Skills Our Team is Developing
+
 - [Technical skills team members are learning]
 - [Domain knowledge being acquired]
 - [Civic tech methodology and best practices]
 - [Community engagement and co-design techniques]
 
 ### Knowledge Sharing
+
 - **Tech Talks**: [Internal presentations on what we're learning]
 - **Documentation**: [How we document decisions and learnings]
 - **Blog Posts**: [If team members write about the project]
@@ -147,24 +169,29 @@ We appreciate everyone who has contributed to this project:
 ## 🏆 Team Achievements
 
 ### Project Milestones
+
 - [x] [Completed milestone 1]
 - [x] [Completed milestone 2]
 - [ ] [Upcoming milestone]
 - [ ] [Future goal]
 
 ### Community Recognition
+
 - [Any awards, mentions, or recognition the team has received]
 - [Speaking opportunities or conference presentations]
 - [Media coverage or community spotlight features]
 
 ### Individual Growth
+
 *Team members can add personal achievements related to the project:*
+
 - [Name]: [Personal learning or achievement]
 - [Name]: [Personal learning or achievement]
 
 ## 🤔 Team Values & Working Style
 
 ### Our Principles
+
 - **Community First**: We prioritize community needs over technical preferences
 - **Inclusive Process**: Everyone's voice matters in decision-making
 - **Transparent Communication**: Open sharing of progress, challenges, and decisions
@@ -172,6 +199,7 @@ We appreciate everyone who has contributed to this project:
 - **Ethical Technology**: We consider privacy, security, and fairness in everything we build
 
 ### How We Work
+
 - **Collaborative Decision Making**: [How the team makes major decisions]
 - **Conflict Resolution**: [How we handle disagreements]
 - **Work-Life Balance**: [Expectations around availability and time commitment]
@@ -180,15 +208,18 @@ We appreciate everyone who has contributed to this project:
 ## 📞 Contact the Team
 
 ### For Project-Related Questions
+
 - **General Inquiries**: [Create a GitHub Discussion]({{ site.github.repository_url }}/discussions)
 - **Technical Issues**: [Create an Issue]({{ site.github.repository_url }}/issues)
 - **Partnership Opportunities**: [Team email or specific contact]
 
 ### For Media or Speaking Requests
+
 - **Project Lead**: [Contact information]
 - **CivicTechWR Media Contact**: [General CTWR contact]
 
 ### For Community Members
+
 - **User Support**: [How users can get help]
 - **Feedback**: [How to provide input on the project]
 - **Testing Opportunities**: [How to participate in user testing]
@@ -196,11 +227,13 @@ We appreciate everyone who has contributed to this project:
 ## 🙏 Acknowledgments
 
 ### Special Thanks
+
 - **CivicTechWR Community** - For ongoing support, mentorship, and feedback
 - **{{ site.civictech.partner }}** - For domain expertise and partnership
 - **[Other individuals or organizations]** - [Specific contributions]
 
 ### Inspiration & Learning
+
 - **[Other civic tech projects]** - [What we learned from them]
 - **[Research or reports]** - [Academic or policy work that informed our approach]
 - **[Community members]** - [People who helped shape our understanding]

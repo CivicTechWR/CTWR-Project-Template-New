@@ -10,27 +10,32 @@ title: Home
 **CivicTechWR Season {{ site.civictech.season }} Project** • **DVF Score: {{ site.civictech.dvf_score }}**
 
 ### 🎯 Project Mission
+
 [One sentence describing what your project does and who it helps]
 
 ### 🏛️ Civic Impact
+
 - **Community Partner**: {{ site.civictech.partner }}
 - **Target Users**: [Who will use this tool/service?]
 - **Expected Impact**: [What positive change will this create in the community?]
 - **Data Sources**: [What data does this project use and how is it obtained?]
 
 ### 🚀 Current Status
+
 - **Phase**: {{ site.civictech.status }}
 - **Last Updated**: {{ site.time | date: "%B %d, %Y" }}
 - **Next Milestone**: [What's the next major goal?]
 - **Demo Day**: {{ site.civictech.demo_day }}
 
 ### 📊 Key Metrics
+
 - **Users Served**: [Number of people helped]
 - **Community Feedback**: [Rating, testimonials, or summary]
 - **Partnership Status**: [Active collaboration, developing relationship, etc.]
 - **Technical Progress**: [Percentage complete, features implemented]
 
 ### 🔗 Quick Links
+
 - **[Live Demo](demo.html)** - Try the tool yourself
 - **[GitHub Repository]({{ site.github.repository_url }})** - View source code and contribute
 - **[Team Information](team.html)** - Meet the people behind the project
@@ -41,26 +46,32 @@ title: Home
 ### 📱 How to Get Involved
 
 #### For Community Members
+
 - **Test the tool** and provide feedback
 - **Share your experience** with the problem we're solving
 - **Connect us with others** who might benefit or contribute
 - **Attend Demo Day** on {{ site.civictech.demo_day }}
 
 #### For Developers & Designers
+
 - **Check our [Issues]({{ site.github.repository_url }}/issues)** for ways to contribute
 - **Join our team** - we're always looking for new contributors
 - **Review our [Contributing Guide]({{ site.github.repository_url }}/blob/main/docs/CONTRIBUTING.md)**
 - **Attend CTWR Wednesday meetings** to meet the team
 
 ### 🎯 Problem Statement
+
 [Detailed description of the community problem this project addresses. Include:]
+
 - **Who is affected** by this problem?
 - **How does the current situation impact** community members?
 - **What solutions exist** and why are they insufficient?
 - **How will this project** specifically address the gap?
 
 ### 💡 Our Solution
+
 [Explain your approach and why it's the right solution:]
+
 - **Technology approach**: [What tools/platforms are you using?]
 - **User experience**: [How will people interact with your solution?]
 - **Data handling**: [How do you collect, process, and protect data?]
@@ -70,37 +81,44 @@ title: Home
 ### 📅 Project Timeline
 
 #### Weeks 1-3: Research & Validation
+
 - [x] Initial community partner meetings
 - [x] User research and interviews
 - [x] DVF scorecard completion
 - [ ] Problem validation with stakeholders
 
 #### Weeks 4-6: Design & Prototyping
+
 - [ ] Technical architecture design
 - [ ] User interface mockups
 - [ ] Data collection strategy
 - [ ] Accessibility planning
 
 #### Weeks 7-9: Development
+
 - [ ] Core feature implementation
 - [ ] User testing with community members
 - [ ] Data integration and processing
 - [ ] Security and privacy implementation
 
 #### Weeks 10-11: Testing & Refinement
+
 - [ ] Comprehensive user testing
 - [ ] Partner feedback incorporation
 - [ ] Performance optimization
 - [ ] Documentation completion
 
 #### Week 12: Demo Day Preparation
+
 - [ ] Final presentation preparation
 - [ ] Impact measurement and reporting
 - [ ] Handoff planning for sustainability
 - [ ] Community celebration
 
 ### 🛡️ Privacy & Security
+
 This project follows CivicTechWR security and privacy best practices:
+
 - **Data minimization**: We collect only necessary information
 - **Transparency**: Clear documentation of what data is used and how
 - **Security**: Following established security protocols for civic tech
@@ -109,7 +127,9 @@ This project follows CivicTechWR security and privacy best practices:
 [Learn more about our security practices]({{ site.github.repository_url }}/blob/main/docs/SECURITY_GUIDE.md)
 
 ### 📈 Impact Measurement
+
 We track our success through:
+
 - **User adoption**: [How many people are using the tool?]
 - **Community feedback**: [Surveys, interviews, testimonials]
 - **Partner engagement**: [Level of involvement from community organizations]
@@ -117,6 +137,7 @@ We track our success through:
 - **Technical metrics**: [Performance, accessibility, security scores]
 
 ### 🏆 Demo Day Presentation
+
 {% if site.civictech.demo_day %}
 Join us on {{ site.civictech.demo_day }} to see our final presentation and celebrate our impact on the community!
 {% else %}
@@ -126,6 +147,7 @@ Demo Day date to be announced - follow this project for updates.
 [View our Demo Day preparation and presentation materials](demo.html)
 
 ### 🤝 Community Partners & Acknowledgments
+
 - **{{ site.civictech.partner }}** - Primary community partner
 - **CivicTechWR Community** - Support, mentorship, and feedback
 - **[Other organizations]** - [Their specific contributions]
@@ -133,6 +155,7 @@ Demo Day date to be announced - follow this project for updates.
 - **[Inspiration]** - [Similar projects or research that informed this work]
 
 ### 📞 Contact & Support
+
 - **Project Team**: [team email or contact method]
 - **CivicTechWR**: Join us at [Wednesday meetings](https://civictechwr.org)
 - **Technical Support**: [Create an issue]({{ site.github.repository_url }}/issues) on GitHub

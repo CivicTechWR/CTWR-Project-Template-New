@@ -18,6 +18,7 @@ Run the setup script to create a configured project:
 ```
 
 This creates a GitHub Project with:
+
 - ✅ DVF tracking fields (Community Partner, Talent & Team, Technically Exciting, Civic Exciting)
 - ✅ Season workflow tracking (Week 1-12, Project phases)
 - ✅ Integration with your repository
@@ -27,7 +28,7 @@ This creates a GitHub Project with:
 
 If you prefer manual setup or need to customize:
 
-1. **Create Project**: Go to https://github.com/orgs/CivicTechWR/projects
+1. **Create Project**: Go to <https://github.com/orgs/CivicTechWR/projects>
 2. **Click "New Project"** → Choose "Board" or "Table" view
 3. **Add Custom Fields** (see Field Configuration section below)
 4. **Link to Repository**: Project Settings → Link Repository
@@ -37,16 +38,19 @@ If you prefer manual setup or need to customize:
 ### Core Views
 
 **📋 Table View** - Comprehensive task and DVF tracking
+
 - All tasks with DVF scores, assignees, and timeline
 - Sortable by priority, week, or DVF score
 - Best for detailed project management
 
 **📋 Board View** - Kanban workflow by status
+
 - Columns: Backlog → In Progress → Review → Done
 - Drag and drop for status updates
 - Best for daily/weekly standups
 
 **📊 DVF Dashboard** - Assessment tracking
+
 - Filter by DVF scores and project phase
 - Track scoring improvements over time
 - Best for mid-season reviews and reporting
@@ -70,6 +74,7 @@ The template includes these DVF-specific fields:
 ### Week 1-3: Project Initialization
 
 **Tasks to create:**
+
 - [ ] Complete initial DVF assessment
 - [ ] Set up project repository
 - [ ] Create user research plan
@@ -77,6 +82,7 @@ The template includes these DVF-specific fields:
 - [ ] Identify community partners
 
 **DVF Tracking:**
+
 - Complete initial DVF scorecard
 - Set baseline scores in project fields
 - Document assumptions and goals
@@ -84,12 +90,14 @@ The template includes these DVF-specific fields:
 ### Week 4-6: Development Sprint
 
 **Tasks to create:**
+
 - [ ] User interviews and research
 - [ ] Technical architecture decisions
 - [ ] MVP feature development
 - [ ] Mid-season DVF review
 
 **DVF Tracking:**
+
 - Update DVF scores based on learnings
 - Adjust project scope if needed
 - Document partner feedback
@@ -97,12 +105,14 @@ The template includes these DVF-specific fields:
 ### Week 7-9: Core Development
 
 **Tasks to create:**
+
 - [ ] Feature implementation
 - [ ] User testing sessions
 - [ ] Accessibility compliance
 - [ ] Security review
 
 **DVF Tracking:**
+
 - Monitor technical progress
 - Validate community impact
 - Track team engagement
@@ -110,12 +120,14 @@ The template includes these DVF-specific fields:
 ### Week 10-11: Demo Preparation
 
 **Tasks to create:**
+
 - [ ] Demo Day presentation prep
 - [ ] Impact metrics collection
 - [ ] User story documentation
 - [ ] Final DVF assessment
 
 **DVF Tracking:**
+
 - Final DVF scoring
 - Impact measurement
 - Sustainability planning
@@ -123,6 +135,7 @@ The template includes these DVF-specific fields:
 ### Week 12: Demo Day
 
 **Tasks to create:**
+
 - [ ] Final presentation delivery
 - [ ] Project handoff documentation
 - [ ] Community impact report
@@ -133,12 +146,14 @@ The template includes these DVF-specific fields:
 ### Creating Effective Issues
 
 **Use the CTWR issue template** which includes:
+
 - DVF impact assessment
 - Community benefit description
 - Acceptance criteria
 - Accessibility considerations
 
 **Example Good Issue:**
+
 ```markdown
 ## Summary
 Implement keyboard navigation for service directory
@@ -160,10 +175,12 @@ As a screen reader user, I want to navigate the service directory with keyboard 
 ### Linking Issues to Projects
 
 **Automatic linking** (if repository is linked):
+
 - New issues automatically appear in project
 - Status updates sync between issue and project
 
 **Manual linking**:
+
 1. Go to issue page
 2. Click "Projects" in sidebar
 3. Select your CTWR project
@@ -172,12 +189,14 @@ As a screen reader user, I want to navigate the service directory with keyboard 
 ### Status Management
 
 **Standard Status Flow:**
+
 1. **Backlog** - Identified but not started
 2. **In Progress** - Actively being worked on
 3. **Review** - Complete but needs validation
 4. **Done** - Completed and validated
 
 **Special Statuses:**
+
 - **Blocked** - Waiting on external dependencies
 - **On Hold** - Paused pending decisions
 - **Won't Do** - Decided not to implement
@@ -187,21 +206,25 @@ As a screen reader user, I want to navigate the service directory with keyboard 
 ### Scoring Guidelines
 
 **Community Partner (1-5):**
+
 - 1: No clear partner engagement
 - 3: Regular partner check-ins scheduled
 - 5: Active partner participation with decision-making authority
 
 **Talent & Team (1-5):**
+
 - 1: Solo project or unclear commitment
 - 3: 2-3 people with regular availability
 - 5: Diverse team with weekly commitment and complementary skills
 
 **Technically Exciting (1-5):**
+
 - 1: No significant technical component
 - 3: Solid technology choices with some learning
 - 5: Innovative technology with high learning value
 
 **Civic Exciting (1-5):**
+
 - 1: Limited public benefit
 - 3: Clear community value with decent story
 - 5: Compelling civic impact with measurable outcomes
@@ -216,11 +239,13 @@ As a screen reader user, I want to navigate the service directory with keyboard 
 ### Using DVF Data
 
 **For Project Decisions:**
+
 - Scores ≤12: Focus on de-risking specific areas
 - Scores 13-16: Continue with targeted coaching
 - Scores 17-20: Leverage momentum for maximum impact
 
 **For Community Reporting:**
+
 - Track DVF improvement over time
 - Identify successful patterns for future projects
 - Demonstrate community value to sponsors
@@ -232,11 +257,13 @@ As a screen reader user, I want to navigate the service directory with keyboard 
 The template includes automated workflows:
 
 **DVF Score Updates:**
+
 - Automatically calculate total DVF scores
 - Notify team when scores change significantly
 - Generate weekly DVF reports
 
 **Season Progression:**
+
 - Auto-update week numbers based on season start
 - Reminder notifications for key milestones
 - Demo Day preparation checklist automation
@@ -244,12 +271,14 @@ The template includes automated workflows:
 ### Project Templates
 
 **Quick Start Templates:**
+
 - Web application project
 - Data analysis project
 - Mobile app project
 - Community engagement project
 
 Each template includes:
+
 - Pre-configured issue templates
 - Standard task breakdowns
 - DVF scoring guidelines
@@ -262,6 +291,7 @@ Each template includes:
 Use project views to facilitate team meetings:
 
 **Agenda Template:**
+
 1. **DVF Check** (5 min) - Review current scores
 2. **Progress Review** (10 min) - What's done/in progress
 3. **Blockers** (5 min) - What needs help
@@ -270,6 +300,7 @@ Use project views to facilitate team meetings:
 ### Mid-Season Review (Week 6)
 
 **Review Process:**
+
 1. Export project data to CSV
 2. Compare current vs. initial DVF scores
 3. Identify trends and patterns
@@ -279,6 +310,7 @@ Use project views to facilitate team meetings:
 ### Demo Day Preparation
 
 **Metrics to Track:**
+
 - Total issues completed
 - DVF score progression
 - Community engagement metrics
@@ -290,9 +322,11 @@ Use project views to facilitate team meetings:
 ### Community Project Board
 
 Your project can be linked to the main CTWR community board:
-- https://github.com/orgs/CivicTechWR/projects/10
+
+- <https://github.com/orgs/CivicTechWR/projects/10>
 
 **Benefits:**
+
 - Visibility to CTWR leadership
 - Cross-project collaboration opportunities
 - Community resource sharing
@@ -301,6 +335,7 @@ Your project can be linked to the main CTWR community board:
 ### Documentation Links
 
 Connect your project management to documentation:
+
 - Link issues to specific docs sections
 - Track documentation completeness
 - Ensure accessibility guide compliance
@@ -311,17 +346,20 @@ Connect your project management to documentation:
 ### Common Issues
 
 **Project not linked to repository:**
+
 ```bash
 gh project link [PROJECT_NUMBER] --owner CivicTechWR --repo [REPO_NAME]
 ```
 
 **Missing DVF fields:**
+
 ```bash
 # Re-run the setup script or add manually
 ./scripts/setup-project.sh
 ```
 
 **DVF scores not calculating:**
+
 - Check that all four DVF fields are filled
 - Verify field names match exactly
 - Refresh project view
@@ -329,11 +367,13 @@ gh project link [PROJECT_NUMBER] --owner CivicTechWR --repo [REPO_NAME]
 ### Getting Help
 
 **CTWR Community Support:**
+
 - Weekly meetings: Ask about project management
 - Slack/Discord: #project-help channel
 - Documentation: This guide and DVF scorecard
 
 **GitHub Support:**
+
 - GitHub Projects documentation
 - GitHub CLI reference
 - GitHub Actions for automation
@@ -343,12 +383,14 @@ gh project link [PROJECT_NUMBER] --owner CivicTechWR --repo [REPO_NAME]
 ### Custom Automations
 
 **DVF Score Alerts:**
+
 ```yaml
 # .github/workflows/dvf-alert.yml
 # Notify team when DVF scores drop below threshold
 ```
 
 **Progress Reports:**
+
 ```yaml
 # .github/workflows/weekly-report.yml
 # Generate weekly progress reports for community
@@ -357,6 +399,7 @@ gh project link [PROJECT_NUMBER] --owner CivicTechWR --repo [REPO_NAME]
 ### Multi-Project Coordination
 
 For complex projects spanning multiple repositories:
+
 - Use organization-level projects
 - Link multiple repositories
 - Coordinate with other CTWR projects
@@ -365,11 +408,13 @@ For complex projects spanning multiple repositories:
 ### Data Export and Analysis
 
 **Export Options:**
+
 - CSV for spreadsheet analysis
 - JSON for custom reporting
 - GitHub API for automated insights
 
 **Analysis Ideas:**
+
 - DVF score correlation with project success
 - Team engagement patterns
 - Community impact measurement

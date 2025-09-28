@@ -5,6 +5,7 @@ GitHub Pages provides free hosting for project websites, documentation, and live
 ## 🚀 Quick Start: Enable GitHub Pages (2 Minutes)
 
 ### 1. Enable Pages in Repository Settings
+
 ```bash
 # Enable GitHub Pages via CLI (requires admin permissions)
 gh api repos/OWNER/REPO/pages \
@@ -14,39 +15,47 @@ gh api repos/OWNER/REPO/pages \
 ```
 
 **Or manually:**
+
 1. Go to your repository on GitHub
 2. Click **Settings** → **Pages**
 3. Set **Source** to "Deploy from a branch"
 4. Choose **Branch**: `main` and **Folder**: `/docs` or `/`
 5. Click **Save**
 
-### 2. Your Site Will Be Available At:
+### 2. Your Site Will Be Available At
+
 `https://USERNAME.github.io/REPOSITORY-NAME`
 
 ## 📋 GitHub Pages Use Cases for Civic Tech
 
 ### 🌐 Project Website
+
 **Perfect for:** Public-facing project information, team bios, project status
 
 **Setup:** Use `/docs` folder for Jekyll site with project information
+
 - Landing page explaining the project's civic impact
 - Team member profiles and contact information
 - Project timeline and current status
 - Links to live demo and GitHub repository
 
 ### 📚 Documentation Site
+
 **Perfect for:** User guides, API documentation, setup instructions
 
 **Setup:** Use automated documentation generation (MkDocs, Gitiles, etc.)
+
 - User manuals for community members
 - Developer documentation and API references
 - Setup and installation guides
 - FAQ and troubleshooting
 
 ### 🎯 Live Demo/Prototype
+
 **Perfect for:** Interactive demos, data visualizations, web applications
 
 **Setup:** Deploy built application to GitHub Pages
+
 - Working prototypes for user testing
 - Data dashboards and visualizations
 - Interactive tools for community use
@@ -57,6 +66,7 @@ gh api repos/OWNER/REPO/pages \
 ### Option 1: Simple Jekyll Site (Recommended for Project Websites)
 
 Create `/docs` folder structure:
+
 ```
 docs/
 ├── _config.yml          # Jekyll configuration
@@ -69,6 +79,7 @@ docs/
 ```
 
 **Basic `_config.yml`:**
+
 ```yaml
 title: "[Your Project Name]"
 description: "CivicTechWR Season X Project"
@@ -91,6 +102,7 @@ civictech_url: "https://civictechwr.org"
 ### Option 2: Custom HTML/CSS Site
 
 Create `/docs` folder with static files:
+
 ```
 docs/
 ├── index.html          # Main page
@@ -104,6 +116,7 @@ docs/
 ### Option 3: GitHub Actions Deployment
 
 For React, Vue, Angular, or other built applications:
+
 ```
 project-root/
 ├── src/                # Source code
@@ -118,6 +131,7 @@ project-root/
 ### Jekyll Site Deployment
 
 Create `.github/workflows/pages-jekyll.yml`:
+
 ```yaml
 name: Deploy Jekyll Site to Pages
 
@@ -180,6 +194,7 @@ jobs:
 ### React/Vue/Angular App Deployment
 
 Create `.github/workflows/pages-spa.yml`:
+
 ```yaml
 name: Deploy SPA to Pages
 
@@ -242,6 +257,7 @@ jobs:
 ## 📖 Documentation Site with MkDocs
 
 ### Setup MkDocs for Documentation
+
 ```bash
 # Install MkDocs
 pip install mkdocs mkdocs-material
@@ -287,6 +303,7 @@ mkdocs serve
 ### MkDocs Deployment Workflow
 
 Create `.github/workflows/docs.yml`:
+
 ```yaml
 name: Deploy Documentation
 
@@ -341,6 +358,7 @@ jobs:
 ### Project Landing Page Template
 
 Create `docs/index.md`:
+
 ```markdown
 ---
 layout: default
@@ -388,6 +406,7 @@ title: Home
 ### Team Page Template
 
 Create `docs/team.md`:
+
 ```markdown
 ---
 layout: default
@@ -425,16 +444,19 @@ Interested in contributing? Check out our [Contributing Guide](../CONTRIBUTING.m
 ## 🔒 Security Considerations for GitHub Pages
 
 ### Public Repository Content
+
 - **All content is public** - Never include sensitive data in Pages sites
 - **Environment variables** - Use GitHub Secrets for build-time configuration
 - **API keys** - Never expose API keys in client-side code
 
 ### Content Security
+
 - **Input validation** - Sanitize any user-generated content
 - **HTTPS enforcement** - GitHub Pages enforces HTTPS by default
 - **Domain security** - Use custom domains with proper DNS configuration
 
 ### Privacy Compliance
+
 - **Analytics** - Use privacy-focused analytics (avoid Google Analytics for government data)
 - **Cookies** - Minimal cookie usage, clear privacy policy
 - **Data collection** - Document what data (if any) is collected
@@ -442,7 +464,9 @@ Interested in contributing? Check out our [Contributing Guide](../CONTRIBUTING.m
 ## 📈 Analytics and Monitoring
 
 ### Simple Analytics Setup
+
 Add to your Jekyll `_config.yml`:
+
 ```yaml
 # Privacy-focused analytics
 plausible:
@@ -454,6 +478,7 @@ google_analytics: false  # Avoid for civic projects
 ```
 
 ### Monitoring Site Health
+
 - **GitHub Actions status** - Monitor deployment success
 - **Link checking** - Validate external links regularly
 - **Accessibility testing** - Automated a11y checks in CI
@@ -462,11 +487,13 @@ google_analytics: false  # Avoid for civic projects
 ## 🚀 Advanced GitHub Pages Features
 
 ### Custom Domain Setup
+
 1. **Add CNAME file** to `/docs` folder with your domain
 2. **Configure DNS** - Point CNAME record to `USERNAME.github.io`
 3. **Enable HTTPS** - GitHub automatically provisions SSL certificates
 
 ### Multi-language Support
+
 ```
 docs/
 ├── en/
@@ -479,7 +506,9 @@ docs/
 ```
 
 ### API Integration
+
 For dynamic content, use client-side API calls:
+
 ```javascript
 // Fetch live data from your project's API
 fetch('/api/status')
@@ -490,6 +519,7 @@ fetch('/api/status')
 ## 📋 GitHub Pages Checklist
 
 ### Initial Setup
+
 - [ ] Enable GitHub Pages in repository settings
 - [ ] Choose deployment source (branch + folder or GitHub Actions)
 - [ ] Create basic site structure
@@ -497,6 +527,7 @@ fetch('/api/status')
 - [ ] Test site locally before deploying
 
 ### Content Creation
+
 - [ ] Write compelling project landing page
 - [ ] Create team member profiles
 - [ ] Document project status and milestones
@@ -504,6 +535,7 @@ fetch('/api/status')
 - [ ] Include civic impact metrics
 
 ### Technical Configuration
+
 - [ ] Set up automated deployment workflow
 - [ ] Configure custom domain (if applicable)
 - [ ] Add security headers and privacy policy
@@ -511,6 +543,7 @@ fetch('/api/status')
 - [ ] Test accessibility and performance
 
 ### Ongoing Maintenance
+
 - [ ] Update project status regularly
 - [ ] Monitor site performance and uptime
 - [ ] Keep dependencies updated
@@ -520,23 +553,28 @@ fetch('/api/status')
 ## ❓ Common Questions
 
 ### "Do I need GitHub Pages for my civic tech project?"
+
 **Yes, if you need:**
+
 - Public project website for community engagement
 - Documentation site for users and developers
 - Live demo hosting for stakeholder reviews
 - Professional presence for Demo Day
 
 **Maybe, if you have:**
+
 - Simple projects that only need a README
 - Enterprise hosting requirements
 - Complex backend services (consider GitHub Pages + external API)
 
 ### "What's the difference between Jekyll and custom HTML?"
+
 - **Jekyll**: Better for content-heavy sites, blog posts, documentation
 - **Custom HTML**: More control, better for interactive applications
 - **Static Site Generators**: MkDocs for docs, Gatsby/Next.js for apps
 
 ### "How do I handle sensitive civic data?"
+
 - **Never put sensitive data in GitHub Pages** (it's public)
 - **Use external APIs** for dynamic data (with proper authentication)
 - **Static analysis only** - pre-process sensitive data before publishing

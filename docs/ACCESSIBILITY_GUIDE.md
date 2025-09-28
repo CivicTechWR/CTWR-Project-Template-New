@@ -16,6 +16,7 @@ Accessibility is fundamental to civic technology. Our projects must work for eve
 We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/WAI/WCAG21/quickref/) at Level AA:
 
 #### 1. Perceivable
+
 **Users must be able to perceive the information being presented**
 
 - **Text alternatives**: Provide alt text for images
@@ -24,6 +25,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 - **Resizable text**: Allow text to be enlarged up to 200%
 
 #### 2. Operable
+
 **Interface components must be operable**
 
 - **Keyboard accessible**: All functionality available via keyboard
@@ -32,6 +34,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 - **Navigation**: Help users navigate and find content
 
 #### 3. Understandable
+
 **Information and UI operation must be understandable**
 
 - **Readable**: Make text readable and understandable
@@ -39,6 +42,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 - **Input assistance**: Help users avoid and correct mistakes
 
 #### 4. Robust
+
 **Content must be robust enough for various assistive technologies**
 
 - **Compatible**: Maximize compatibility with assistive technologies
@@ -47,12 +51,14 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ## Implementation Checklist
 
 ### Planning Phase
+
 - [ ] Include accessibility in project requirements
 - [ ] Consider diverse user needs in design phase
 - [ ] Plan for accessibility testing throughout development
 - [ ] Budget time for accessibility improvements
 
 ### Design Phase
+
 - [ ] Use sufficient color contrast (4.5:1 for normal text, 3:1 for large text)
 - [ ] Don't rely solely on color to convey information
 - [ ] Design for 200% zoom without horizontal scrolling
@@ -60,6 +66,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 - [ ] Ensure touch targets are at least 44x44 pixels
 
 ### Development Phase
+
 - [ ] Use semantic HTML elements
 - [ ] Provide proper heading structure (h1, h2, h3...)
 - [ ] Add alt text for images
@@ -68,6 +75,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 - [ ] Validate HTML and check for accessibility errors
 
 ### Testing Phase
+
 - [ ] Test with keyboard only
 - [ ] Test with screen reader software
 - [ ] Test at 200% zoom
@@ -79,6 +87,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ### Images and Media
 
 **Images:**
+
 ```html
 <!-- Informative images -->
 <img src="chart.png" alt="Budget increased 15% from 2023 to 2024">
@@ -92,6 +101,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ```
 
 **Videos:**
+
 - Provide captions for all speech
 - Include audio descriptions for visual content
 - Offer transcripts
@@ -99,6 +109,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ### Forms
 
 **Accessible form design:**
+
 ```html
 <label for="email">Email Address (required)</label>
 <input type="email" id="email" name="email" required
@@ -109,6 +120,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ```
 
 **Form requirements:**
+
 - Associate labels with form controls
 - Group related fields with fieldset/legend
 - Provide clear error messages
@@ -118,6 +130,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ### Navigation
 
 **Accessible navigation:**
+
 ```html
 <nav aria-label="Main navigation">
   <ul>
@@ -129,6 +142,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ```
 
 **Navigation requirements:**
+
 - Provide skip links to main content
 - Use landmarks (header, nav, main, footer)
 - Indicate current page in navigation
@@ -137,6 +151,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ### Content Structure
 
 **Heading structure:**
+
 ```html
 <h1>Main Page Title</h1>
   <h2>Section Heading</h2>
@@ -146,6 +161,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ```
 
 **Requirements:**
+
 - Use headings to structure content logically
 - Don't skip heading levels
 - Use lists for grouped content
@@ -154,6 +170,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ### Interactive Elements
 
 **Buttons and links:**
+
 ```html
 <!-- Button for actions -->
 <button type="submit">Submit Application</button>
@@ -168,6 +185,7 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ```
 
 **Requirements:**
+
 - Use buttons for actions, links for navigation
 - Provide clear, descriptive text
 - Ensure adequate size for touch (44x44px minimum)
@@ -178,15 +196,18 @@ We follow [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/W
 ### Automated Testing Tools
 
 **Browser Extensions:**
+
 - [axe DevTools](https://www.deque.com/axe/devtools/) - Comprehensive accessibility testing
 - [WAVE](https://wave.webaim.org/extension/) - Visual accessibility evaluation
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) - Includes accessibility audit
 
 **Command Line Tools:**
+
 - [axe-core](https://github.com/dequelabs/axe-core) - Automated testing in CI/CD
 - [Pa11y](https://pa11y.org/) - Command line accessibility testing
 
 **Code Integration:**
+
 ```javascript
 // Example: axe-core in automated tests
 import { axe, toHaveNoViolations } from 'jest-axe';
@@ -201,6 +222,7 @@ test('should not have accessibility violations', async () => {
 ### Manual Testing Methods
 
 **Keyboard Testing:**
+
 1. Unplug your mouse
 2. Navigate using only:
    - Tab (forward)
@@ -210,11 +232,13 @@ test('should not have accessibility violations', async () => {
 3. Verify all functionality is accessible
 
 **Screen Reader Testing:**
+
 - **Windows**: NVDA (free) or JAWS
 - **Mac**: VoiceOver (built-in)
 - **Mobile**: VoiceOver (iOS) or TalkBack (Android)
 
 **Visual Testing:**
+
 - Test at 200% zoom
 - Test with high contrast mode
 - Test with different color combinations
@@ -223,12 +247,14 @@ test('should not have accessibility violations', async () => {
 ### User Testing with Disabilities
 
 **Finding participants:**
+
 - Partner with local disability organizations
 - Reach out through accessibility communities
 - Offer compensation for testing time
 - Ensure testing is accessible (location, timing, format)
 
 **Testing guidelines:**
+
 - Let users use their own assistive technology
 - Don't assume what barriers they might face
 - Ask about their typical workflows
@@ -239,6 +265,7 @@ test('should not have accessibility violations', async () => {
 ### Data Visualization
 
 **Making charts accessible:**
+
 ```html
 <div role="img" aria-labelledby="chart-title" aria-describedby="chart-desc">
   <h3 id="chart-title">City Budget 2024</h3>
@@ -256,6 +283,7 @@ test('should not have accessibility violations', async () => {
 ### Maps and Location Data
 
 **Accessible maps:**
+
 - Provide text alternatives to map information
 - Include address lists alongside map visualizations
 - Ensure map controls are keyboard accessible
@@ -264,6 +292,7 @@ test('should not have accessibility violations', async () => {
 ### Public Information Portals
 
 **Document accessibility:**
+
 - Provide HTML alternatives to PDF documents
 - Use proper heading structure in documents
 - Make forms fillable and accessible
@@ -272,6 +301,7 @@ test('should not have accessibility violations', async () => {
 ### Mobile Civic Apps
 
 **Mobile accessibility:**
+
 - Test with mobile screen readers
 - Ensure touch targets are large enough
 - Support device rotation
@@ -365,21 +395,25 @@ class ContactForm(forms.Form):
 ## Resources and References
 
 ### Guidelines and Standards
+
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Section 508](https://www.section508.gov/) (US Federal)
 - [AODA](https://www.ontario.ca/page/accessibility-laws) (Ontario)
 
 ### Testing Tools
+
 - [Axe Accessibility Checker](https://www.deque.com/axe/)
 - [WAVE Web Accessibility Evaluator](https://wave.webaim.org/)
 - [Colour Contrast Analyser](https://www.tpgi.com/color-contrast-checker/)
 
 ### Learning Resources
+
 - [WebAIM](https://webaim.org/) - Web accessibility tutorials
 - [A11y Project](https://www.a11yproject.com/) - Community-driven accessibility resources
 - [Inclusive Design Principles](https://inclusivedesignprinciples.org/)
 
 ### Local Resources
+
 - [CNIB](https://cnib.ca/) - Support for blind and partially sighted
 - [March of Dimes Canada](https://www.marchofdimes.ca/) - Disability services
 - [Accessibility Directorate of Ontario](https://www.ontario.ca/page/accessibility-directorate-ontario)
@@ -387,11 +421,13 @@ class ContactForm(forms.Form):
 ## Getting Help
 
 ### CTWR Community Support
+
 - Ask in community channels for accessibility guidance
 - Request accessibility reviews from experienced community members
 - Share accessibility challenges and solutions with other projects
 
 ### Professional Resources
+
 - Consider hiring accessibility consultants for complex projects
 - Partner with disability advocacy organizations
 - Engage users with disabilities throughout the development process

@@ -1,9 +1,11 @@
 ## Summary
+
 [Brief description of what this PR changes and why it's needed]
 
 **Related Issue(s):** Closes #[issue number]
 
 ## Type of Change
+
 - [ ] 🐛 Bug fix (non-breaking change which fixes an issue)
 - [ ] ✨ New feature (non-breaking change which adds functionality)
 - [ ] 💥 Breaking change (fix or feature that would cause existing functionality to not work as expected)
@@ -14,6 +16,7 @@
 - [ ] ♿ Accessibility improvement
 
 ## Community Impact
+
 **Who benefits from this change?**
 [Describe which community members this helps and how]
 
@@ -23,18 +26,21 @@
 ## Testing & Quality Assurance
 
 ### Manual Testing
+
 - [ ] I have tested this change locally
 - [ ] I have tested with different user scenarios/personas
 - [ ] I have tested on different devices/browsers
 - [ ] I have verified the change works as expected
 
 ### Automated Testing
+
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] All existing tests still pass
 - [ ] New code has appropriate test coverage
 - [ ] Performance impact has been measured (if applicable)
 
 ### Accessibility Testing
+
 - [ ] I have verified accessibility standards are met (WCAG 2.1)
 - [ ] Keyboard navigation works correctly
 - [ ] Screen reader compatibility tested
@@ -45,6 +51,7 @@
 ## Civic Tech Considerations
 
 ### Privacy & Security
+
 - [ ] No sensitive community data is exposed or logged
 - [ ] Privacy and data protection standards are maintained
 - [ ] Input validation and sanitization implemented
@@ -52,6 +59,7 @@
 - [ ] No new security vulnerabilities introduced
 
 ### Inclusivity & Accessibility
+
 - [ ] Change is inclusive and works for diverse users
 - [ ] Accessibility standards maintained or improved
 - [ ] Works across different economic/technical circumstances
@@ -59,39 +67,46 @@
 - [ ] Mobile-friendly implementation
 
 ### Community Engagement
+
 - [ ] Change aligns with community needs and feedback
 - [ ] Partner organization requirements considered
 - [ ] Change supports community self-service goals
 - [ ] Improves community access to services/information
 
 ## DVF Assessment Impact
+
 How does this change affect our project's DVF scorecard?
 
 **Community Partner** (1-5): [Current score] → [New score if changed]
+
 - [ ] No impact
 - [ ] Improves partner engagement or value delivery
 - [ ] Addresses partner feedback or requirements
 - [ ] Concern: [explain any negative impact]
 
 **Talent & Team** (1-5): [Current score] → [New score if changed]
+
 - [ ] No impact
 - [ ] Improves team productivity or learning
 - [ ] Demonstrates new technical skills
 - [ ] Concern: [explain any negative impact]
 
 **Technically Exciting** (1-5): [Current score] → [New score if changed]
+
 - [ ] No impact
 - [ ] Introduces innovative technology or approach
 - [ ] Improves technical architecture or quality
 - [ ] Concern: [explain any negative impact]
 
 **Civic Exciting** (1-5): [Current score] → [New score if changed]
+
 - [ ] No impact
 - [ ] Increases community impact or reach
 - [ ] Improves user experience for community members
 - [ ] Concern: [explain any negative impact]
 
 ## Demo Day Readiness
+
 - [ ] This feature is ready to showcase at Demo Day
 - [ ] Documentation is updated for demo presentation
 - [ ] User story and impact are clearly articulated
@@ -99,13 +114,16 @@ How does this change affect our project's DVF scorecard?
 - [ ] Feature contributes to overall project narrative
 
 ## Season Timeline Alignment
+
 **Target Week:** [Week X of 12-week season]
+
 - [ ] Change aligns with current season timeline
 - [ ] Meets season milestone requirements
 - [ ] Supports Demo Day preparation (if Week 10+)
 - [ ] Timeline impact assessed and acceptable
 
 ## Code Quality Checklist
+
 - [ ] My code follows the project's style guidelines
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
@@ -115,6 +133,7 @@ How does this change affect our project's DVF scorecard?
 - [ ] External dependencies are justified and documented
 
 ## Documentation & Knowledge Sharing
+
 - [ ] README updated (if needed)
 - [ ] API documentation updated (if applicable)
 - [ ] User-facing documentation updated
@@ -123,6 +142,7 @@ How does this change affect our project's DVF scorecard?
 - [ ] Knowledge shared with team (how-to, lessons learned)
 
 ## Deployment & Rollout
+
 - [ ] Change is backward compatible
 - [ ] Database migrations are safe (if applicable)
 - [ ] Feature flags implemented (if needed)
@@ -131,7 +151,9 @@ How does this change affect our project's DVF scorecard?
 - [ ] No breaking changes for existing users
 
 ## Community Review
+
 **Additional reviewers needed:**
+
 - [ ] Technical review: @[username]
 - [ ] Accessibility review: @[username]
 - [ ] Community partner review: @[username]
@@ -139,19 +161,24 @@ How does this change affect our project's DVF scorecard?
 - [ ] No additional review needed
 
 **Community testing:**
+
 - [ ] Ready for community testing/feedback
 - [ ] Needs controlled rollout to select users
 - [ ] Ready for full community deployment
 - [ ] Internal testing only
 
 ## Visual Changes (if applicable)
+
 ### Screenshots/Videos
+
 [Add screenshots, GIFs, or videos to help explain your changes]
 
 ### Before/After Comparison
+
 [Show the improvement or change visually]
 
 ## Performance Impact (if applicable)
+
 - [ ] No performance impact
 - [ ] Performance improved
 - [ ] Minor performance impact (acceptable)
@@ -161,17 +188,21 @@ How does this change affect our project's DVF scorecard?
 [Include before/after metrics if relevant]
 
 ## Breaking Changes (if applicable)
+
 [Describe any breaking changes and migration path for users]
 
 ## Additional Notes
+
 [Any additional information that reviewers should know]
 
 ### Related Work
+
 - [ ] Related to previous PR: #[number]
 - [ ] Builds on work by: @[contributor]
 - [ ] Coordinated with: [other team/project]
 
 ### Follow-up Work
+
 - [ ] Follow-up issue created: #[number]
 - [ ] Additional work needed: [description]
 - [ ] Future consideration: [ideas for later]
@@ -179,6 +210,7 @@ How does this change affect our project's DVF scorecard?
 ---
 
 **For Reviewers:**
+
 - Focus on community impact and civic tech best practices
 - Verify accessibility standards are maintained
 - Check that change aligns with DVF framework and season goals

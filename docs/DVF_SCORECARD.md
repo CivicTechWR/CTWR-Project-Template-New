@@ -7,6 +7,7 @@ This scorecard helps teams decide **what to back, how much to back it, and what 
 ## The Four Lenses (Score 1-5 each)
 
 ### 1. Community Partner (1-5 points)
+
 **Will partners consistently participate and bring real value back to the CTWR community?**
 
 - **5 - Exceptional**: Committed champion with decision-making authority, regular weekly participation, clear value exchange to CTWR
@@ -16,11 +17,13 @@ This scorecard helps teams decide **what to back, how much to back it, and what 
 - **1 - Poor**: No clear community partner or stakeholder engagement
 
 **Key Questions:**
+
 - Do we have a named champion who can make decisions?
 - Are they committed to regular participation in our process?
 - What value are they bringing back to CTWR (data, connections, feedback, story)?
 
 ### 2. Talent & Team Commitment (1-5 points)
+
 **Is the team sized, skilled, diverse—and able to show up weekly?**
 
 - **5 - Exceptional**: 3-5 committed team members, diverse skills, weekly availability confirmed, clear roles
@@ -30,11 +33,13 @@ This scorecard helps teams decide **what to back, how much to back it, and what 
 - **1 - Poor**: Solo project or no committed team members
 
 **Key Questions:**
+
 - Can we realistically commit to weekly meetups for 12 weeks?
 - Do we have the right mix of skills (technical, design, domain knowledge)?
 - Is our team diverse in perspectives and backgrounds?
 
 ### 3. Technically Exciting (1-5 points)
+
 **Is there genuine maker energy here (new skills, playful learning, meaningful tech)?**
 
 - **5 - Exceptional**: Cutting-edge tech that's valuable to learn, clear innovation opportunity, high maker energy
@@ -44,11 +49,13 @@ This scorecard helps teams decide **what to back, how much to back it, and what 
 - **1 - Poor**: No significant technical component or learning opportunity
 
 **Key Questions:**
+
 - Are team members excited to build this?
 - Will we learn valuable new skills or technologies?
 - Is there a meaningful technical challenge or innovation?
 
 ### 4. Civic Exciting (1-5 points)
+
 **Is the public-interest story strong, with potential for visible community impact?**
 
 - **5 - Exceptional**: Clear civic impact with measurable outcomes, compelling public story, fits CTWR mission perfectly
@@ -58,6 +65,7 @@ This scorecard helps teams decide **what to back, how much to back it, and what 
 - **1 - Poor**: No clear civic/public interest component
 
 **Key Questions:**
+
 - Does this strengthen Waterloo Region's civic fabric?
 - Can we tell a compelling story about public impact?
 - Will this be visible and valuable to the broader community?
@@ -67,28 +75,36 @@ This scorecard helps teams decide **what to back, how much to back it, and what 
 **Total Score: ___/20**
 
 ### 17-20 Points: CTWR-Supported
+
 ✅ **Full Support**
+
 - Regular check-ins to support progress
 - Priority Demo Day slot (Week 12)
 - Featured in conversations with sponsors and partners
 - Access to CTWR resources and network
 
 ### 13-16 Points: Worth Exploring
+
 🟡 **Conditional Support**
+
 - Continue building with targeted coaching
 - Identify specific risks to address
 - Mid-season check-in required
 - Demo Day slot if time permits
 
 ### 8-12 Points: Significant Risks
+
 ⚠️ **Proceed with Caution**
+
 - Only proceed if team is eager to de-risk
 - Choose one major risk to address immediately
 - Consider scoping down or pivoting
 - Focus on learning and iteration
 
 ### 4-7 Points: Not Supported Right Now
+
 ❌ **Learning Mode**
+
 - Welcome to learn in public with minimal CTWR resources
 - Encouraged to develop idea further independently
 - Re-assess after addressing major gaps
@@ -104,16 +120,19 @@ Any working initiative should satisfy both:
 ## Using the Scorecard
 
 ### Week 1-3: Initial Assessment
+
 - Run scoring as a team or with community input
 - Use scores to guide early decisions and scope
 - Identify immediate risks to address
 
 ### Week 6: Mid-Season Check
+
 - Re-score to track progress
 - Adjust project scope based on learnings
 - Celebrate improvements, address persistent issues
 
 ### Focus Areas by Score Range
+
 - **≤12**: Choose one risk to crush next
 - **13-16**: Scope a public demo to learn in front of users
 - **17-20**: Lean into momentum with tight cadences and storytelling
@@ -121,6 +140,7 @@ Any working initiative should satisfy both:
 ## Assessment Date: ____________
 
 **Team Members Present:**
+
 - [ ] [Name]
 - [ ] [Name]
 - [ ] [Name]

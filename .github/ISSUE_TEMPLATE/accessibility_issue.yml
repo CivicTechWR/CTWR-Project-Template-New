@@ -1,3 +1,4 @@
+---
 name: ♿ Accessibility Issue
 description: Report accessibility barriers or improvements needed
 title: "[A11Y] "
@@ -29,7 +30,6 @@ body:
         - General accessibility improvement
     validations:
       required: true
-
   - type: dropdown
     id: severity
     attributes:
@@ -43,7 +43,6 @@ body:
         - Enhancement - Improvement opportunity, not a barrier
     validations:
       required: true
-
   - type: textarea
     id: issue-description
     attributes:
@@ -52,7 +51,6 @@ body:
       placeholder: Be specific about what doesn't work and how it affects users with disabilities.
     validations:
       required: true
-
   - type: checkboxes
     id: affected-users
     attributes:
@@ -68,7 +66,6 @@ body:
         - label: Mobile device users
         - label: Users with older assistive technology
         - label: All users (general usability improvement)
-
   - type: textarea
     id: steps-to-reproduce
     attributes:
@@ -81,7 +78,6 @@ body:
         4. Experience [accessibility barrier]
     validations:
       required: true
-
   - type: dropdown
     id: assistive-technology
     attributes:
@@ -101,14 +97,12 @@ body:
         - Other assistive technology
         - Manual accessibility testing
         - Automated accessibility tool
-
   - type: input
     id: technology-version
     attributes:
       label: Technology Version/Details
       description: Version of assistive technology or testing tool used
       placeholder: e.g., NVDA 2023.2, macOS VoiceOver, Chrome + keyboard only
-
   - type: textarea
     id: expected-behavior
     attributes:
@@ -117,40 +111,37 @@ body:
       placeholder: Describe what accessible behavior should look like.
     validations:
       required: true
-
   - type: dropdown
     id: wcag-guideline
     attributes:
       label: WCAG 2.1 Guideline
       description: Which WCAG guideline does this relate to (if known)?
       options:
-        - "1.1 Text Alternatives"
-        - "1.2 Time-based Media"
-        - "1.3 Adaptable"
-        - "1.4 Distinguishable"
-        - "2.1 Keyboard Accessible"
-        - "2.2 Enough Time"
-        - "2.3 Seizures and Physical Reactions"
-        - "2.4 Navigable"
-        - "2.5 Input Modalities"
-        - "3.1 Readable"
-        - "3.2 Predictable"
-        - "3.3 Input Assistance"
-        - "4.1 Compatible"
+        - 1.1 Text Alternatives
+        - 1.2 Time-based Media
+        - 1.3 Adaptable
+        - 1.4 Distinguishable
+        - 2.1 Keyboard Accessible
+        - 2.2 Enough Time
+        - 2.3 Seizures and Physical Reactions
+        - 2.4 Navigable
+        - 2.5 Input Modalities
+        - 3.1 Readable
+        - 3.2 Predictable
+        - 3.3 Input Assistance
+        - 4.1 Compatible
         - Not sure/Multiple guidelines
         - Other accessibility standard
-
   - type: dropdown
     id: conformance-level
     attributes:
       label: WCAG Conformance Level
       description: What level of WCAG conformance is needed?
       options:
-        - "Level A (minimum)"
-        - "Level AA (standard)"
-        - "Level AAA (enhanced)"
-        - "Not sure"
-
+        - Level A (minimum)
+        - Level AA (standard)
+        - Level AAA (enhanced)
+        - Not sure
   - type: textarea
     id: suggested-solution
     attributes:
@@ -161,7 +152,6 @@ body:
         - Content changes: [text/structure modifications]
         - Design changes: [visual/interaction modifications]
         - Alternative solutions: [other approaches to consider]
-
   - type: checkboxes
     id: testing-completed
     attributes:
@@ -176,7 +166,6 @@ body:
         - label: Zoom/magnification testing (200%+)
         - label: Focus visibility testing
         - label: User testing with people with disabilities
-
   - type: textarea
     id: testing-results
     attributes:
@@ -187,7 +176,6 @@ body:
         - Manual testing observations: [what didn't work]
         - User feedback: [if tested with people with disabilities]
         - Screenshots/recordings: [evidence of the barrier]
-
   - type: textarea
     id: community-impact
     attributes:
@@ -198,7 +186,6 @@ body:
         - Essential services impacted: [which civic functions]
         - Equity considerations: [who is excluded by this barrier]
         - DVF score impact: [effect on civic exciting score]
-
   - type: checkboxes
     id: priority-factors
     attributes:
@@ -212,7 +199,6 @@ body:
         - label: Impacts vulnerable community members
         - label: Easy fix with high impact
         - label: Prerequisites for other accessibility improvements
-
   - type: checkboxes
     id: help-available
     attributes:
@@ -225,7 +211,6 @@ body:
         - label: I can provide accessibility expertise/guidance
         - label: I can help with documentation/training
         - label: I can research best practices/solutions
-
   - type: textarea
     id: resources-links
     attributes:
@@ -236,7 +221,6 @@ body:
         - Code examples: [links to accessible implementations]
         - Testing tools: [recommended tools/techniques]
         - Community resources: [accessibility organizations, experts]
-
   - type: textarea
     id: additional-context
     attributes:

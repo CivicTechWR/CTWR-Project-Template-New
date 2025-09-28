@@ -13,57 +13,69 @@ Track your project's impact throughout the season to demonstrate community value
 ## Impact Framework
 
 ### 1. Community Partner Value
+
 **Question:** Are partners consistently participating and bringing value back to CTWR?
 
 **Metrics to Track:**
+
 - Partner engagement frequency
 - Value delivered to CTWR (data, connections, stories)
 - Partner satisfaction with collaboration
 - New partnerships formed through project
 
 **Tracking Methods:**
+
 - Weekly partner check-ins
 - Partner feedback surveys
 - Documentation of value exchanges
 
 ### 2. Talent & Team Development
+
 **Question:** Is the team growing skills and maintaining commitment?
 
 **Metrics to Track:**
+
 - Team member retention rate
 - New skills acquired by team members
 - Weekly attendance at project meetings
 - Volunteer hours contributed
 
 **Tracking Methods:**
+
 - Skills assessment before/after season
 - Attendance tracking
 - Team reflection sessions
 
 ### 3. Technical Innovation
+
 **Question:** Is there genuine maker energy and learning happening?
 
 **Metrics to Track:**
+
 - New technologies learned/implemented
 - Technical challenges overcome
 - Code quality and documentation
 - Community contributions to tech ecosystem
 
 **Tracking Methods:**
+
 - Technical blog posts or documentation
 - Code repository analytics
 - Peer feedback on technical choices
 
 ### 4. Civic Impact
+
 **Question:** Are we strengthening Waterloo Region's civic fabric?
 
 **Metrics to Track:**
+
 - Direct user impact (people helped)
 - Process improvements achieved
 - Cost/time savings for community
 - Policy or systemic changes influenced
 
 **Tracking Methods:**
+
 - User surveys and interviews
 - Before/after process analysis
 - Partner feedback on systemic impact
@@ -73,21 +85,25 @@ Track your project's impact throughout the season to demonstrate community value
 ### Week 3: Baseline Assessment
 
 **Community Partner Engagement:**
+
 - Partner contacts established: ___
 - Meeting cadence agreed: ___
 - Value exchange defined: ___
 
 **Team Commitment:**
+
 - Active team members: ___
 - Weekly availability committed: ___ hours
 - Skills gaps identified: ___
 
 **Technical Goals:**
+
 - Technologies to learn: ___
 - Innovation opportunities: ___
 - Technical challenges anticipated: ___
 
 **Civic Goals:**
+
 - Target users/beneficiaries: ___
 - Success criteria defined: ___
 - Community problems addressed: ___
@@ -95,24 +111,28 @@ Track your project's impact throughout the season to demonstrate community value
 ### Week 6: Mid-Season Check
 
 **Community Partner Progress:**
+
 - Meetings held with partners: ___
 - Value delivered to CTWR: ___
 - Partner satisfaction (1-10): ___
 - New partnerships formed: ___
 
 **Team Development:**
-- Team member retention: ___/___
+
+- Team member retention: _**/**_
 - Average weekly participation: ___ hours
 - New skills acquired: ___
 - Team satisfaction (1-10): ___
 
 **Technical Progress:**
+
 - Features completed: ___
 - Technical milestones hit: ___
 - Code quality assessment (1-10): ___
 - Innovation achievements: ___
 
 **Civic Impact (Early Indicators):**
+
 - Users engaged: ___
 - Feedback collected: ___
 - Process improvements identified: ___
@@ -121,6 +141,7 @@ Track your project's impact throughout the season to demonstrate community value
 ### Week 9: Impact Assessment
 
 **Quantitative Impact:**
+
 - Direct users reached: ___
 - Hours saved per user: ___
 - Cost savings generated: $___
@@ -128,12 +149,14 @@ Track your project's impact throughout the season to demonstrate community value
 - Data points improved: ___
 
 **Qualitative Impact:**
+
 - User satisfaction (1-10): ___
 - Number of positive testimonials: ___
 - Community partner endorsements: ___
 - Unexpected positive outcomes: ___
 
 **System-Level Changes:**
+
 - Policies influenced: ___
 - Processes improved: ___
 - New collaborations formed: ___
@@ -144,24 +167,28 @@ Track your project's impact throughout the season to demonstrate community value
 **Overall Project Impact:**
 
 **Community Partner Value Created:**
+
 - Total partner interactions: ___
 - Value delivered to CTWR: ___
 - Ongoing partnerships established: ___
 - Partner Net Promoter Score: ___
 
 **Team & Skills Development:**
+
 - Total volunteer hours: ___
 - Skills acquired by team: ___
 - Team members continuing in civic tech: ___
 - Mentoring relationships formed: ___
 
 **Technical Contributions:**
+
 - Lines of code written: ___
 - Open source contributions: ___
 - Technical documentation created: ___
 - Reusable components built: ___
 
 **Civic Impact Summary:**
+
 - Total beneficiaries: ___
 - Aggregate time saved: ___ hours
 - Total cost savings: $___
@@ -171,6 +198,7 @@ Track your project's impact throughout the season to demonstrate community value
 ## User Impact Tracking
 
 ### User Engagement Metrics
+
 ```
 Week 1: ___ users
 Week 2: ___ users
@@ -185,16 +213,18 @@ Average Session Duration: ___ minutes
 ### User Satisfaction Survey Template
 
 **Overall Experience**
+
 1. How satisfied are you with [project name]? (1-10)
 2. How likely are you to recommend this to others? (1-10)
 3. What problem did this solve for you?
 
 **Specific Impact**
 4. How much time did this save you?
-   - [ ] Less than 1 hour
-   - [ ] 1-5 hours
-   - [ ] 5-20 hours
-   - [ ] More than 20 hours
+
+- [ ] Less than 1 hour
+- [ ] 1-5 hours
+- [ ] 5-20 hours
+- [ ] More than 20 hours
 
 5. How much easier is this process now? (1-10)
 
@@ -229,6 +259,7 @@ Average Session Duration: ___ minutes
 ## Story Collection
 
 ### User Story Template
+
 **Name:** [Use pseudonym for privacy]
 **Role:** [Their role/situation]
 **Problem:** [What challenge they faced]
@@ -237,6 +268,7 @@ Average Session Duration: ___ minutes
 **Quote:** "[Direct quote about the experience]"
 
 ### Partner Story Template
+
 **Organization:** [Partner organization]
 **Challenge:** [Problem they were facing]
 **Collaboration:** [How you worked together]
@@ -247,6 +279,7 @@ Average Session Duration: ___ minutes
 ## Data Collection Best Practices
 
 ### Privacy & Ethics
+
 - [ ] Get explicit consent for data collection
 - [ ] Anonymize personal information
 - [ ] Provide opt-out mechanisms
@@ -254,6 +287,7 @@ Average Session Duration: ___ minutes
 - [ ] Follow CTWR privacy guidelines
 
 ### Data Quality
+
 - [ ] Use consistent measurement methods
 - [ ] Validate data sources
 - [ ] Cross-check qualitative and quantitative data
@@ -261,6 +295,7 @@ Average Session Duration: ___ minutes
 - [ ] Account for external factors
 
 ### Bias Reduction
+
 - [ ] Seek diverse feedback sources
 - [ ] Ask neutral, non-leading questions
 - [ ] Include negative feedback and failures
@@ -270,7 +305,9 @@ Average Session Duration: ___ minutes
 ## Reporting Templates
 
 ### Weekly Impact Update
+
 **Week [X] Impact Summary:**
+
 - Users engaged this week: ___
 - Key feedback received: ___
 - Metrics improved: ___
@@ -278,24 +315,26 @@ Average Session Duration: ___ minutes
 - Partner updates: ___
 
 ### Monthly Impact Report
+
 **[Month] Civic Impact Report:**
 
 **Executive Summary:**
 [2-3 sentences on key impact achieved]
 
 **Quantitative Results:**
-- [Metric]: [Number] ([% change])
-- [Metric]: [Number] ([% change])
 
 **Qualitative Highlights:**
+
 - [Key user story or testimonial]
 - [Partner feedback highlight]
 
 **Lessons Learned:**
+
 - [Key insight about civic tech]
 - [Process improvement identified]
 
 **Next Month Focus:**
+
 - [Priority impact area]
 - [Measurement improvement needed]
 
@@ -304,12 +343,14 @@ Average Session Duration: ___ minutes
 **[Project Name] Final Impact Report - Season [X]**
 
 **Project Overview:**
+
 - Duration: [Weeks]
 - Team size: [Number]
 - Community partners: [Number]
 - Technology used: [Stack]
 
 **Impact Summary:**
+
 - Direct beneficiaries: [Number]
 - Hours saved: [Number]
 - Cost savings: $[Amount]

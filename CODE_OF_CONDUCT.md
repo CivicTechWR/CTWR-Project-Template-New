@@ -36,22 +36,28 @@ Examples of unacceptable behavior include:
 As civic technologists, we have additional responsibilities:
 
 ### Community-Centered Development
-- **Listen first** - Understand community needs before proposing solutions
-- **Include affected voices** - Center the people your project aims to serve
-- **Build with, not for** - Collaborate with community members as partners
-- **Question assumptions** - Regularly validate your understanding with real users
+
+* **Listen first** - Understand community needs before proposing solutions
+
+* **Include affected voices** - Center the people your project aims to serve
+* **Build with, not for** - Collaborate with community members as partners
+* **Question assumptions** - Regularly validate your understanding with real users
 
 ### Ethical Technology Practices
-- **Privacy by design** - Minimize data collection and protect user privacy
-- **Accessibility first** - Ensure your solutions work for people with diverse abilities
-- **Open by default** - Use open source tools and share your learnings
-- **Security consciousness** - Protect user data and system integrity
+
+* **Privacy by design** - Minimize data collection and protect user privacy
+
+* **Accessibility first** - Ensure your solutions work for people with diverse abilities
+* **Open by default** - Use open source tools and share your learnings
+* **Security consciousness** - Protect user data and system integrity
 
 ### Inclusive Participation
-- **Welcome newcomers** - Help people get started regardless of technical experience
-- **Share knowledge** - Teach and mentor others in the community
-- **Amplify diverse voices** - Ensure all community members can contribute
-- **Bridge divides** - Connect technical and non-technical community members
+
+* **Welcome newcomers** - Help people get started regardless of technical experience
+
+* **Share knowledge** - Teach and mentor others in the community
+* **Amplify diverse voices** - Ensure all community members can contribute
+* **Bridge divides** - Connect technical and non-technical community members
 
 ## Enforcement Responsibilities
 
@@ -64,12 +70,13 @@ Community leaders have the right and responsibility to remove, edit, or reject c
 This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
 
 This includes:
-- CivicTechWR meetings and events
-- Project repositories and documentation
-- Communication channels (Slack, Discord, etc.)
-- Social media interactions representing CTWR
-- Community presentations and demos
-- Interactions with community partners
+
+* CivicTechWR meetings and events
+* Project repositories and documentation
+* Communication channels (Slack, Discord, etc.)
+* Social media interactions representing CTWR
+* Community presentations and demos
+* Interactions with community partners
 
 ## Reporting Guidelines
 
@@ -82,11 +89,12 @@ For urgent safety concerns, please contact local authorities.
 ### What to Include
 
 When reporting, please include:
-- Your contact information
-- Names (real or usernames) of any individuals involved
-- Your account of what occurred, including any relevant context
-- Whether you believe the incident is ongoing
-- Any additional information that would be helpful
+
+* Your contact information
+* Names (real or usernames) of any individuals involved
+* Your account of what occurred, including any relevant context
+* Whether you believe the incident is ongoing
+* Any additional information that would be helpful
 
 ### Response Process
 
@@ -103,21 +111,25 @@ All community leaders are obligated to respect the privacy and security of the r
 Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:
 
 ### 1. Correction
+
 **Community Impact**: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.
 
 **Consequence**: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.
 
 ### 2. Warning
+
 **Community Impact**: A violation through a single incident or series of actions.
 
 **Consequence**: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.
 
 ### 3. Temporary Ban
+
 **Community Impact**: A serious violation of community standards, including sustained inappropriate behavior.
 
 **Consequence**: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.
 
 ### 4. Permanent Ban
+
 **Community Impact**: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.
 
 **Consequence**: A permanent ban from any sort of public interaction within the community.
@@ -125,37 +137,47 @@ Community leaders will follow these Community Impact Guidelines in determining t
 ## Civic Tech Specific Enforcement
 
 ### Project-Level Issues
+
 For issues specific to project development:
-- **Accessibility violations** - Required remediation before project continuation
-- **Privacy concerns** - Immediate review and correction required
-- **Exclusionary design** - Community discussion and redesign process
+
+* **Accessibility violations** - Required remediation before project continuation
+* **Privacy concerns** - Immediate review and correction required
+* **Exclusionary design** - Community discussion and redesign process
 
 ### Community-Level Issues
+
 For broader community concerns:
-- **Partner relationship issues** - Mediation and relationship repair process
-- **Resource access problems** - Review of community practices and policies
-- **Representation concerns** - Community listening sessions and process improvements
+
+* **Partner relationship issues** - Mediation and relationship repair process
+* **Resource access problems** - Review of community practices and policies
+* **Representation concerns** - Community listening sessions and process improvements
 
 ## Resources for Support
 
 ### Technical Support
-- **Accessibility guidance** - [Link to accessibility resources]
-- **Privacy compliance** - [Link to privacy guidelines]
-- **Security best practices** - [Link to security resources]
+
+* **Accessibility guidance** - [Link to accessibility resources]
+
+* **Privacy compliance** - [Link to privacy guidelines]
+* **Security best practices** - [Link to security resources]
 
 ### Community Support
-- **Conflict resolution** - [Link to mediation resources]
-- **Mental health** - [Link to mental health resources]
-- **Professional development** - [Link to career and skill development]
+
+* **Conflict resolution** - [Link to mediation resources]
+
+* **Mental health** - [Link to mental health resources]
+* **Professional development** - [Link to career and skill development]
 
 ### Local Resources
-- **Crisis support** - [Local crisis helpline numbers]
-- **Legal assistance** - [Legal aid resources for tech/privacy issues]
-- **Diversity and inclusion** - [Local D&I organizations]
+
+* **Crisis support** - [Local crisis helpline numbers]
+
+* **Legal assistance** - [Legal aid resources for tech/privacy issues]
+* **Diversity and inclusion** - [Local D&I organizations]
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.0, available at <https://www.contributor-covenant.org/version/2/0/code_of_conduct.html>.
 
 Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity).
 
@@ -166,9 +188,10 @@ The civic tech specific guidelines were developed in collaboration with the Civi
 ## Updates and Feedback
 
 This Code of Conduct is a living document that evolves with our community. We welcome feedback and suggestions for improvement. Please submit suggestions through:
-- GitHub issues on this repository
-- Discussion at community meetings
-- Direct feedback to community leaders
+
+* GitHub issues on this repository
+* Discussion at community meetings
+* Direct feedback to community leaders
 
 **Last Updated**: [Date]
 **Next Review**: [Date - typically annual]

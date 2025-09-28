@@ -1,19 +1,20 @@
+---
 name: Template Validation
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, develop]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   template-validation:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Validate template structure
+      - name: Validate template structure
       run: |
         echo "🔍 Validating CivicTechWR Project Template structure..."
 
@@ -35,7 +36,7 @@ jobs:
         done
         echo "✅ Essential template files found."
 
-    - name: Validate documentation structure
+      - name: Validate documentation structure
       run: |
         echo "📚 Validating documentation structure..."
 
@@ -59,7 +60,7 @@ jobs:
         done
         echo "✅ Required documentation found."
 
-    - name: Validate GitHub templates
+      - name: Validate GitHub templates
       run: |
         echo "🗂️ Validating GitHub templates..."
 
@@ -82,7 +83,7 @@ jobs:
         done
         echo "✅ GitHub templates found."
 
-    - name: Validate wiki templates
+      - name: Validate wiki templates
       run: |
         echo "📖 Validating wiki templates..."
 
@@ -103,7 +104,7 @@ jobs:
         done
         echo "✅ Wiki templates found."
 
-    - name: Validate script executability
+      - name: Validate script executability
       run: |
         echo "🔧 Validating script permissions..."
 
@@ -119,7 +120,7 @@ jobs:
 
         echo "✅ Scripts are executable."
 
-    - name: Check for placeholder content
+      - name: Check for placeholder content
       run: |
         echo "🔍 Checking for placeholder content that needs customization..."
 
@@ -148,9 +149,9 @@ jobs:
   civic-compliance:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Check for sensitive data
+      - name: Check for sensitive data
       run: |
         echo "🔒 Checking for sensitive data..."
 
@@ -183,7 +184,7 @@ jobs:
           echo "✅ No obvious sensitive data found."
         fi
 
-    - name: Verify open source license
+      - name: Verify open source license
       run: |
         if [ ! -f LICENSE ]; then
           echo "❌ No LICENSE file found. Civic tech projects should have clear licensing."
@@ -192,7 +193,7 @@ jobs:
           echo "✅ LICENSE file found."
         fi
 
-    - name: Validate DVF framework integration
+      - name: Validate DVF framework integration
       run: |
         echo "🏛️ Validating DVF framework integration..."
 
@@ -211,7 +212,7 @@ jobs:
         done
         echo "✅ DVF framework integration validated."
 
-    - name: Check accessibility considerations
+      - name: Check accessibility considerations
       run: |
         echo "♿ Checking accessibility considerations..."
 
@@ -230,7 +231,7 @@ jobs:
           exit 1
         fi
 
-    - name: Validate CTWR community standards
+      - name: Validate CTWR community standards
       run: |
         echo "🤝 Validating CTWR community standards..."
 
@@ -251,9 +252,9 @@ jobs:
   template-completeness:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Count template components
+      - name: Count template components
       run: |
         echo "📊 Template completeness report..."
 

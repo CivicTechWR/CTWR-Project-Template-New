@@ -7,6 +7,7 @@ This guide helps you configure GitHub repository security settings for your Civi
 After creating your repository from this template, enable these essential security features:
 
 ### 1. Enable Secret Scanning (Required)
+
 ```bash
 # Enable secret scanning and push protection
 gh repo edit --enable-secret-scanning --enable-secret-scanning-push-protection
@@ -15,6 +16,7 @@ gh repo edit --enable-secret-scanning --enable-secret-scanning-push-protection
 **Why:** Automatically detects accidentally committed passwords, API keys, and tokens.
 
 ### 2. Set Up Branch Protection (Recommended)
+
 ```bash
 # Basic branch protection for main branch
 gh api repos/OWNER/REPO/branches/main/protection \
@@ -25,7 +27,9 @@ gh api repos/OWNER/REPO/branches/main/protection \
 **Why:** Prevents direct pushes to main branch, requires pull request reviews.
 
 ### 3. Enable Dependabot (Recommended)
+
 Create `.github/dependabot.yml`:
+
 ```yaml
 version: 2
 updates:
@@ -43,6 +47,7 @@ updates:
 ### Repository Settings Checklist
 
 #### Security & Analysis Settings
+
 - [ ] **Secret scanning** - Enabled (detects committed secrets)
 - [ ] **Push protection** - Enabled (blocks secret commits)
 - [ ] **Dependency graph** - Enabled (tracks dependencies)
@@ -50,11 +55,13 @@ updates:
 - [ ] **Dependabot security updates** - Enabled (automatic security patches)
 
 #### Access & Permissions
+
 - [ ] **Repository visibility** - Public (for open civic tech projects)
 - [ ] **Collaborator permissions** - Minimum necessary access
 - [ ] **Team permissions** - Read/Write/Admin as appropriate
 
 #### Branch Protection Rules
+
 - [ ] **Require pull request reviews** - At least 1 approving review
 - [ ] **Require status checks** - CI must pass before merge
 - [ ] **Require up-to-date branches** - Force updates before merge
@@ -63,7 +70,9 @@ updates:
 ### Advanced Security (For Sensitive Projects)
 
 #### Code Scanning
+
 Enable GitHub Advanced Security (if available):
+
 ```yaml
 # .github/workflows/security.yml
 name: Security Scan
@@ -80,12 +89,15 @@ jobs:
 ```
 
 #### Security Policy
+
 - [ ] **SECURITY.md file** - Created ✅ (included in template)
 - [ ] **Vulnerability disclosure process** - Documented ✅ (included in template)
 - [ ] **Security contact information** - Updated with your project details
 
 #### Audit Logging
+
 For organization-owned repositories:
+
 - [ ] **Audit log monitoring** - Regular review of access changes
 - [ ] **Repository insights** - Monitor access patterns
 - [ ] **Webhook notifications** - Alert on security events
@@ -95,6 +107,7 @@ For organization-owned repositories:
 ### Branch Protection Configuration
 
 Create `scripts/branch-protection.json`:
+
 ```json
 {
   "required_status_checks": {
@@ -116,6 +129,7 @@ Create `scripts/branch-protection.json`:
 ### Security Setup Script
 
 Add to `scripts/setup-security.sh`:
+
 ```bash
 #!/bin/bash
 set -e
@@ -158,18 +172,21 @@ echo "3. Set up monitoring for security alerts"
 ## 📊 Security Monitoring
 
 ### GitHub Security Features
+
 - **Security Overview** - Dashboard showing security status
 - **Dependabot Alerts** - Vulnerable dependency notifications
 - **Secret Scanning Alerts** - Detected secrets in code
 - **Code Scanning Alerts** - Static analysis findings
 
 ### Regular Security Tasks
+
 - [ ] **Weekly**: Review Dependabot alerts and update dependencies
 - [ ] **Monthly**: Review access permissions and remove unused accounts
 - [ ] **Quarterly**: Audit security settings and update policies
 - [ ] **As needed**: Respond to security alerts within 24-48 hours
 
 ### Civic Tech Specific Monitoring
+
 - [ ] **Community data access** - Log who accesses sensitive community information
 - [ ] **Partner integration** - Monitor API access from partner organizations
 - [ ] **Public data exposure** - Regular review of what data is publicly visible
@@ -178,6 +195,7 @@ echo "3. Set up monitoring for security alerts"
 ## 🚨 Security Incident Response
 
 ### When Security Alerts Trigger
+
 1. **Immediate (within 1 hour)**:
    - Assess severity of the alert
    - If critical, disable affected functionality
@@ -194,7 +212,9 @@ echo "3. Set up monitoring for security alerts"
    - Conduct post-incident review
 
 ### Emergency Contacts
+
 Update these contacts for your project:
+
 - **Security Lead**: [Name and contact]
 - **Technical Lead**: [Name and contact]
 - **CTWR Community**: Weekly Wednesday meetings
@@ -203,6 +223,7 @@ Update these contacts for your project:
 ## 🔧 Tool-Specific Security
 
 ### For Web Applications
+
 ```bash
 # Install security scanning tools
 npm install --save-dev eslint-plugin-security
@@ -211,6 +232,7 @@ npm install --save-dev express-rate-limit  # Rate limiting
 ```
 
 ### For Python Projects
+
 ```bash
 # Install security tools
 pip install bandit  # Security linter
@@ -219,6 +241,7 @@ pip install secrets  # Secure random generation
 ```
 
 ### For Data Projects
+
 - [ ] **Data encryption** - Encrypt sensitive data at rest
 - [ ] **Access logging** - Log all data access
 - [ ] **Data retention** - Automatic deletion of old data
@@ -227,6 +250,7 @@ pip install secrets  # Secure random generation
 ## 📋 Security Checklist for Project Phases
 
 ### Project Setup (Week 1-3)
+
 - [ ] Enable repository security features
 - [ ] Set up branch protection
 - [ ] Configure dependabot
@@ -234,18 +258,21 @@ pip install secrets  # Secure random generation
 - [ ] Add security contacts
 
 ### Development Phase (Week 4-9)
+
 - [ ] Follow secure coding practices from [Security Guide](SECURITY_GUIDE.md)
 - [ ] Regular dependency updates
 - [ ] Code security reviews
 - [ ] Input validation testing
 
 ### Pre-Launch (Week 10-11)
+
 - [ ] Security audit/penetration testing
 - [ ] Review all security configurations
 - [ ] Test incident response procedures
 - [ ] Final security documentation review
 
 ### Post-Launch (Week 12+)
+
 - [ ] Monitor security alerts
 - [ ] Regular security updates
 - [ ] Ongoing compliance checks
@@ -254,23 +281,29 @@ pip install secrets  # Secure random generation
 ## ❓ Common Questions
 
 ### "Do I need all these security features for a simple project?"
+
 **Minimum required**:
+
 - Secret scanning (always)
 - Branch protection (if multiple contributors)
 - Basic HTTPS (if web-facing)
 
 **Add based on project needs**:
+
 - Advanced scanning (if handling sensitive data)
 - Audit logging (if partner integrations)
 - Formal incident response (if mission-critical)
 
 ### "Our team is small - is this overkill?"
+
 Start with the "Quick Security Setup" (5 minutes), then add features as you grow:
+
 - **1-2 people**: Secret scanning + basic branch protection
 - **3-5 people**: Add code reviews and dependency monitoring
 - **5+ people**: Full security configuration with monitoring
 
 ### "How often should we review security settings?"
+
 - **Weekly**: Check and resolve security alerts
 - **Monthly**: Review access permissions
 - **Quarterly**: Full security configuration audit

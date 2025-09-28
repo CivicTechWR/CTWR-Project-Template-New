@@ -1,8 +1,9 @@
+---
 name: Template Repository Maintenance
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   release:
     types: [published]
 
@@ -12,10 +13,10 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Update template metadata
-      run: |
+      - name: Update template metadata
+        run: |
         echo "📋 Updating template metadata..."
 
         # Update last modified date in key files
@@ -76,10 +77,10 @@ jobs:
   template-documentation:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Generate template README stats
-      run: |
+      - name: Generate template README stats
+        run: |
         echo "📈 Template Usage Statistics" > TEMPLATE_STATS.md
         echo "=============================" >> TEMPLATE_STATS.md
         echo "" >> TEMPLATE_STATS.md
@@ -111,10 +112,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Celebrate template release
-      run: |
+      - name: Celebrate template release
+        run: |
         echo "🎉 CivicTechWR Project Template Release!"
         echo "======================================"
         echo ""

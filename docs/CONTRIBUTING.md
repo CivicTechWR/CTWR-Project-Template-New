@@ -59,6 +59,7 @@ cd [project-name]
 ## Development Workflow
 
 ### 1. Create a Branch
+
 ```bash
 git checkout -b feature/your-feature-name
 # or
@@ -66,12 +67,14 @@ git checkout -b bugfix/issue-description
 ```
 
 ### 2. Make Your Changes
+
 - Write clear, commented code
 - Follow our style guidelines (see below)
 - Add tests for new functionality
 - Update documentation as needed
 
 ### 3. Test Your Changes
+
 ```bash
 # Run the test suite
 [test command]
@@ -81,6 +84,7 @@ git checkout -b bugfix/issue-description
 ```
 
 ### 4. Commit Your Changes
+
 ```bash
 git add .
 git commit -m "Brief description of changes
@@ -92,6 +96,7 @@ Longer explanation if needed, including:
 ```
 
 ### 5. Submit a Pull Request
+
 - Push your branch to GitHub
 - Create a pull request using our [PR template](../.github/PULL_REQUEST_TEMPLATE.md)
 - Link to any related issues
@@ -100,6 +105,7 @@ Longer explanation if needed, including:
 ## Code Standards
 
 ### General Principles
+
 - **Accessibility first** - Follow WCAG 2.1 guidelines
 - **Privacy by design** - No unnecessary data collection
 - **Community-focused** - Consider how this serves Waterloo Region
@@ -108,23 +114,27 @@ Longer explanation if needed, including:
 ### Style Guidelines
 
 #### JavaScript/TypeScript
+
 - Use meaningful variable names
 - Add JSDoc comments for public functions
 - Follow [Prettier](https://prettier.io/) formatting
 - Use ESLint for code quality
 
 #### Python
+
 - Follow [PEP 8](https://pep8.org/) style guidelines
 - Use type hints where helpful
 - Add docstrings for functions and classes
 
 #### CSS
+
 - Use semantic class names
 - Follow BEM methodology for complex components
 - Ensure responsive design
 - Test with screen readers
 
 #### Documentation
+
 - Write in clear, accessible language
 - Include examples where helpful
 - Keep README and docs up to date
@@ -132,6 +142,7 @@ Longer explanation if needed, including:
 ## Testing Guidelines
 
 ### What to Test
+
 - **Functionality** - Does it work as expected?
 - **Accessibility** - Can everyone use it?
 - **Performance** - Does it load quickly?
@@ -139,6 +150,7 @@ Longer explanation if needed, including:
 - **Mobile** - Does it work on different devices?
 
 ### Testing Tools
+
 - [List project-specific testing tools]
 - Accessibility: [WAVE](https://wave.webaim.org/), [axe](https://www.deque.com/axe/)
 - Performance: [Lighthouse](https://developers.google.com/web/tools/lighthouse)
@@ -146,17 +158,20 @@ Longer explanation if needed, including:
 ## Civic Tech Specific Guidelines
 
 ### Data Handling
+
 - **Minimize data collection** - Only collect what's necessary
 - **Protect privacy** - Never expose personal information
 - **Use open data** - Prefer publicly available datasets
 - **Document sources** - Always cite data sources
 
 ### Community Engagement
+
 - **Test with real users** - Not just team members
 - **Consider diverse needs** - Different abilities, languages, tech comfort
 - **Think about sustainability** - Can the community maintain this?
 
 ### Transparency
+
 - **Open by default** - Make code and decisions public
 - **Document decisions** - Explain why choices were made
 - **Share learnings** - Help other civic tech projects
@@ -164,13 +179,16 @@ Longer explanation if needed, including:
 ## Communication
 
 ### Where to Get Help
+
 - **Weekly meetings**: Wednesdays at [time/location]
 - **Slack/Discord**: [link to communication channel]
 - **Issues**: For technical questions, tag @[maintainer]
 - **Email**: [contact email] for sensitive matters
 
 ### Response Time Expectations
+
 This is a volunteer-driven project. Please be patient with response times:
+
 - **Pull requests**: We aim to review within 1 week
 - **Issues**: We'll respond within 2 weeks
 - **Community questions**: Usually answered same week
@@ -178,6 +196,7 @@ This is a volunteer-driven project. Please be patient with response times:
 ## Recognition
 
 We value all contributions! Contributors will be:
+
 - Listed in our project credits
 - Invited to Demo Day presentations
 - Connected with CTWR's broader network
@@ -186,6 +205,7 @@ We value all contributions! Contributors will be:
 ## Project Lifecycle
 
 ### Season Timeline
+
 - **Weeks 1-3**: Project setup and team formation
 - **Weeks 4-6**: Core development and user research
 - **Weeks 7-9**: Feature development and testing
@@ -193,6 +213,7 @@ We value all contributions! Contributors will be:
 - **Week 12**: Demo Day presentation
 
 ### After the Season
+
 - The project may continue with community maintainers
 - Code will remain open source for future use
 - Documentation will be preserved for learning

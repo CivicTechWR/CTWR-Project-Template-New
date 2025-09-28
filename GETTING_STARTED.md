@@ -15,11 +15,13 @@ This template provides everything you need for a successful CivicTechWR project:
 ## 🚀 Quick Start (5 Minutes)
 
 ### 1. Use This Template
+
 1. Click "Use this template" on GitHub
 2. Name your repository (e.g., `waterloo-transit-tracker`)
 3. Clone your new repository locally
 
 ### 2. Initial Setup
+
 ```bash
 # Clone your repository
 git clone [your-repo-url]
@@ -36,6 +38,7 @@ cd [project-name]
 ```
 
 ### 3. Start Your Project Planning
+
 1. Fill out the [Project Pitch](docs/PROJECT_PITCH.md) (Week 1)
 2. Complete your [DVF Assessment](docs/DVF_SCORECARD.md) (Week 1-3)
 3. Update the README.md with your project details
@@ -50,6 +53,7 @@ The DVF (Desirability-Viability-Feasibility) Framework helps evaluate civic tech
 - **Civic Exciting** (5 points) - Is the public-interest story strong with visible impact?
 
 **Your DVF Score determines project support level:**
+
 - **17-20**: Full CTWR support with regular check-ins and Demo Day slot
 - **13-16**: Worth exploring with targeted coaching
 - **8-12**: Significant risks - proceed with willing team and de-risk plan
@@ -58,30 +62,35 @@ The DVF (Desirability-Viability-Feasibility) Framework helps evaluate civic tech
 ## 📅 12-Week Project Timeline
 
 ### Weeks 1-3: Problem Validation & DVF Scoring
+
 - [ ] Complete [Project Pitch](docs/PROJECT_PITCH.md)
 - [ ] Conduct [User Research](docs/USER_RESEARCH.md)
 - [ ] Score your project using [DVF Scorecard](docs/DVF_SCORECARD.md)
 - [ ] Get community feedback at CTWR meetings
 
 ### Weeks 4-6: Research & Prototyping
+
 - [ ] Validate problem with user interviews
 - [ ] Create technical design document
 - [ ] Build basic prototype or mockups
 - [ ] Establish community partnerships
 
 ### Weeks 7-9: Core Development
+
 - [ ] Implement core features
 - [ ] Follow [Security Guide](docs/SECURITY_GUIDE.md) best practices
 - [ ] Ensure [Accessibility compliance](docs/ACCESSIBILITY_GUIDE.md)
 - [ ] Regular testing with users
 
 ### Weeks 10-11: Testing & Refinement
+
 - [ ] User testing and feedback collection
 - [ ] Performance and security testing
 - [ ] Documentation completion
 - [ ] Prepare for Demo Day
 
 ### Week 12: Demo Day
+
 - [ ] Present using [Demo Prep Guide](docs/DEMO_PREP.md)
 - [ ] Share impact using [Impact Tracking](docs/IMPACT_TRACKING.md)
 - [ ] Celebrate with the community!
@@ -107,14 +116,18 @@ The DVF (Desirability-Viability-Feasibility) Framework helps evaluate civic tech
 ## 🛠️ Development Workflow
 
 ### GitHub Integration
+
 This template includes:
+
 - **6 Issue Templates** - Feature requests, bug reports, user research, partnerships, accessibility, general tasks
 - **Pull Request Template** - Standardized PR format with security and accessibility checks
 - **GitHub Project Setup** - Automated project creation with DVF tracking fields
 - **CI/CD Workflows** - Template validation and maintenance automation
 
 ### Using GitHub Issues
+
 Create issues using the provided templates:
+
 ```bash
 # Or use GitHub CLI
 gh issue create --template feature_request
@@ -123,13 +136,17 @@ gh issue create --template community_partnership
 ```
 
 ### Wiki Setup
+
 Use the wiki templates to document your project:
+
 1. Copy files from `wiki-template/` to your GitHub Wiki
 2. Customize with your project details
 3. Keep DVF scorecard and team information updated
 
 ### GitHub Pages Setup
+
 Create a public website for your project:
+
 1. **Quick Setup**: Follow the [GitHub Pages Guide](docs/GITHUB_PAGES.md)
 2. **Choose Your Approach**: Jekyll site, documentation, or live demo
 3. **Sample Template**: Use the provided Jekyll site in `/docs` folder
@@ -146,6 +163,7 @@ Create a public website for your project:
 5. **Plan for incidents** - how will you respond to security issues?
 
 **For public-facing tools:**
+
 - Review [Accessibility Guide](docs/ACCESSIBILITY_GUIDE.md) for WCAG 2.1 compliance
 - Test with screen readers and keyboard navigation
 - Ensure color contrast meets standards
@@ -153,16 +171,19 @@ Create a public website for your project:
 ## 🤝 Community Integration
 
 ### CTWR Meetings
+
 - **Weekly Wednesday meetings** - Share progress and get feedback
 - **Monthly Demo Nights** - Show your work to the community
 - **Season Demo Day** - Final presentation of your project
 
 ### Getting Help
+
 - **GitHub Discussions** - Ask questions about the template
 - **CTWR Slack** - Connect with other project teams
 - **Community Partners** - Leverage local government and nonprofit connections
 
 ### Contributing Back
+
 - **Share learnings** - Document what worked and what didn't
 - **Improve the template** - Submit PRs for better docs or examples
 - **Mentor other teams** - Help newcomers navigate their first civic tech project
@@ -170,13 +191,16 @@ Create a public website for your project:
 ## ❓ Common Questions
 
 ### "This seems like a lot - where do I really start?"
+
 1. **Week 1**: Fill out the Project Pitch template (30 minutes)
 2. **Week 1-2**: Complete DVF assessment (1-2 hours)
 3. **Week 2-3**: Get feedback at CTWR meeting
 4. **Week 3+**: Start with Technical Design if DVF score is 13+
 
 ### "My project doesn't need all this documentation"
+
 Start with the essentials:
+
 - Project Pitch (required for CTWR)
 - DVF Scorecard (required for CTWR)
 - Technical Design (if building software)
@@ -184,13 +208,16 @@ Start with the essentials:
 - GitHub Pages setup (if you need a public website)
 
 ### "How do I know if my project is civic tech?"
+
 Civic tech projects:
+
 - **Serve the public interest** - Address community problems
 - **Engage community members** - Include affected people in the process
 - **Build public capacity** - Make civic processes more accessible
 - **Create public value** - Benefits extend beyond individual users
 
 ### "What if I'm not technical?"
+
 - **Start with user research** - Technical solutions come after understanding problems
 - **Partner with developers** - Use the Contributing guide to recruit technical help
 - **Focus on design and process** - Many civic tech projects need more design than code
@@ -199,6 +226,7 @@ Civic tech projects:
 ## 🎯 Success Metrics
 
 **Your project is succeeding when:**
+
 - [ ] **Community engagement** - Partners are actively participating
 - [ ] **User feedback** - People affected by the problem are involved in testing
 - [ ] **Technical progress** - You're building something that works
@@ -209,15 +237,18 @@ Civic tech projects:
 ## 📞 Getting Support
 
 ### Template Issues
+
 - **GitHub Issues** - Report problems with the template itself
 - **Discussions** - Ask questions about using the template
 
 ### Project Support
+
 - **CTWR Meetings** - Weekly community support and feedback
 - **Mentorship** - Connect with experienced civic tech practitioners
 - **Partner Organizations** - Leverage CTWR's network of community partners
 
 ### Emergency Situations
+
 - **Security incidents** - Follow the [Security Policy](SECURITY.md)
 - **Accessibility barriers** - Get help making your project inclusive
 - **Team conflicts** - CTWR leadership can provide mediation

@@ -7,6 +7,7 @@ Security is critical for civic technology projects that serve community members 
 **New to civic tech security?** Start here for essential security basics:
 
 ### 1. Essential Security Checklist (Week 1-3)
+
 - [ ] Read this overview section
 - [ ] Set up HTTPS for your project
 - [ ] Never commit passwords, API keys, or secrets to Git
@@ -14,18 +15,21 @@ Security is critical for civic technology projects that serve community members 
 - [ ] Enable basic input validation on all user inputs
 
 ### 2. Development Security (Week 4-9)
+
 - [ ] Review [Secure Development Practices](#secure-development-practices)
 - [ ] Implement authentication if handling user data
 - [ ] Follow [Data Protection](#data-protection) guidelines
 - [ ] Set up automated security scanning
 
 ### 3. Deployment Security (Week 10-12)
+
 - [ ] Configure security headers
 - [ ] Set up monitoring and logging
 - [ ] Review [Infrastructure Security](#infrastructure-security)
 - [ ] Create incident response plan
 
 ### When to Prioritize Security
+
 - **High Priority**: Handling personal information, government data, or financial data
 - **Medium Priority**: Public-facing tools with user accounts
 - **Lower Priority**: Static websites or internal tools (but still follow basics)
@@ -43,18 +47,21 @@ Security is critical for civic technology projects that serve community members 
 ## Security Principles
 
 ### 1. Privacy by Design
+
 - **Minimize data collection** - Only collect what's absolutely necessary
 - **Anonymize data** where possible
 - **Clear data retention policies** - Delete data when no longer needed
 - **User consent** - Clear opt-in for any data collection
 
 ### 2. Defense in Depth
+
 - **Multiple security layers** - Don't rely on single security measures
 - **Fail securely** - When systems fail, they should fail safely
 - **Principle of least privilege** - Grant minimum necessary access
 - **Security throughout development** - Not just at the end
 
 ### 3. Transparency and Accountability
+
 - **Open source security** - Security through transparency
 - **Clear incident response** - Plan for when things go wrong
 - **Regular security reviews** - Ongoing security assessment
@@ -65,6 +72,7 @@ Security is critical for civic technology projects that serve community members 
 ### Code Security
 
 #### Input Validation
+
 ```javascript
 // Good: Validate and sanitize all inputs
 function validateEmail(email) {
@@ -86,6 +94,7 @@ function sanitizeHTML(content) {
 ```
 
 #### SQL Injection Prevention
+
 ```python
 # Good: Use parameterized queries
 def get_user_data(user_id):
@@ -98,6 +107,7 @@ def get_user_data(user_id):
 ```
 
 #### Cross-Site Scripting (XSS) Prevention
+
 ```javascript
 // Good: Escape output and validate input
 function displayUserContent(content) {
@@ -113,6 +123,7 @@ function displayUserContent(content) {
 ### Authentication and Authorization
 
 #### Password Security
+
 ```python
 # Good: Hash passwords with salt
 import bcrypt
@@ -126,6 +137,7 @@ def verify_password(password, hashed):
 ```
 
 #### Session Management
+
 ```javascript
 // Good: Secure session configuration
 app.use(session({
@@ -142,6 +154,7 @@ app.use(session({
 ```
 
 #### API Security
+
 ```javascript
 // Good: Rate limiting
 const rateLimit = require('express-rate-limit');
@@ -167,6 +180,7 @@ function validateApiKey(req, res, next) {
 ## Environment and Configuration Security
 
 ### Environment Variables
+
 ```bash
 # .env.example - Never commit actual .env files
 # Database configuration
@@ -183,6 +197,7 @@ CSRF_SECRET=your_csrf_secret_here
 ```
 
 ### Configuration Security
+
 ```javascript
 // Good: Validate configuration
 const config = {
@@ -210,6 +225,7 @@ app.use((req, res, next) => {
 ## Data Protection
 
 ### Personal Information Handling
+
 ```python
 # Good: Data minimization and anonymization
 class UserData:
@@ -229,6 +245,7 @@ class UserData:
 ```
 
 ### Secure File Handling
+
 ```javascript
 // Good: Validate file uploads
 const multer = require('multer');
@@ -260,6 +277,7 @@ function scanUploadedFile(filePath) {
 ## Infrastructure Security
 
 ### HTTPS and TLS
+
 ```nginx
 # nginx configuration for HTTPS
 server {
@@ -279,6 +297,7 @@ server {
 ```
 
 ### Database Security
+
 ```sql
 -- Good: Create limited-privilege database user
 CREATE USER app_user WITH PASSWORD 'secure_random_password';
@@ -290,6 +309,7 @@ GRANT SELECT, INSERT, UPDATE ON app_tables TO app_user;
 ```
 
 ### Container Security
+
 ```dockerfile
 # Good: Use specific, non-root user
 FROM node:18-alpine
@@ -305,12 +325,14 @@ USER nodeuser
 ## Civic Tech Specific Security
 
 ### Government Data Handling
+
 - **Classification awareness** - Understand data sensitivity levels
 - **Compliance requirements** - Follow local privacy laws (PIPEDA, GDPR)
 - **Audit trails** - Log access to sensitive government data
 - **Retention policies** - Follow government data retention rules
 
 ### Community Data Protection
+
 ```python
 # Good: Protect community member data
 class CommunityDataHandler:
@@ -340,6 +362,7 @@ class CommunityDataHandler:
 ```
 
 ### Partner Organization Security
+
 - **Data sharing agreements** - Clear security requirements
 - **Access controls** - Limit who can access what data
 - **Regular security reviews** - Periodic assessment of partner security
@@ -348,6 +371,7 @@ class CommunityDataHandler:
 ## Security Testing
 
 ### Static Analysis
+
 ```yaml
 # .github/workflows/security.yml
 name: Security Scan
@@ -370,6 +394,7 @@ jobs:
 ```
 
 ### Penetration Testing Checklist
+
 - [ ] **Authentication bypass** - Try to access protected resources
 - [ ] **Authorization flaws** - Test role-based access controls
 - [ ] **Input validation** - Test with malicious inputs
@@ -378,6 +403,7 @@ jobs:
 - [ ] **Business logic flaws** - Test application-specific logic
 
 ### Security Code Review
+
 ```markdown
 ## Security Review Checklist
 
@@ -409,6 +435,7 @@ jobs:
 ## Incident Response
 
 ### Security Incident Plan
+
 1. **Detection** - How to identify security incidents
 2. **Containment** - Steps to limit damage
 3. **Investigation** - How to understand what happened
@@ -416,6 +443,7 @@ jobs:
 5. **Lessons Learned** - How to prevent future incidents
 
 ### Incident Response Template
+
 ```markdown
 ## Security Incident Report
 
@@ -448,11 +476,13 @@ jobs:
 ### Tools and Libraries
 
 #### Static Analysis Tools
+
 - **JavaScript/Node.js:** ESLint security plugin, Snyk
 - **Python:** Bandit, Safety
 - **General:** SonarQube, CodeQL
 
 #### Dependencies Management
+
 ```json
 // package.json - Regular security updates
 {
@@ -465,6 +495,7 @@ jobs:
 ```
 
 #### Monitoring and Logging
+
 ```javascript
 // Good: Security event logging
 const winston = require('winston');
@@ -491,11 +522,13 @@ function logSecurityEvent(event, user, details) {
 ### Compliance and Standards
 
 #### Canadian Privacy Laws
+
 - **PIPEDA** - Personal Information Protection and Electronic Documents Act
 - **Provincial privacy laws** - Ontario FIPPA, BC FOIPPA, etc.
 - **Municipal requirements** - Local government privacy policies
 
 #### International Standards
+
 - **GDPR** - If serving EU residents
 - **WCAG 2.1** - Accessibility standards
 - **ISO 27001** - Information security management
@@ -503,11 +536,13 @@ function logSecurityEvent(event, user, details) {
 ### Emergency Contacts
 
 #### Security Incident Contacts
+
 - **CTWR Leadership:** [Contact information]
 - **Partner Organizations:** [Emergency contacts]
 - **Technical Team:** [On-call information]
 
 #### External Resources
+
 - **Canadian Cyber Incident Response Centre:** cyber.gc.ca
 - **Provincial Privacy Commissioners:** [Local contact]
 - **Legal Counsel:** [If needed for incidents]
@@ -515,24 +550,28 @@ function logSecurityEvent(event, user, details) {
 ## Security Checklist for CTWR Projects
 
 ### Project Setup
+
 - [ ] Security requirements defined in project planning
 - [ ] Threat model created for project
 - [ ] Security testing integrated into development process
 - [ ] Incident response plan created
 
 ### Development Phase
+
 - [ ] Secure coding practices followed
 - [ ] Security code reviews conducted
 - [ ] Dependency security scanning automated
 - [ ] Security testing performed
 
 ### Deployment Phase
+
 - [ ] HTTPS configured and enforced
 - [ ] Security headers implemented
 - [ ] Access controls configured
 - [ ] Monitoring and logging enabled
 
 ### Ongoing Maintenance
+
 - [ ] Regular security updates applied
 - [ ] Security monitoring in place
 - [ ] Incident response plan tested
@@ -541,6 +580,7 @@ function logSecurityEvent(event, user, details) {
 ---
 
 **🔒 Related Resources:**
+
 - [Accessibility Guide](ACCESSIBILITY_GUIDE.md) - Security considerations for inclusive design
 - [Contributing Guidelines](CONTRIBUTING.md) - Security requirements for contributors
 - [Technical Design](TECHNICAL_DESIGN.md) - Security architecture decisions

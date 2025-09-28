@@ -3,6 +3,7 @@
 ## User Interview Guide
 
 ### Pre-Interview Preparation
+
 - [ ] Recruited representative users (not just friends/family)
 - [ ] Prepared neutral, open-ended questions
 - [ ] Set up recording (with permission)
@@ -12,6 +13,7 @@
 ### Interview Structure
 
 **Opening (5 minutes)**
+
 - Introduce yourself and the project context
 - Explain how you'll use the information
 - Get permission to record
@@ -76,6 +78,7 @@ Test your assumptions about potential solutions:
 [What would prevent adoption?]
 
 **Follow-up Actions:**
+
 - [ ] Send thank you
 - [ ] Add to user research database
 - [ ] Share insights with team
@@ -86,6 +89,7 @@ Test your assumptions about potential solutions:
 ### [Persona Name]
 
 **Demographics:**
+
 - Age range:
 - Location:
 - Occupation:
@@ -116,31 +120,37 @@ Test your assumptions about potential solutions:
 **So that** [benefit/reason]
 
 **Acceptance Criteria:**
+
 - [ ] [Specific, testable requirement]
 - [ ] [Specific, testable requirement]
 - [ ] [Specific, testable requirement]
 
 **User Journey Steps:**
+
 1. [First action user takes]
 2. [Next step in their process]
 3. [Final outcome]
 
 **Pain Points to Address:**
+
 - [Current friction point]
 - [Current frustration]
 
 ## Usability Testing Script
 
 ### Testing Goals
+
 [What do you want to learn from this test?]
 
 ### Test Scenarios
+
 **Scenario 1:** [Realistic task]
 "Imagine you need to [context]. Please show me how you would [specific task] using this [prototype/app]."
 
 **Scenario 2:** [Another realistic task]
 
 ### Things to Observe
+
 - [ ] Can they complete the task?
 - [ ] How long does it take?
 - [ ] Where do they get stuck?
@@ -149,6 +159,7 @@ Test your assumptions about potential solutions:
 - [ ] What language do they use to describe features?
 
 ### Post-Test Questions
+
 1. What was your overall impression?
 2. What worked well for you?
 3. What was confusing or frustrating?
@@ -159,6 +170,7 @@ Test your assumptions about potential solutions:
 ## Research Synthesis Template
 
 ### Key Insights
+
 [3-5 major insights from your research]
 
 1. **Finding:** [What you discovered]
@@ -177,17 +189,21 @@ Test your assumptions about potential solutions:
 | [Need 2] | Med | Med | P2 |
 
 ### Recommendations
+
 Based on research findings:
 
 **Immediate Actions:**
+
 1. [Action based on research]
 2. [Action based on research]
 
 **Design Implications:**
+
 1. [How this affects your solution]
 2. [How this affects your solution]
 
 **Further Research Needed:**
+
 1. [Questions that emerged]
 2. [Areas needing deeper investigation]
 
@@ -196,6 +212,7 @@ Based on research findings:
 ## Research Planning Checklist
 
 **Before Starting Research:**
+
 - [ ] Defined research questions
 - [ ] Identified target user groups
 - [ ] Planned recruitment strategy
@@ -204,6 +221,7 @@ Based on research findings:
 - [ ] Assigned note-takers/observers
 
 **During Research:**
+
 - [ ] Focus on listening, not selling
 - [ ] Ask "why" and "how" questions
 - [ ] Observe behavior, not just words
@@ -211,6 +229,7 @@ Based on research findings:
 - [ ] Look for patterns across users
 
 **After Research:**
+
 - [ ] Synthesize findings immediately
 - [ ] Share insights with full team
 - [ ] Update personas and user stories

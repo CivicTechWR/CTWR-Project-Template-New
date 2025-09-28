@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh workflow:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+      "Bash(bundle lock:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Read(//Users/andrelevesque/Projects/CTWR-Org/**)",
+      "Bash(git push:*)",
+      "Bash(gh api:*)",
+      "Bash(git tag:*)",
+      "Bash(gh release create v1.0.0 --title \"CivicTechWR Project Template v1.0.0\" --notes \"$(cat <<''EOF''\n## CivicTechWR Project Template v1.0.0\n\nFirst stable release of the comprehensive CivicTechWR project template.\n\n### ✨ Features\n\n- **DVF Framework Integration** - Complete scoring system with 4 assessment lenses\n- **12-Week Project Lifecycle** - Documentation and templates for full season\n- **GitHub Pages Documentation Site** - Jekyll-powered documentation with automated deployment\n- **Security Best Practices** - Repository configuration and civic tech data protection guidelines\n- **Project Management Templates** - Pitch, technical design, user research, and Demo Day preparation\n- **Automated Workflows** - Validation, maintenance, and security monitoring\n\n### 🚀 Getting Started\n\n1. Use this template to create a new repository\n2. Follow the [Getting Started Guide](https://civictechwr.github.io/CTWR-Project-Template-New/)\n3. Complete your DVF Assessment to score your project\n4. Begin your 12-week project journey!\n\n### 📚 Documentation\n\n- **Live Documentation**: https://civictechwr.github.io/CTWR-Project-Template-New/\n- **DVF Scorecard**: Evaluate across Community Partner, Talent & Team, Technical, and Civic dimensions\n- **Complete Templates**: Everything needed for successful civic tech projects\n\nThis template provides everything needed for successful CivicTechWR projects following our proven framework.\nEOF\n)\")",
+      "Bash(gh release view:*)",
+      "Bash(yamllint:*)",
+      "Bash(find:*)",
+      "Bash(tail:*)",
+      "Bash(shellcheck:*)",
+      "Bash(/dev/null ;)",
+      "Bash(/dev/null)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

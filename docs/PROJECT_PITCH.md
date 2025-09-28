@@ -6,6 +6,7 @@
 ## Your 3-Minute Pitch Outline
 
 ### 1. What is it? (the problem you'd like to solve)
+
 **Focus on problem > solution.** Prioritize the problem context (not your solution idea). That helps us apply design thinking and invites diverse solutions.
 
 *Example: "Every newcomer struggles to find affordable housing information that's actually current and trustworthy in our city..."*
@@ -14,6 +15,7 @@
 [Write your problem statement here]
 
 ### 2. Who is affected by this problem?
+
 Name the people or groups, and where they are.
 
 *Example: "Seniors in Kitchener who rely on buses after 9pm"*
@@ -22,21 +24,25 @@ Name the people or groups, and where they are.
 [List specific groups and locations]
 
 ### 3. What exists today?
+
 How are users solving or mitigating the problem today? Tools, programs, workarounds, policies, or past attempts (and their gaps).
 
 **Current Solutions & Gaps:**
 [Describe existing approaches and their limitations]
 
 ### 4. Why now?
+
 What's changed or urgent about the problem? Any time-bound opportunity or risk?
 
 **Urgency/Timing:**
 [Explain why this problem needs attention now]
 
 ### 5. What help do you need from the community?
+
 Data, introductions, volunteers with certain skills, user interviews, etc.
 
 **Help Needed:**
+
 - [ ] Technical skills: [specify]
 - [ ] Domain expertise: [specify]
 - [ ] User access/interviews
@@ -45,9 +51,11 @@ Data, introductions, volunteers with certain skills, user interviews, etc.
 - [ ] Other: [specify]
 
 ### 6. What are you bringing to the table? (giving back to CTWR)
+
 Time, domain knowledge, user access, data, story, test space, feedback cadence, or sponsorship.
 
 **Your Contributions:**
+
 - [ ] Weekly time commitment: [hours]
 - [ ] Domain knowledge: [specify]
 - [ ] User access: [describe]
@@ -58,6 +66,7 @@ Time, domain knowledge, user access, data, story, test space, feedback cadence, 
 ## Q&A Preparation (2 minutes)
 
 Expect clarifying questions about:
+
 - **Scope:** How big/small is this problem?
 - **Users:** Who exactly would use this solution?
 - **Constraints:** Technical, legal, or resource limitations?
@@ -79,12 +88,14 @@ Expect clarifying questions about:
 ## After the Pitch: Breakout Session Planning
 
 **Week One Goals:**
+
 - Discuss the pitch in more detail
 - Ask deeper questions about the problem and need
 - Cluster insights and categorize information
 - Identify sub-problems to focus on
 
 **Resources for Next Steps:**
+
 - [Template_Pitching.md](link to original CTWR template)
 - [DVF_SCORECARD.md](./DVF_SCORECARD.md)
 - [USER_RESEARCH.md](./USER_RESEARCH.md)

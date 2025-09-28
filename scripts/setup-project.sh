@@ -40,14 +40,14 @@ echo "📋 Project Setup Information"
 echo "============================"
 
 # Prompt for project name
-read -p "Enter project name (e.g., 'Accessible Transit App'): " PROJECT_NAME
+read -r -p "Enter project name (e.g., 'Accessible Transit App'): " PROJECT_NAME
 if [ -z "$PROJECT_NAME" ]; then
     echo "❌ Project name is required."
     exit 1
 fi
 
 # Prompt for season
-read -p "Enter CTWR season (e.g., 'Season 6'): " SEASON
+read -r -p "Enter CTWR season (e.g., 'Season 6'): " SEASON
 if [ -z "$SEASON" ]; then
     SEASON="Season X"
 fi
@@ -69,8 +69,7 @@ fi
 echo "🔧 Creating GitHub Project..."
 
 # Create the project
-PROJECT_OUTPUT=$(gh project create --owner "$OWNER" --title "$PROJECT_NAME - $SEASON")
-if [ $? -ne 0 ]; then
+if ! gh project create --owner "$OWNER" --title "$PROJECT_NAME - $SEASON"; then
     echo "❌ Failed to create project."
     exit 1
 fi

@@ -145,11 +145,13 @@ CivicTechWR projects support security research conducted in good faith:
 **Questions about this security policy?**
 
 Contact us through:
+
 - **CTWR Community Meetings** - Weekly Wednesday meetings
 - **GitHub Discussions** - For general security questions
 - **Direct Contact** - For sensitive security matters
 
 **This policy applies to:**
+
 - The CivicTechWR project template repository
 - Projects created using this template (each project should customize this policy)
 - Community-contributed resources and documentation
