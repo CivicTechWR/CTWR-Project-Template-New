@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2025-09-28
+
+### Fixed
+- Fixed Create Release workflow to handle branch protection properly
+- Workflow now completes successfully without trying to push to protected branch
+
 ## [1.0.1] - 2025-09-28
 
 ### Fixed
