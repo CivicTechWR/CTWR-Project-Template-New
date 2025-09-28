@@ -30,6 +30,9 @@ cd [project-name]
 
 # Set up GitHub Project with DVF tracking
 ./scripts/setup-project.sh
+
+# Configure repository security
+./scripts/setup-security.sh
 ```
 
 ### 3. Start Your Project Planning

@@ -113,6 +113,7 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for how to get involved.
 ### Development
 - [Technical Design Document](docs/TECHNICAL_DESIGN.md) - Architecture decisions
 - [Security Guide](docs/SECURITY_GUIDE.md) - Security best practices for civic tech
+- [Repository Security](docs/REPOSITORY_SECURITY.md) - GitHub security configuration and monitoring
 - [Accessibility Guide](docs/ACCESSIBILITY_GUIDE.md) - WCAG 2.1 compliance
 - [Contributing Guidelines](docs/CONTRIBUTING.md) - How to get involved
 - [Project Management](docs/PROJECT_MANAGEMENT.md) - GitHub Projects with DVF tracking
