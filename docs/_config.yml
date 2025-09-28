@@ -1,7 +1,8 @@
-title: "[Your Project Name]"
-description: "CivicTechWR Season X Project - [Brief project description]"
-url: "https://USERNAME.github.io"
-baseurl: "/REPOSITORY-NAME"
+title: "CivicTechWR Project Template"
+description: "CivicTechWR Season X Project Template - A comprehensive template for civic tech projects"
+url: "https://civictechwr.github.io"
+baseurl: "/CTWR-Project-Template-New"
+repository: "CivicTechWR/CTWR-Project-Template-New"
 
 # Theme
 theme: minima
