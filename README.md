@@ -4,7 +4,17 @@
 
 > **🚀 New to this template?** Start with the **[Getting Started Guide](GETTING_STARTED.md)** for a 5-minute overview and step-by-step instructions.
 
-> **Quick Start:** Replace this template with your project details and run your DVF assessment in Week 1-3.
+## Quick Summary
+
+This template provides everything needed for a successful CivicTechWR project: DVF framework integration, 12-week project lifecycle, comprehensive documentation, GitHub automation, security best practices, and public website hosting.
+
+**Essential first steps:**
+1. **[Complete the Getting Started Guide](GETTING_STARTED.md)** - Your roadmap to success
+2. **Fill out your Project Pitch** - Define your civic impact
+3. **Run your DVF Assessment** - Score your project across 4 key lenses
+4. **Set up your development environment** - Automated scripts included
+
+> **For detailed guidance:** Read the **[Getting Started Guide](GETTING_STARTED.md)** - it breaks down the entire process with week-by-week instructions, common questions, and success metrics.
 
 ## DVF Assessment Score: [ /20]
 
@@ -78,30 +88,18 @@ Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across f
 - **Week 10-11**: Testing and refinement
 - **Week 12**: Demo Day presentation
 
-## Getting Started
+## Setup Summary
 
-**🆕 First time using this template?**
+**📖 [Complete Getting Started Guide](GETTING_STARTED.md)** - Full walkthrough recommended
 
-📖 **[Read the Getting Started Guide](GETTING_STARTED.md)** - Complete overview with step-by-step instructions
-
-### Quick Setup
+**Quick commands after reading the guide:**
 ```bash
-# Clone the repository
-git clone [your-repo-url]
-cd [project-name]
-
-# Set up development environment
-./scripts/setup.sh
-
-# Set up GitHub Project with DVF tracking
-./scripts/setup-project.sh
-
-# Start development
-[technology-specific commands]
+./scripts/setup.sh          # Development environment
+./scripts/setup-project.sh  # GitHub Project with DVF tracking
+./scripts/setup-security.sh # Repository security
 ```
 
-### For Contributors
-See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for how to get involved.
+**For Contributors:** See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 
 ## Project Resources
 
