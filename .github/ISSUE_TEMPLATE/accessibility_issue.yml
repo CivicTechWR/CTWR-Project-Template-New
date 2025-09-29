@@ -1,8 +1,8 @@
 ---
 name: ♿ Accessibility Issue
 description: Report accessibility barriers or improvements needed
-title: "[A11Y] "
-labels: ["accessibility", "a11y", "needs-triage"]
+title: '[A11Y] '
+labels: ['accessibility', 'a11y', 'needs-triage']
 assignees: []
 body:
   - type: markdown

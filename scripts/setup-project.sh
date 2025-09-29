@@ -68,18 +68,25 @@ fi
 
 echo "🔧 Creating GitHub Project..."
 
-# Create the project
-if ! gh project create --owner "$OWNER" --title "$PROJECT_NAME - $SEASON"; then
+# Create the project and capture the project number directly from gh output
+if ! PROJECT_NUMBER=$(gh project create \
+    --owner "$OWNER" \
+    --title "$PROJECT_NAME - $SEASON" \
+    --format json \
+    --jq '.number'); then
     echo "❌ Failed to create project."
     exit 1
 fi
 
-# Extract project number from the output (last part of the URL or ID)
-PROJECT_NUMBER=$(gh project list --owner "$OWNER" | grep "$PROJECT_NAME" | head -1 | awk '{print $1}')
-
-if [ -z "$PROJECT_NUMBER" ]; then
-    echo "❌ Could not determine project number."
+if [ -z "$PROJECT_NUMBER" ] || [ "$PROJECT_NUMBER" = "null" ]; then
+    echo "❌ Could not determine project number from GitHub CLI response."
     exit 1
+fi
+
+# Fetch the canonical project URL for display purposes
+PROJECT_URL=$(gh project view "$PROJECT_NUMBER" --owner "$OWNER" --format json --jq '.url' 2>/dev/null)
+if [ -z "$PROJECT_URL" ] || [ "$PROJECT_URL" = "null" ]; then
+    PROJECT_URL="https://github.com/orgs/$OWNER/projects/$PROJECT_NUMBER"
 fi
 
 echo "✅ Project created with ID: $PROJECT_NUMBER"
@@ -135,8 +142,8 @@ if git rev-parse --git-dir > /dev/null 2>&1; then
     REPO_NAME=$(basename "$(git config --get remote.origin.url)" .git)
     if [[ "$REPO_NAME" =~ ^[a-zA-Z0-9._-]+$ ]]; then
         echo "  📁 Linking to repository: $REPO_NAME"
-        gh project link "$PROJECT_NUMBER" --owner "$OWNER" --repo "$REPO_NAME"
-        echo "✅ Project linked to repository: $REPO_NAME"
+        gh project link "$PROJECT_NUMBER" --owner "$OWNER" --repo "$OWNER/$REPO_NAME"
+        echo "✅ Project linked to repository: $OWNER/$REPO_NAME"
     else
         echo "  ⚠️ Could not determine repository name. Link manually if needed."
     fi
@@ -151,7 +158,7 @@ echo ""
 echo "📋 Project Details:"
 echo "   Name: $PROJECT_NAME - $SEASON"
 echo "   ID: $PROJECT_NUMBER"
-echo "   URL: https://github.com/orgs/$OWNER/projects/$PROJECT_NUMBER"
+echo "   URL: $PROJECT_URL"
 echo ""
 echo "📊 DVF Fields Added:"
 echo "   ✅ Community Partner (1-5 scale)"

@@ -1,7 +1,7 @@
 name: 📋 General Task
 description: Create a general project task or work item
-title: "[TASK] "
-labels: ["task"]
+title: '[TASK] '
+labels: ['task']
 assignees: []
 body:
   - type: markdown

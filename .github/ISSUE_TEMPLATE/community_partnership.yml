@@ -1,7 +1,7 @@
 name: 🤝 Community Partnership
 description: Track community partnerships and stakeholder engagement
-title: "[PARTNERSHIP] "
-labels: ["community-partner", "stakeholder"]
+title: '[PARTNERSHIP] '
+labels: ['community-partner', 'stakeholder']
 assignees: []
 body:
   - type: markdown

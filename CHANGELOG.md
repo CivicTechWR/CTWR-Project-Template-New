@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Automated linting workflow stage running ESLint and Prettier in CI
+- ESLint flat config, Prettier configuration, and npm scripts for local linting
+
+### Changed
+
+- Hardened `scripts/setup-project.sh` to capture the correct GitHub Project ID and link URL
+- Updated `.gitignore` to ignore local automation folders and reduce overly-broad secret patterns
+- Reformatted YAML/JSON assets with Prettier for consistent styling
+
+### Removed
+
+- Legacy `.DS_Store` and `test_release_notes.md` artifacts from the template root
+
 ## [1.0.5] - 2025-09-28
 
 ### Fixed

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Documentation
+---
+
+## CivicTechWR Project Documentation Hub
+
+Welcome! This page gathers all of the key resources bundled with the CivicTechWR Project Template. Customize it with links that make sense for your project once you populate the repo.
+
+### Core References
+
+- [Getting Started Guide]({{ site.github.repository_url }}/blob/main/GETTING_STARTED.md)
+- [Project Pitch Template]({{ site.github.repository_url }}/blob/main/docs/PROJECT_PITCH.md)
+- [DVF Scorecard]({{ site.github.repository_url }}/blob/main/docs/DVF_SCORECARD.md)
+- [Technical Design Doc]({{ site.github.repository_url }}/blob/main/docs/TECHNICAL_DESIGN.md)
+- [User Research Toolkit]({{ site.github.repository_url }}/blob/main/docs/USER_RESEARCH.md)
+
+### Operations & Governance
+
+- [Project Management Guide]({{ site.github.repository_url }}/blob/main/docs/PROJECT_MANAGEMENT.md)
+- [Security Guide]({{ site.github.repository_url }}/blob/main/docs/SECURITY_GUIDE.md)
+- [Repository Security Checklist]({{ site.github.repository_url }}/blob/main/docs/REPOSITORY_SECURITY.md)
+- [Accessibility Guide]({{ site.github.repository_url }}/blob/main/docs/ACCESSIBILITY_GUIDE.md)
+- [Demo Prep Guide]({{ site.github.repository_url }}/blob/main/docs/DEMO_PREP.md)
+
+### Additional Resources
+
+- [Impact Tracking Framework]({{ site.github.repository_url }}/blob/main/docs/IMPACT_TRACKING.md)
+- [Contributing Guidelines]({{ site.github.repository_url }}/blob/main/docs/CONTRIBUTING.md)
+- [Wiki Templates]({{ site.github.repository_url }}/blob/main/wiki-template/README.md)
+
+### Linting & Formatting Workflow
+
+- Run `npm run lint` to execute ESLint with the template’s flat config (`eslint.config.cjs`).
+- Run `npm run format` for a non-destructive Prettier check or `npm run format:fix` to write changes.
+- Our CI `lint-validation` job runs both commands on every push/PR; ensure local runs are clean before committing.
+
+> ℹ️ Update links and add any project-specific documentation (API references, user manuals, research reports) as your team builds them out.

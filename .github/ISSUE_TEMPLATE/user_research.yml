@@ -1,7 +1,7 @@
 name: 👥 User Research
 description: Plan user research activities or report research findings
-title: "[RESEARCH] "
-labels: ["user-research", "community"]
+title: '[RESEARCH] '
+labels: ['user-research', 'community']
 assignees: []
 body:
   - type: markdown

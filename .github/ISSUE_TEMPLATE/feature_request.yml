@@ -1,8 +1,8 @@
 ---
 name: 🚀 Feature Request
 description: Propose a new feature for this civic tech project
-title: "[FEATURE] "
-labels: ["enhancement", "needs-triage"]
+title: '[FEATURE] '
+labels: ['enhancement', 'needs-triage']
 assignees: []
 body:
   - type: markdown
@@ -26,7 +26,7 @@ body:
     attributes:
       label: User Story
       description: Describe this feature from the user's perspective
-      placeholder: "As a [type of user], I want [goal] so that [benefit to community/user]."
+      placeholder: 'As a [type of user], I want [goal] so that [benefit to community/user].'
     validations:
       required: true
 

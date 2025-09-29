@@ -152,11 +152,15 @@ participant_data/
 sensitive_docs/
 
 # API keys and secrets (additional patterns)
-*secret*
-*key*
-*token*
-*password*
-*credential*
+# Use scoped patterns to avoid excluding legitimate source files
+*-secret.*
+*_secret.*
+*-token.*
+*_token.*
+*-password.*
+*_password.*
+*-credential.*
+*_credential.*
 api_keys.txt
 secrets.json
 
@@ -178,6 +182,10 @@ production_data/
 # Documentation builds
 docs/_build/
 site/
+
+# Local tooling directories
+.claude/
+.qodo/
 
 # Backup files
 *.bak

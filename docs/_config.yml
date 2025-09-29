@@ -1,9 +1,9 @@
 ---
-title: "CivicTechWR Project Template"
-description: "CivicTechWR Season X Project Template - A comprehensive template for civic tech projects"
-url: "https://civictechwr.github.io"
-baseurl: "/CTWR-Project-Template-New"
-repository: "CivicTechWR/CTWR-Project-Template-New"
+title: 'CivicTechWR Project Template'
+description: 'CivicTechWR Season X Project Template - A comprehensive template for civic tech projects'
+url: 'https://civictechwr.github.io'
+baseurl: '/CTWR-Project-Template-New'
+repository: 'CivicTechWR/CTWR-Project-Template-New'
 
 # Theme
 theme: minima
@@ -21,12 +21,12 @@ header_pages:
 
 # Author information
 author:
-  name: "CivicTechWR Team"
-  email: "noreply@civictechwr.org"
+  name: 'CivicTechWR Team'
+  email: 'noreply@civictechwr.org'
 
 # Social links
 github_username: CivicTechWR
-civictech_url: "https://civictechwr.org"
+civictech_url: 'https://civictechwr.org'
 
 # Site settings
 lang: en
@@ -63,29 +63,28 @@ collections:
 # Default layouts
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: ''
+      type: 'posts'
     values:
-      layout: "post"
-      author: "CivicTechWR Team"
+      layout: 'post'
+      author: 'CivicTechWR Team'
   - scope:
-      path: ""
-      type: "pages"
+      path: ''
+      type: 'pages'
     values:
-      layout: "page"
+      layout: 'page'
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "default"
+      layout: 'default'
 
 # Custom variables for CivicTechWR projects
 civictech:
-  season: "X"
-  dvf_score: "[/20]"
-  partner: "[Partner Organization]"
-  status: "[Research/Development/Testing/Live]"
-  demo_day: "[Date]"
-
+  season: 'X'
+  dvf_score: '[/20]'
+  partner: '[Partner Organization]'
+  status: '[Research/Development/Testing/Live]'
+  demo_day: '[Date]'
 # Analytics (use privacy-focused options for civic projects)
 # google_analytics: false  # Avoid for government/civic data
 # Add privacy-focused analytics configuration here if needed
