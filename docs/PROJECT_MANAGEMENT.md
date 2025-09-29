@@ -17,6 +17,31 @@ Run the setup script to create a configured project:
 ./scripts/setup-project.sh
 ```
 
+#### Prerequisites
+
+1. Install the [GitHub CLI (`gh`)](https://cli.github.com/) on your workstation.
+2. Authenticate with your CivicTechWR credentials: `gh auth login`.
+3. Grant the CLI the **project** scope (required for Projects v2 APIs):
+   ```bash
+   gh auth refresh -s project --hostname github.com
+   gh auth status
+   ```
+   Confirm the output includes `scopes: ... project ...`.
+4. Ensure you have permission to create Projects inside the `CivicTechWR` organization (contact the org admins if you see a permissions error).
+5. (Optional) Export `CTWR_PROJECT_OWNER=YourOrg` if you want to create the project in a different GitHub organization.
+
+> 🔁 **Dry-run/testing:** set `CTWR_SKIP_SCOPE_CHECK=1` before running the script to bypass scope validation in CI smoke tests.
+
+#### Example: Cyber Shield Initiative
+
+```text
+Enter project name (e.g., 'Accessible Transit App'): Cyber Shield Initiative
+Enter CTWR season (e.g., 'Season 6'): Season 7
+Create this project? (y/n): y
+```
+
+The script provisions project number `123` (example), adds DVF fields, and links it to your repository so your new cybersecurity education program can track Week 1–12 milestones immediately.
+
 This creates a GitHub Project with:
 
 - ✅ DVF tracking fields (Community Partner, Talent & Team, Technically Exciting, Civic Exciting)

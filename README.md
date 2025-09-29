@@ -10,6 +10,18 @@
 
 ## Quick Summary
 
+**Prerequisites (10 minutes):**
+
+- Git 2.30+ (`git --version`)
+- Node.js 18+ with npm (`node --version`, `npm --version`)
+- GitHub CLI (`gh`) authenticated with:
+  - `gh auth login`
+  - `gh auth refresh -s project --hostname github.com` (for project automation)
+  - `gh auth status` showing `project` and `repo` scopes
+- Optional: Python 3.10+, Ruby/Bundler, or Flutter if your project uses them
+
+> Tip: Run `./scripts/setup.sh --check` (new flag) for a prereq-only diagnostic before installing dependencies.
+
 This template provides everything needed for a successful CivicTechWR project: DVF framework integration, 12-week project lifecycle, comprehensive documentation, GitHub automation, security best practices, and public website hosting.
 
 **Essential first steps:**
@@ -101,11 +113,25 @@ Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across f
 
 **Quick commands after reading the guide:**
 
+### Quick Setup Commands
+
 ```bash
-./scripts/setup.sh          # Development environment
-./scripts/setup-project.sh  # GitHub Project with DVF tracking
-./scripts/setup-security.sh # Repository security
+# 0. Pre-flight check (optional but recommended)
+./scripts/setup.sh --check
+
+# 1. Bootstrap local environment
+./scripts/setup.sh
+
+# 2. Provision GitHub Project w/ DVF tracking
+CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # override owner as needed
+
+# 3. Apply security baseline (branch protection, Dependabot, secret scanning)
+./scripts/setup-security.sh
 ```
+
+> ⚠️ `./scripts/setup-project.sh` needs `gh` with the `project` scope and org permissions. Run `gh auth refresh -s project --hostname github.com` first.
+>
+> ⚠️ `./scripts/setup-security.sh` needs `gh` with `repo` scope plus admin rights. Verify with `gh auth status` and ensure you can edit repository settings.
 
 **For Contributors:** See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 

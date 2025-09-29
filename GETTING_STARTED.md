@@ -2,6 +2,17 @@
 
 Welcome to the CivicTechWR Project Template! This guide will help you navigate the template and get your civic tech project up and running quickly.
 
+## ⚡ TL;DR: Launch in 30 Minutes
+
+1. Verify prerequisites with `./scripts/setup.sh --check` (Git, Node, gh scopes).
+2. Run `./scripts/setup.sh` to install dependencies and drop starter files.
+3. Kick off a GitHub Project with DVF fields via `./scripts/setup-project.sh`.
+4. Apply baseline security settings using `./scripts/setup-security.sh`.
+5. In **Settings → Pages**, select **GitHub Actions** so docs deploy automatically.
+6. Customize `README.md`, the DVF scorecard, and the wiki starter pages.
+
+> Ready for the full context? Keep reading for detailed guidance, tips, and 12-week planning support.
+
 ## 🎯 Template Overview
 
 This template provides everything you need for a successful CivicTechWR project:
@@ -36,6 +47,8 @@ cd [project-name]
 # Configure repository security
 ./scripts/setup-security.sh
 ```
+
+> ℹ️ Before running `./scripts/setup-project.sh`, install the GitHub CLI and grant it the `project` scope (`gh auth refresh -s project --hostname github.com`). See [Project Management](docs/PROJECT_MANAGEMENT.md#prerequisites) for the full checklist.
 
 ### 3. Start Your Project Planning
 

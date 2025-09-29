@@ -3,51 +3,64 @@
 # CivicTechWR Project Setup Script
 # This script sets up the development environment for new contributors
 
-set -e  # Exit on any error
+set -euo pipefail  # Exit on error, undefined var, or failed pipeline
+
+CHECK_MODE=0
+if [[ ${1:-} == "--check" ]]; then
+    CHECK_MODE=1
+    echo "ℹ️ Running setup in pre-flight check mode (no changes will be made)."
+fi
+
+# Utility: ensure required command exists before continuing
+require_command() {
+    local cmd="$1"
+    local label=${2:-$1}
+    local help=${3:-}
+
+    if ! command -v "${cmd}" >/dev/null 2>&1; then
+        echo "❌ ${label} is required but not installed."
+        if [[ -n "${help}" ]]; then
+            echo "${help}"
+        fi
+        exit 1
+    fi
+}
 
 echo "🚀 Setting up CivicTechWR Project Development Environment"
 echo "=================================================="
 
 # Check if we're in the right directory
-if [ ! -f "README.md" ]; then
+if [[ ! -f "README.md" ]]; then
     echo "❌ Error: Please run this script from the project root directory"
     exit 1
 fi
-
-# Function to check if command exists
-command_exists() {
-    command -v "$1" >/dev/null 2>&1
-}
 
 # Function to prompt for user input
 prompt_user() {
     read -p "$1 (y/n): " -n 1 -r
     echo
-    [[ $REPLY =~ ^[Yy]$ ]]
+    [[ ${REPLY} =~ ^[Yy]$ ]]
 }
 
 echo "🔍 Checking system requirements..."
 
 # Check for Git
-if ! command_exists git; then
-    echo "❌ Git is required but not installed. Please install Git first."
-    exit 1
-fi
+require_command git "Git" "Please install Git first."
 echo "✅ Git found"
 
 # Detect project type and set up accordingly
 echo "🔍 Detecting project type..."
 
-if [ -f "package.json" ]; then
+if [[ -f "package.json" ]]; then
     PROJECT_TYPE="node"
     echo "📦 Node.js project detected"
-elif [ -f "requirements.txt" ] || [ -f "setup.py" ] || [ -f "pyproject.toml" ]; then
+elif [[ -f "requirements.txt" || -f "setup.py" || -f "pyproject.toml" ]]; then
     PROJECT_TYPE="python"
     echo "🐍 Python project detected"
-elif [ -f "Gemfile" ]; then
+elif [[ -f "Gemfile" ]]; then
     PROJECT_TYPE="ruby"
     echo "💎 Ruby project detected"
-elif [ -f "pubspec.yaml" ]; then
+elif [[ -f "pubspec.yaml" ]]; then
     PROJECT_TYPE="flutter"
     echo "🐦 Flutter project detected"
 else
@@ -56,119 +69,146 @@ else
 fi
 
 # Node.js setup
-if [ "$PROJECT_TYPE" = "node" ]; then
-    if ! command_exists node; then
-        echo "❌ Node.js is required but not installed."
-        echo "Please install Node.js from https://nodejs.org/"
+if [[ "${PROJECT_TYPE}" == "node" ]]; then
+    require_command node "Node.js" "Please install Node.js from https://nodejs.org/"
+    require_command npm "npm"
+
+    NODE_VERSION=$(node --version 2>/dev/null) || {
+        echo "❌ Failed to determine Node.js version."
         exit 1
-    fi
-
-    if ! command_exists npm; then
-        echo "❌ npm is required but not installed."
+    }
+    NPM_VERSION=$(npm --version 2>/dev/null) || {
+        echo "❌ Failed to determine npm version."
         exit 1
+    }
+
+    echo "✅ Node.js ${NODE_VERSION} found"
+    echo "✅ npm ${NPM_VERSION} found"
+
+    if (( CHECK_MODE )); then
+        echo "ℹ️ (check) Would run: npm install"
+    else
+        echo "📦 Installing Node.js dependencies..."
+        npm install
     fi
 
-    echo "✅ Node.js $(node --version) found"
-    echo "✅ npm $(npm --version) found"
-
-    echo "📦 Installing Node.js dependencies..."
-    npm install
-
-    # Check for common civic tech dependencies
-    if npm list | grep -q "accessibility"; then
-        echo "♿ Accessibility tools detected"
+    if (( CHECK_MODE )); then
+        echo "ℹ️ (check) Skipping accessibility tooling detection"
+    else
+        if npm list 2>/dev/null | grep -q "accessibility"; then
+            echo "♿ Accessibility tools detected"
+        fi
     fi
 
-    echo "🔧 Setting up development tools..."
-    if [ -f ".eslintrc.js" ] || [ -f ".eslintrc.json" ]; then
-        echo "✅ ESLint configuration found"
-    fi
+    if (( CHECK_MODE )); then
+        echo "ℹ️ (check) Skipping local lint/format detection"
+    else
+        echo "🔧 Setting up development tools..."
+        if [[ -f ".eslintrc.js" || -f ".eslintrc.json" ]]; then
+            echo "✅ ESLint configuration found"
+        fi
 
-    if [ -f ".prettierrc" ] || [ -f "prettier.config.js" ]; then
-        echo "✅ Prettier configuration found"
+        if [[ -f ".prettierrc" || -f "prettier.config.js" ]]; then
+            echo "✅ Prettier configuration found"
+        fi
     fi
 fi
 
 # Python setup
-if [ "$PROJECT_TYPE" = "python" ]; then
-    if ! command_exists python3; then
-        echo "❌ Python 3 is required but not installed."
-        echo "Please install Python 3 from https://python.org/"
-        exit 1
-    fi
+if [[ "${PROJECT_TYPE}" == "python" ]]; then
+    require_command python3 "Python 3" "Please install Python 3 from https://python.org/"
 
-    echo "✅ Python $(python3 --version) found"
+    PYTHON_VERSION=$(python3 --version 2>/dev/null) || {
+        echo "❌ Failed to determine Python version."
+        exit 1
+    }
+    echo "✅ ${PYTHON_VERSION}"
 
     # Create virtual environment if it doesn't exist
-    if [ ! -d "venv" ]; then
-        echo "🐍 Creating Python virtual environment..."
-        python3 -m venv venv
-    fi
+    if (( CHECK_MODE )); then
+        echo "ℹ️ (check) Would create virtual environment (python3 -m venv venv)"
+        echo "ℹ️ (check) Would install pip requirements"
+    else
+        if [[ ! -d "venv" ]]; then
+            echo "🐍 Creating Python virtual environment..."
+            python3 -m venv venv
+        fi
 
-    echo "🐍 Activating virtual environment..."
-    source venv/bin/activate
+        echo "🐍 Activating virtual environment..."
+        # shellcheck disable=SC1091
+        source venv/bin/activate
 
-    echo "📦 Installing Python dependencies..."
-    if [ -f "requirements.txt" ]; then
-        pip install -r requirements.txt
-    fi
+        echo "📦 Installing Python dependencies..."
+        if [[ -f "requirements.txt" ]]; then
+            pip install -r requirements.txt
+        fi
 
-    if [ -f "requirements-dev.txt" ]; then
-        pip install -r requirements-dev.txt
-    fi
+        if [[ -f "requirements-dev.txt" ]]; then
+            pip install -r requirements-dev.txt
+        fi
 
-    # Check for common civic tech dependencies
-    if pip list | grep -q "django"; then
-        echo "🌐 Django framework detected"
-    fi
+        if pip list 2>/dev/null | grep -q "django"; then
+            echo "🌐 Django framework detected"
+        fi
 
-    if pip list | grep -q "flask"; then
-        echo "🌐 Flask framework detected"
+        if pip list 2>/dev/null | grep -q "flask"; then
+            echo "🌐 Flask framework detected"
+        fi
     fi
 fi
 
 # Ruby setup
-if [ "$PROJECT_TYPE" = "ruby" ]; then
-    if ! command_exists ruby; then
-        echo "❌ Ruby is required but not installed."
+if [[ "${PROJECT_TYPE}" == "ruby" ]]; then
+    require_command ruby "Ruby"
+    require_command bundle "Bundler" "Run: gem install bundler"
+
+    RUBY_VERSION=$(ruby --version 2>/dev/null) || {
+        echo "❌ Failed to determine Ruby version."
         exit 1
-    fi
-
-    if ! command_exists bundle; then
-        echo "❌ Bundler is required but not installed."
-        echo "Run: gem install bundler"
+    }
+    echo "✅ ${RUBY_VERSION}"
+    BUNDLER_VERSION=$(bundle --version 2>/dev/null) || {
+        echo "❌ Failed to determine Bundler version."
         exit 1
-    fi
+    }
+    echo "✅ ${BUNDLER_VERSION}"
 
-    echo "✅ Ruby $(ruby --version) found"
-    echo "✅ Bundler found"
+    if (( CHECK_MODE )); then
+        echo "ℹ️ (check) Would run: bundle install"
+        echo "ℹ️ (check) Would check bundle list for Jekyll"
+    else
+        echo "💎 Installing Ruby dependencies..."
+        bundle install
 
-    echo "💎 Installing Ruby dependencies..."
-    bundle install
-
-    # Check for Jekyll (common in civic tech static sites)
-    if bundle list | grep -q "jekyll"; then
-        echo "📄 Jekyll static site generator detected"
+        if bundle list 2>/dev/null | grep -q "jekyll"; then
+            echo "📄 Jekyll static site generator detected"
+        fi
     fi
 fi
 
 # Flutter setup
-if [ "$PROJECT_TYPE" = "flutter" ]; then
-    if ! command_exists flutter; then
-        echo "❌ Flutter is required but not installed."
-        echo "Please install Flutter from https://flutter.dev/"
-        exit 1
-    fi
+if [[ "${PROJECT_TYPE}" == "flutter" ]]; then
+    require_command flutter "Flutter" "Please install Flutter from https://flutter.dev/"
 
     echo "✅ Flutter found"
-    flutter doctor
+    if (( CHECK_MODE )); then
+        echo "ℹ️ (check) Would run: flutter doctor"
+        echo "ℹ️ (check) Would run: flutter pub get"
+    else
+        flutter doctor
+        echo "🐦 Getting Flutter dependencies..."
+        flutter pub get
+    fi
+fi
 
-    echo "🐦 Getting Flutter dependencies..."
-    flutter pub get
+if (( CHECK_MODE )); then
+    echo ""
+    echo "✅ Pre-flight check complete. Run ./scripts/setup.sh without --check to perform setup."
+    exit 0
 fi
 
 # Create development environment file if it doesn't exist
-if [ ! -f ".env" ] && [ ! -f ".env.example" ]; then
+if [[ ! -f ".env" && ! -f ".env.example" ]]; then
     echo "🔧 Creating environment configuration..."
     cat > .env.example << EOF
 # Environment Configuration for Development
@@ -198,7 +238,7 @@ fi
 echo "🔧 Setting up development tools..."
 
 # Create simple pre-commit hook
-if [ ! -f ".git/hooks/pre-commit" ]; then
+if [[ ! -f ".git/hooks/pre-commit" ]]; then
     cat > .git/hooks/pre-commit << 'EOF'
 #!/bin/bash
 # Pre-commit hook for CivicTechWR projects
@@ -213,13 +253,13 @@ if git diff --cached --name-only | xargs grep -l "password\|secret\|key\|token" 
 fi
 
 # Run project-specific linting
-if [ -f "package.json" ] && command -v npm >/dev/null; then
+if [[ -f "package.json" ]] && command -v npm >/dev/null; then
     if npm run lint --silent 2>/dev/null; then
         echo "✅ JavaScript linting passed"
     fi
 fi
 
-if [ -f "requirements.txt" ] && command -v flake8 >/dev/null; then
+if [[ -f "requirements.txt" ]] && command -v flake8 >/dev/null; then
     if flake8 . 2>/dev/null; then
         echo "✅ Python linting passed"
     fi
@@ -240,7 +280,7 @@ mkdir -p docs
 mkdir -p tests
 
 # Create .gitignore if it doesn't exist
-if [ ! -f ".gitignore" ]; then
+if [[ ! -f ".gitignore" ]]; then
     cat > .gitignore << 'EOF'
 # Development environment
 .env
@@ -283,7 +323,7 @@ fi
 
 # Verify accessibility tools
 echo "♿ Checking accessibility tools..."
-if command_exists npm && [ -f "package.json" ]; then
+if command -v npm >/dev/null 2>&1 && [[ -f "package.json" ]]; then
     if npm list @axe-core/cli &>/dev/null || npm list lighthouse &>/dev/null; then
         echo "✅ Accessibility testing tools available"
     else
@@ -293,9 +333,9 @@ if command_exists npm && [ -f "package.json" ]; then
 fi
 
 # Check for Docker setup
-if [ -f "Dockerfile" ] || [ -f "docker-compose.yml" ]; then
+if [[ -f "Dockerfile" || -f "docker-compose.yml" ]]; then
     echo "🐳 Docker configuration detected"
-    if command_exists docker; then
+    if command -v docker >/dev/null 2>&1; then
         echo "✅ Docker is available"
     else
         echo "💡 Docker is configured but not installed. Install Docker for containerized development."
@@ -314,26 +354,26 @@ echo "4. Start contributing! Check issues labeled 'good first issue'"
 echo ""
 
 # Project-specific startup instructions
-case $PROJECT_TYPE in
+case "${PROJECT_TYPE}" in
     "node")
         echo "🚀 To start development:"
         echo "   npm start"
-        if [ -f "package.json" ] && grep -q "dev" package.json; then
+        if [[ -f "package.json" ]] && grep -q "dev" package.json; then
             echo "   npm run dev"
         fi
         ;;
     "python")
         echo "🚀 To start development:"
         echo "   source venv/bin/activate"
-        if [ -f "manage.py" ]; then
+        if [[ -f "manage.py" ]]; then
             echo "   python manage.py runserver"
-        elif [ -f "app.py" ]; then
+        elif [[ -f "app.py" ]]; then
             echo "   python app.py"
         fi
         ;;
     "ruby")
         echo "🚀 To start development:"
-        if bundle list | grep -q "jekyll"; then
+        if bundle list 2>/dev/null | grep -q "jekyll"; then
             echo "   bundle exec jekyll serve"
         else
             echo "   bundle exec [your-command]"
@@ -348,6 +388,9 @@ case $PROJECT_TYPE in
         echo "   Open index.html in your browser"
         echo "   Or use a local server like 'python -m http.server'"
         ;;
+    *)
+        echo "⚠️ Unknown project type '${PROJECT_TYPE}'. Please update scripts/setup.sh."
+        ;;
 esac
 
 echo ""
@@ -355,4 +398,3 @@ echo "🤝 Welcome to CivicTechWR! Let's build technology that serves our commun
 echo ""
 echo "Need help? Join our weekly meetings or reach out on our communication channels."
 echo "Check CONTRIBUTING.md for more details on how to get involved."
-EOF

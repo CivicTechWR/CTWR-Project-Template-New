@@ -104,6 +104,12 @@ For organization-owned repositories:
 
 ## 🛠️ Automated Security Setup Scripts
 
+### Prerequisites
+
+- Install and authenticate the GitHub CLI (`gh auth login`).
+- Ensure your token has the `repo` scope and admin rights on the repository (`gh auth status`).
+- Confirm you are an administrator within the `CivicTechWR` organization or have equivalent repository permissions.
+
 ### Branch Protection Configuration
 
 Create `scripts/branch-protection.json`:
@@ -133,6 +139,11 @@ Add to `scripts/setup-security.sh`:
 ```bash
 #!/bin/bash
 set -e
+
+# Requirements:
+#   * GitHub CLI (`gh`) installed and authenticated (`gh auth login`).
+#   * `repo` scope and admin permissions on the target repository.
+#   * Network access to GitHub's API endpoints.
 
 echo "🔒 Setting up repository security..."
 

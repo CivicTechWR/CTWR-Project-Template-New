@@ -1,5 +1,7 @@
 # Pull Request
 
+> Quick change? Fill in **Summary**, the sections you touched (Testing / Accessibility / DVF), mark the rest as N/A, and hit create. The full template is here when you need it.
+
 ## Summary
 
 [Brief description of what this PR changes and why it's needed]

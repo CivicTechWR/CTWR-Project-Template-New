@@ -7,6 +7,13 @@ title: Documentation
 
 Welcome! This page gathers all of the key resources bundled with the CivicTechWR Project Template. Customize it with links that make sense for your project once you populate the repo.
 
+### Quick Start
+
+- ✅ Run the setup scripts in order (`./scripts/setup.sh --check`, then `./scripts/setup.sh`, `./scripts/setup-project.sh`, `./scripts/setup-security.sh`).
+- ✅ Update the README, DVF scorecard, and wiki home with your project details.
+- ✅ Create your first issues using the quick templates below and assign them in your GitHub Project.
+- ⏩ Come back here whenever you need the deep-dive docs linked in the sections below.
+
 ### Core References
 
 - [Getting Started Guide]({{ site.github.repository_url }}/blob/main/GETTING_STARTED.md)
@@ -28,6 +35,7 @@ Welcome! This page gathers all of the key resources bundled with the CivicTechWR
 - [Impact Tracking Framework]({{ site.github.repository_url }}/blob/main/docs/IMPACT_TRACKING.md)
 - [Contributing Guidelines]({{ site.github.repository_url }}/blob/main/docs/CONTRIBUTING.md)
 - [Wiki Templates]({{ site.github.repository_url }}/blob/main/wiki-template/README.md)
+- [Quick Task Issue Template]({{ site.github.repository_url }}/blob/main/.github/ISSUE_TEMPLATE/quick_task.yml) – 2-minute lightweight ticket
 
 ### Linting & Formatting Workflow
 
