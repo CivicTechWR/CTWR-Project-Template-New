@@ -27,8 +27,8 @@ Run the setup script to create a configured project:
    gh auth status
    ```
    Confirm the output includes `scopes: ... project ...`.
-4. Ensure you have permission to create Projects inside the `CivicTechWR` organization (contact the org admins if you see a permissions error).
-5. (Optional) Export `CTWR_PROJECT_OWNER=YourOrg` if you want to create the project in a different GitHub organization.
+4. Ensure you have permission to create Projects inside the `CivicTechWR` organization—this is the recommended home for new projects (contact org admins if you see a permissions error).
+5. If you must host elsewhere, export `CTWR_PROJECT_OWNER=YourOrg` before running the script and confirm your Pages plan supports private deployments.
 
 > 🔁 **Dry-run/testing:** set `CTWR_SKIP_SCOPE_CHECK=1` before running the script to bypass scope validation in CI smoke tests.
 

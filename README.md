@@ -123,15 +123,17 @@ Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across f
 ./scripts/setup.sh
 
 # 2. Provision GitHub Project w/ DVF tracking
-CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # override owner as needed
+CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # recommend hosting in the CivicTechWR org
 
 # 3. Apply security baseline (branch protection, Dependabot, secret scanning)
 ./scripts/setup-security.sh
 ```
 
-> ⚠️ `./scripts/setup-project.sh` needs `gh` with the `project` scope and org permissions. Run `gh auth refresh -s project --hostname github.com` first.
+> ⚠️ `./scripts/setup-project.sh` needs `gh` with the `project` scope and permissions **inside the CivicTechWR organization** (recommended home for new repos). Run `gh auth refresh -s project --hostname github.com` first.
 >
 > ⚠️ `./scripts/setup-security.sh` needs `gh` with `repo` scope plus admin rights. Verify with `gh auth status` and ensure you can edit repository settings.
+>
+> 📢 **GitHub Pages:** Repos under `github.com/CivicTechWR` can stay private if the org plan allows private Pages. For personal forks, make the repo public or upgrade so the docs site can publish.
 
 **For Contributors:** See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 

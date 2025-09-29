@@ -13,6 +13,7 @@ Welcome! This page gathers all of the key resources bundled with the CivicTechWR
 - ✅ Update the README, DVF scorecard, and wiki home with your project details.
 - ✅ Create your first issues using the quick templates below and assign them in your GitHub Project.
 - ⏩ Come back here whenever you need the deep-dive docs linked in the sections below.
+- ℹ️ Host your repo under [github.com/CivicTechWR](https://github.com/CivicTechWR) when possible; if you stay in a personal namespace, make it public so GitHub Pages can publish the docs site.
 
 ### Core References
 
