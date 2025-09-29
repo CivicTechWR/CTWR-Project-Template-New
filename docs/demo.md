@@ -97,9 +97,9 @@ title: Demo
 
 ### Presentation Materials
 
-- **[Slide Deck](link-to-slides)** - Final presentation slides
-- **[Demo Script](link-to-script)** - Detailed demonstration walkthrough
-- **[Impact Report](link-to-report)** - Quantitative and qualitative outcomes
+- **[Slide Deck]({{ '/demo-slides/' | relative_url }})** - Final presentation slides
+- **[Demo Script]({{ '/demo-script/' | relative_url }})** - Detailed demonstration walkthrough
+- **[Impact Report]({{ '/demo-report/' | relative_url }})** - Quantitative and qualitative outcomes
 - **[Technical Documentation]({{ site.github.repository_url }}/tree/main/docs)** - Complete technical details
 
 ## 🎪 Interactive Demonstrations

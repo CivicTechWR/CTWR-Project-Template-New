@@ -163,6 +163,8 @@ Demo Day date to be announced - follow this project for updates.
 
 ---
 
-### Built with ❤️ by the CivicTechWR community • [Learn more about CivicTechWR](https://civictechwr.org) • [View all Season {{ site.civictech.season }} projects](https://civictechwr.org/projects)
+### Built with ❤️ by the CivicTechWR community 
+• [Learn more about CivicTechWR](https://civictechwr.org) 
+• [View all Season {{ site.civictech.season }} projects](https://civictechwr.org/projects)
 
 *Last updated: {{ site.time | date: "%B %d, %Y at %I:%M %p" }}*
