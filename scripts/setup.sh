@@ -398,3 +398,12 @@ echo "🤝 Welcome to CivicTechWR! Let's build technology that serves our commun
 echo ""
 echo "Need help? Join our weekly meetings or reach out on our communication channels."
 echo "Check CONTRIBUTING.md for more details on how to get involved."
+
+echo ""
+echo "🧾 Post-flight checklist:"
+echo "   ▸ Enable GitHub Pages (Settings → Pages → GitHub Actions) if you haven't already."
+echo "   ▸ Create your GitHub Project with DVF fields via CTWR_PROJECT_OWNER=<org> ./scripts/setup-project.sh."
+echo "   ▸ Apply the security baseline with ./scripts/setup-security.sh (requires repo admin permissions)."
+echo "   ▸ Update README, DVF scorecard, and wiki pages with real project details."
+echo "   ▸ Replace placeholder CODEOWNERS entries with real GitHub usernames."
+echo "   ▸ Invite partners and volunteers to the repo and GitHub Project."

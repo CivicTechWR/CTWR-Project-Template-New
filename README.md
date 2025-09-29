@@ -135,6 +135,13 @@ CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # recommend hosting i
 >
 > 📢 **GitHub Pages:** Repos under `github.com/CivicTechWR` can stay private if the org plan allows private Pages. For personal forks, make the repo public or upgrade so the docs site can publish.
 
+**Post-flight checklist:**
+
+- Enable GitHub Pages (Settings → Pages → GitHub Actions)
+- Run the project (`./scripts/setup-project.sh`) and security (`./scripts/setup-security.sh`) automation
+- Update README, DVF scorecard, wiki, and CODEOWNERS with real details
+- Invite partners/volunteers to the repo and GitHub Project
+
 **For Contributors:** See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 
 ## Project Resources

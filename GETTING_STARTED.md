@@ -9,7 +9,7 @@ Welcome to the CivicTechWR Project Template! This guide will help you navigate t
 3. Kick off a GitHub Project with DVF fields via `CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh` (we recommend creating your repo inside the [CivicTechWR org](https://github.com/CivicTechWR)).
 4. Apply baseline security settings using `./scripts/setup-security.sh`.
 5. In **Settings → Pages**, select **GitHub Actions** so docs deploy automatically; if you host outside the CivicTechWR org, ensure the repo is public or on a plan that supports private Pages.
-6. Customize `README.md`, the DVF scorecard, and the wiki starter pages.
+6. Customize `README.md`, the DVF scorecard, and the wiki starter pages (the setup script prints a post-flight checklist to guide you).
 
 > Ready for the full context? Keep reading for detailed guidance, tips, and 12-week planning support.
 
