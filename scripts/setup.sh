@@ -11,6 +11,25 @@ if [[ ${1:-} == "--check" ]]; then
     echo "ℹ️ Running setup in pre-flight check mode (no changes will be made)."
 fi
 
+POSTFLIGHT_ITEMS=(
+    "Enable GitHub Pages (Settings → Pages → GitHub Actions)"
+    "Run CTWR_PROJECT_OWNER=<org> ./scripts/setup-project.sh to create the GitHub Project"
+    "Run ./scripts/setup-security.sh to apply branch protection, Dependabot, and secret scanning"
+    "Update README, DVF scorecard, wiki, and documentation with real project information"
+    "Replace placeholder CODEOWNERS entries with your team’s GitHub usernames"
+    "Invite partners and volunteers to the repo and GitHub Project"
+)
+
+if [[ -n "${CTWR_POSTFLIGHT_EXTRA:-}" ]]; then
+    IFS=';' read -r -a _ctwr_extra_items <<<"${CTWR_POSTFLIGHT_EXTRA}"
+    for item in "${_ctwr_extra_items[@]}"; do
+        trimmed_item=$(echo "${item}" | awk '{$1=$1;print}')
+        if [[ -n "${trimmed_item}" ]]; then
+            POSTFLIGHT_ITEMS+=("${trimmed_item}")
+        fi
+    done
+fi
+
 # Utility: ensure required command exists before continuing
 require_command() {
     local cmd="$1"
@@ -399,11 +418,13 @@ echo ""
 echo "Need help? Join our weekly meetings or reach out on our communication channels."
 echo "Check CONTRIBUTING.md for more details on how to get involved."
 
-echo ""
-echo "🧾 Post-flight checklist:"
-echo "   ▸ Enable GitHub Pages (Settings → Pages → GitHub Actions) if you haven't already."
-echo "   ▸ Create your GitHub Project with DVF fields via CTWR_PROJECT_OWNER=<org> ./scripts/setup-project.sh."
-echo "   ▸ Apply the security baseline with ./scripts/setup-security.sh (requires repo admin permissions)."
-echo "   ▸ Update README, DVF scorecard, and wiki pages with real project details."
-echo "   ▸ Replace placeholder CODEOWNERS entries with real GitHub usernames."
-echo "   ▸ Invite partners and volunteers to the repo and GitHub Project."
+if [[ "${CTWR_SKIP_POSTFLIGHT:-0}" != "1" ]]; then
+    echo ""
+    echo "🧾 Post-flight checklist:"
+    for item in "${POSTFLIGHT_ITEMS[@]}"; do
+        echo "   ▸ ${item}"
+    done
+    if [[ -n "${CTWR_POSTFLIGHT_EXTRA:-}" ]]; then
+        echo "   (Additional items supplied via CTWR_POSTFLIGHT_EXTRA)"
+    fi
+fi
