@@ -390,7 +390,7 @@ title: Home
 - **Partnership Status**: [Active/developing]
 
 ### 🔗 Quick Links
-- [Live Demo](demo.html) - Try the tool
+- [Live Demo]({{ '/demo/' | relative_url }}) - Try the tool
 - [GitHub Repository](https://github.com/OWNER/REPO) - Source code
 - [Team Information](team.html) - Meet the team
 - [Project Documentation](docs/) - Technical details

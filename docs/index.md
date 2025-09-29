@@ -36,11 +36,11 @@ title: Home
 
 ### 🔗 Quick Links
 
-- **[Live Demo](demo.html)** - Try the tool yourself
+- **[Live Demo]({{ '/demo/' | relative_url }})** - Try the tool yourself
 - **[GitHub Repository]({{ site.github.repository_url }})** - View source code and contribute
 - **[Team Information](team.html)** - Meet the people behind the project
 - **[Technical Documentation]({{ site.github.repository_url }}/tree/main/docs)** - Setup and API docs
-- **[User Guide](user-guide.html)** - How to use this tool
+- **[User Guide]({{ '/user-guide/' | relative_url }})** - How to use this tool
 - **[Contributing]({{ site.github.repository_url }}/blob/main/docs/CONTRIBUTING.md)** - Join our team
 
 ### 📱 How to Get Involved
@@ -144,7 +144,7 @@ Join us on {{ site.civictech.demo_day }} to see our final presentation and celeb
 Demo Day date to be announced - follow this project for updates.
 {% endif %}
 
-[View our Demo Day preparation and presentation materials](demo.html)
+[View our Demo Day preparation and presentation materials]({{ '/demo/' | relative_url }})
 
 ### 🤝 Community Partners & Acknowledgments
 

@@ -20,9 +20,8 @@ header_pages:
   - docs.md
 
 # Author information
-author:
-  name: 'CivicTechWR Team'
-  email: 'noreply@civictechwr.org'
+author: 'CivicTechWR Team'
+author_email: 'noreply@civictechwr.org'
 
 # Social links
 github_username: CivicTechWR
