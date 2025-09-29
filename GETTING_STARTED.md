@@ -59,6 +59,8 @@ The DVF (Desirability-Viability-Feasibility) Framework helps evaluate civic tech
 - **8-12**: Significant risks - proceed with willing team and de-risk plan
 - **4-7**: Not supported at this time
 
+> 📚 Want deeper context? Read our blog post on [Iterating on IDEO's DVF Framework for CivicTech](https://civictechwr.github.io/blog/Iterating-on-IDEO's-DVF-Framework-(for-CivicTech)/) to learn how CTWR adapted the model for volunteer civic projects.
+
 ## 📅 12-Week Project Timeline
 
 ### Weeks 1-3: Problem Validation & DVF Scoring
