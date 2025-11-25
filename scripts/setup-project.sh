@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # CivicTechWR Project Setup Script
-# Creates a GitHub Project with DVF tracking for a new CTWR season project.
+# Creates a GitHub Project for a new CTWR season project.
 #
 # Requirements:
 #   * GitHub CLI (`gh`) installed and authenticated (run `gh auth login`).
@@ -122,37 +122,7 @@ fi
 
 echo "✅ Project created with ID: ${PROJECT_NUMBER}"
 
-echo "🔧 Setting up DVF tracking fields..."
-
-# Create DVF fields
-echo "  📊 Creating DVF Community Partner field..."
-gh project field-create "${PROJECT_NUMBER}" --owner "${OWNER}" \
-    --data-type SINGLE_SELECT \
-    --name "DVF Community Partner" \
-    --single-select-options "1 - Poor,2 - Weak,3 - Good,4 - Strong,5 - Exceptional"
-
-echo "  👥 Creating DVF Talent Team field..."
-gh project field-create "${PROJECT_NUMBER}" --owner "${OWNER}" \
-    --data-type SINGLE_SELECT \
-    --name "DVF Talent Team" \
-    --single-select-options "1 - Poor,2 - Weak,3 - Good,4 - Strong,5 - Exceptional"
-
-echo "  💻 Creating DVF Technically Exciting field..."
-gh project field-create "${PROJECT_NUMBER}" --owner "${OWNER}" \
-    --data-type SINGLE_SELECT \
-    --name "DVF Technically Exciting" \
-    --single-select-options "1 - Poor,2 - Weak,3 - Good,4 - Strong,5 - Exceptional"
-
-echo "  🏛️ Creating DVF Civic Exciting field..."
-gh project field-create "${PROJECT_NUMBER}" --owner "${OWNER}" \
-    --data-type SINGLE_SELECT \
-    --name "DVF Civic Exciting" \
-    --single-select-options "1 - Poor,2 - Weak,3 - Good,4 - Strong,5 - Exceptional"
-
-echo "  🔢 Creating DVF Total Score field..."
-gh project field-create "${PROJECT_NUMBER}" --owner "${OWNER}" \
-    --data-type NUMBER \
-    --name "DVF Total Score"
+echo "🔧 Setting up project tracking fields..."
 
 echo "  📅 Creating Season Week field..."
 gh project field-create "${PROJECT_NUMBER}" --owner "${OWNER}" \
@@ -195,23 +165,15 @@ echo "   Name: ${PROJECT_NAME} - ${SEASON}"
 echo "   ID: ${PROJECT_NUMBER}"
 echo "   URL: ${PROJECT_URL}"
 echo ""
-echo "📊 DVF Fields Added:"
-echo "   ✅ Community Partner (1-5 scale)"
-echo "   ✅ Talent & Team (1-5 scale)"
-echo "   ✅ Technically Exciting (1-5 scale)"
-echo "   ✅ Civic Exciting (1-5 scale)"
-echo "   ✅ Total Score (calculated field)"
+echo "📊 Fields Added:"
 echo "   ✅ Season Week (Week 1-12)"
 echo "   ✅ Project Phase (Pitch → Demo Day)"
 echo ""
 echo "📋 Next Steps:"
-echo "1. 📝 Complete your DVF scorecard assessment (Week 1-3)"
-echo "2. 🎯 Create initial project issues and link them to the project"
-echo "3. 📊 Update DVF scores regularly (Week 6 mid-season check)"
-echo "4. 🚀 Track progress through the 12-week season workflow"
+echo "1. 🎯 Create initial project issues and link them to the project"
+echo "2. 🚀 Track progress through the 12-week season workflow"
 echo ""
 echo "📖 Documentation:"
-echo "   DVF Scorecard: docs/DVF_SCORECARD.md"
 echo "   Project Workflow: docs/PROJECT_MANAGEMENT.md"
 echo ""
 echo "🤝 Need help? Ask in CTWR community channels or weekly meetings!"

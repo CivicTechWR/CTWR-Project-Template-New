@@ -10,7 +10,7 @@ Welcome! This page gathers all of the key resources bundled with the CivicTechWR
 ### Quick Start
 
 - ✅ Run the setup scripts in order (`./scripts/setup.sh --check`, then `./scripts/setup.sh`, `./scripts/setup-project.sh`, `./scripts/setup-security.sh`).
-- ✅ Update the README, DVF scorecard, and wiki home with your project details.
+- ✅ Update the README and wiki home with your project details.
 - ✅ Create your first issues using the quick templates below and assign them in your GitHub Project.
 - ⏩ Come back here whenever you need the deep-dive docs linked in the sections below.
 - ℹ️ Host your repo under [github.com/CivicTechWR](https://github.com/CivicTechWR) when possible; if you stay in a personal namespace, make it public so GitHub Pages can publish the docs site.
@@ -19,7 +19,6 @@ Welcome! This page gathers all of the key resources bundled with the CivicTechWR
 
 - [Getting Started Guide]({{ site.github.repository_url }}/blob/main/GETTING_STARTED.md)
 - [Project Pitch Template]({{ site.github.repository_url }}/blob/main/docs/PROJECT_PITCH.md)
-- [DVF Scorecard]({{ site.github.repository_url }}/blob/main/docs/DVF_SCORECARD.md)
 - [Technical Design Doc]({{ site.github.repository_url }}/blob/main/docs/TECHNICAL_DESIGN.md)
 - [User Research Toolkit]({{ site.github.repository_url }}/blob/main/docs/USER_RESEARCH.md)
 

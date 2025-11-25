@@ -17,7 +17,6 @@
 
 - Overall project coordination and timeline management
 - Community partner relationship management
-- DVF scorecard maintenance and reporting
 - Demo Day presentation coordination
 - CTWR community liaison
 
@@ -248,6 +247,5 @@
 - [Project Overview](Project-Overview) - Project goals and context
 - [Community Partners](Community-Partners) - External team members and stakeholders
 - [Meeting Notes](Meeting-Notes) - Records of team decisions and discussions
-- [DVF Scorecard](DVF-Scorecard) - Team capacity assessment
 
 **🔄 Last Updated:** [Date] by [@contributor]

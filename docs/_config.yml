@@ -80,7 +80,6 @@ defaults:
 # Custom variables for CivicTechWR projects
 civictech:
   season: 'X'
-  dvf_score: '[/20]'
   partner: '[Partner Organization]'
   status: '[Research/Development/Testing/Live]'
   demo_day: '[Date]'

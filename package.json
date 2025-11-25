@@ -1,11 +1,10 @@
 {
   "name": "@civictechwr/project-template",
   "version": "1.0.0",
-  "description": "CivicTechWR comprehensive project template with DVF framework, 12-week lifecycle, and GitHub automation",
+  "description": "CivicTechWR comprehensive project template with 12-week lifecycle and GitHub automation",
   "keywords": [
     "civic-tech",
     "template",
-    "dvf-framework",
     "government",
     "community",
     "github-template"
@@ -44,7 +43,6 @@
   },
   "civictechwr": {
     "template_version": "1.0.0",
-    "dvf_framework": "2024",
     "season_lifecycle": "12-weeks",
     "last_updated": "2025-09-28"
   },
