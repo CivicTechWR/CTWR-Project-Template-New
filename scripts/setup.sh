@@ -15,7 +15,7 @@ POSTFLIGHT_ITEMS=(
     "Enable GitHub Pages (Settings → Pages → GitHub Actions)"
     "Run CTWR_PROJECT_OWNER=<org> ./scripts/setup-project.sh to create the GitHub Project"
     "Run ./scripts/setup-security.sh to apply branch protection, Dependabot, and secret scanning"
-    "Update README, DVF scorecard, wiki, and documentation with real project information"
+    "Update README, wiki, and documentation with real project information"
     "Replace placeholder CODEOWNERS entries with your team’s GitHub usernames"
     "Invite partners and volunteers to the repo and GitHub Project"
 )
@@ -368,8 +368,7 @@ echo ""
 echo "📋 Next steps:"
 echo "1. Copy .env.example to .env and customize settings"
 echo "2. Review the project documentation in docs/"
-echo "3. Check our DVF scorecard in docs/DVF_SCORECARD.md"
-echo "4. Start contributing! Check issues labeled 'good first issue'"
+echo "3. Start contributing! Check issues labeled 'good first issue'"
 echo ""
 
 # Project-specific startup instructions

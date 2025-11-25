@@ -134,7 +134,7 @@
 
 **Key Milestones:**
 
-- **Week 3:** DVF assessment and team formation
+- **Week 3:** Team formation and project planning
 - **Week 6:** Mid-season review and pivot decisions
 - **Week 9:** Core feature completion and user testing
 - **Week 12:** Demo Day presentation
@@ -179,7 +179,6 @@
 
 **📋 Related Pages:**
 
-- [DVF Scorecard](DVF-Scorecard) - Current project assessment
 - [Team & Roles](Team-and-Roles) - Who's working on what
 - [Season Timeline](Season-Timeline) - Detailed project schedule
 - [Community Partners](Community-Partners) - Stakeholder relationships

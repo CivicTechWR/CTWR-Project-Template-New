@@ -15,7 +15,6 @@ Upload your presentation deck to a shared location (e.g., Google Slides, PowerPo
 1. Problem statement
 2. Community impact
 3. Solution overview & demo
-4. DVF highlights
-5. Call to action & next steps
+4. Call to action & next steps
 
 > ℹ️ Remove this helper content once your final slide deck link is ready.
