@@ -121,15 +121,15 @@ body:
         - label: Account for different economic situations
 
   - type: textarea
-    id: dvf-connection
+    id: project-connection
     attributes:
-      label: DVF Framework Connection
-      description: How does this research connect to our DVF scorecard?
+      label: Project Connection
+      description: How does this research connect to project goals?
       placeholder: |
         - Community Partner: [how this validates partner needs]
-        - Talent & Team: [skills needed, community involvement]
-        - Technically Exciting: [technical validation needed]
-        - Civic Exciting: [community impact validation]
+        - Team Skills: [skills needed, community involvement]
+        - Technical Validation: [technical validation needed]
+        - Civic Impact: [community impact validation]
 
   - type: dropdown
     id: timeline

@@ -134,15 +134,15 @@ body:
         - label: Impact measurement and evaluation
 
   - type: textarea
-    id: dvf-impact
+    id: partnership-impact
     attributes:
-      label: DVF Impact
-      description: How does this partnership affect our DVF scorecard?
+      label: Partnership Impact
+      description: How does this partnership benefit the project and community?
       placeholder: |
-        - Community Partner score: [expected impact]
-        - Talent & Team: [skills/capacity gained]
-        - Technically Exciting: [technical validation/requirements]
-        - Civic Exciting: [community reach/impact enhanced]
+        - Community engagement: [expected impact]
+        - Team capacity: [skills/capacity gained]
+        - Technical validation: [requirements/feedback]
+        - Civic reach: [community reach/impact enhanced]
 
   - type: checkboxes
     id: partnership-stage-activities

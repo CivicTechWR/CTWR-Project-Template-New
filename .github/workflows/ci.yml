@@ -41,7 +41,6 @@ jobs:
           echo "📚 Validating documentation structure..."
 
           required_docs=(
-            "docs/DVF_SCORECARD.md"
             "docs/PROJECT_PITCH.md"
             "docs/TECHNICAL_DESIGN.md"
             "docs/USER_RESEARCH.md"
@@ -90,7 +89,6 @@ jobs:
           wiki_templates=(
             "wiki-template/README.md"
             "wiki-template/Home.md"
-            "wiki-template/DVF-Scorecard.md"
             "wiki-template/Team-and-Roles.md"
             "wiki-template/Project-Overview.md"
             "wiki-template/Meeting-Notes.md"
@@ -173,28 +171,11 @@ jobs:
       - name: Run Prettier check
         run: npm run format
 
-  dvf-framework-validation:
+  project-lifecycle-validation:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Validate DVF Framework integration
-        run: |
-          echo "🎯 Validating DVF Framework integration..."
-
-          # Check for DVF references in key files
-          if ! grep -q -i "dvf\|community partner\|talent.*team\|technically exciting\|civic exciting" docs/DVF_SCORECARD.md; then
-            echo "❌ DVF framework not properly documented in scorecard"
-            exit 1
-          fi
-
-          if ! grep -q -i "dvf" README.md; then
-            echo "❌ DVF framework not mentioned in README"
-            exit 1
-          fi
-
-          echo "✅ DVF Framework integration validated."
 
       - name: Validate project lifecycle templates
         run: |

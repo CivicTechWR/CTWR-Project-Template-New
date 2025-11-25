@@ -138,19 +138,18 @@ jobs:
             fi
           done
 
-          # Validate DVF documentation exists
-          dvf_files=(
-            "docs/DVF_SCORECARD.md"
+          # Validate core documentation exists
+          core_docs=(
             "docs/PROJECT_PITCH.md"
             "docs/TECHNICAL_DESIGN.md"
           )
 
-          for file in "${dvf_files[@]}"; do
+          for file in "${core_docs[@]}"; do
             if [ ! -f "$file" ]; then
-              echo "❌ Missing DVF file: $file"
+              echo "❌ Missing core documentation: $file"
               exit 1
             else
-              echo "✅ Found DVF: $file"
+              echo "✅ Found: $file"
             fi
           done
 

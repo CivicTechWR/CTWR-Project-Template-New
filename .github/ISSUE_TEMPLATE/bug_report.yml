@@ -146,7 +146,6 @@ body:
       placeholder: |
         - Number of users potentially affected: [estimate]
         - Community services impacted: [list services]
-        - DVF score impact: [which areas affected]
         - Urgency for community: [timeline needs]
   - type: checkboxes
     id: testing-help
