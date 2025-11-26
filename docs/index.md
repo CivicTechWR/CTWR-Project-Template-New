@@ -7,7 +7,7 @@ title: Home
 
 ## Solving [Community Problem] for [Target Community]
 
-**CivicTechWR Season {{ site.civictech.season }} Project** • **DVF Score: {{ site.civictech.dvf_score }}**
+**CivicTechWR Season {{ site.civictech.season }} Project**
 
 ### 🎯 Project Mission
 
@@ -84,7 +84,7 @@ title: Home
 
 - [x] Initial community partner meetings
 - [x] User research and interviews
-- [x] DVF scorecard completion
+- [x] Project planning completion
 - [ ] Problem validation with stakeholders
 
 #### Weeks 4-6: Design & Prototyping

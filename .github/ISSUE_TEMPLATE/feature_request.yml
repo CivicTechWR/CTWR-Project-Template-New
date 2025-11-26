@@ -11,15 +11,15 @@ body:
         Thanks for taking the time to suggest a feature! Help us understand how this will benefit our community.
 
   - type: checkboxes
-    id: dvf-category
+    id: impact-category
     attributes:
-      label: DVF Impact Category
-      description: Which DVF areas does this feature primarily impact?
+      label: Impact Category
+      description: Which areas does this feature primarily impact?
       options:
         - label: Community Partner - Improves stakeholder engagement
-        - label: Talent & Team - Enhances team productivity or skills
-        - label: Technically Exciting - Introduces new technology or innovation
-        - label: Civic Exciting - Increases community impact or accessibility
+        - label: Team Productivity - Enhances team productivity or skills
+        - label: Technical Innovation - Introduces new technology or innovation
+        - label: Civic Impact - Increases community impact or accessibility
 
   - type: textarea
     id: user-story

@@ -120,17 +120,6 @@ body:
         - label: Consider low-tech/no-tech alternatives
         - label: Account for different economic situations
 
-  - type: textarea
-    id: dvf-connection
-    attributes:
-      label: DVF Framework Connection
-      description: How does this research connect to our DVF scorecard?
-      placeholder: |
-        - Community Partner: [how this validates partner needs]
-        - Talent & Team: [skills needed, community involvement]
-        - Technically Exciting: [technical validation needed]
-        - Civic Exciting: [community impact validation]
-
   - type: dropdown
     id: timeline
     attributes:

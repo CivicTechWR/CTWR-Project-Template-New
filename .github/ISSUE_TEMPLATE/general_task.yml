@@ -83,15 +83,15 @@ body:
       required: true
 
   - type: checkboxes
-    id: dvf-impact
+    id: impact-areas
     attributes:
-      label: DVF Impact Areas
-      description: Which DVF areas does this task support?
+      label: Impact Areas
+      description: Which areas does this task support?
       options:
         - label: Community Partner - Improves stakeholder relationships
-        - label: Talent & Team - Builds team capacity or engagement
-        - label: Technically Exciting - Advances technical innovation
-        - label: Civic Exciting - Increases community impact
+        - label: Team Capacity - Builds team capacity or engagement
+        - label: Technical Innovation - Advances technical innovation
+        - label: Civic Impact - Increases community impact
 
   - type: dropdown
     id: effort-estimate

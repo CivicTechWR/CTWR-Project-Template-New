@@ -14,13 +14,6 @@
 **Duration:** [X minutes]
 **Facilitator:** [@username]
 
-#### DVF Check-in (5 minutes)
-
-**Current DVF Score:** [X/20]
-
-- Any changes since last week: [Brief update]
-- Areas needing attention: [Focus areas]
-
 #### Progress Review (15 minutes)
 
 **Completed Since Last Meeting:**
@@ -123,16 +116,10 @@
 
 ## Special Meetings & Sessions
 
-### [Date] - DVF Mid-Season Review (Week 6)
+### [Date] - Mid-Season Review (Week 6)
 
 **Attendees:** [Core team + community partners]
-**Purpose:** Assess DVF progress and adjust project direction
-
-**DVF Score Changes:**
-
-- Week 3 Score: [X/20]
-- Week 6 Score: [X/20]
-- Net Change: [+/-X]
+**Purpose:** Assess project progress and adjust direction
 
 **Key Insights:**
 
@@ -270,7 +257,6 @@
 
 - [Team & Roles](Team-and-Roles) - Team member information and responsibilities
 - [Decision Log](Decision-Log) - Detailed decision documentation
-- [DVF Scorecard](DVF-Scorecard) - Assessment progress tracking
 - [Project Overview](Project-Overview) - Project context and goals
 
 **🔄 Last Updated:** [Date] by [@contributor]

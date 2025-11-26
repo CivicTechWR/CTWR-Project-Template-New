@@ -20,42 +20,6 @@ This project is part of [CivicTechWR](https://civictechwr.org), a community of v
 - **Public Interest**: Focus on collective benefit rather than private profit
 - **Inclusive Design**: Accessible to all community members regardless of technical background
 
-## 📊 DVF Framework Assessment
-
-Our project has been evaluated using CivicTechWR's DVF (Desirability-Viability-Feasibility) framework:
-
-### Community Partner ({{ site.civictech.dvf_score }} points)
-
-- **Partner Organization**: {{ site.civictech.partner }}
-- **Partnership Level**: [Active collaboration / Developing relationship / Advisory support]
-- **Partner Value**: [How does the partner benefit from CTWR involvement?]
-- **CTWR Value**: [What does the partner bring to the CTWR community?]
-
-### Talent & Team ({{ site.civictech.dvf_score }} points)
-
-- **Team Size**: [Number] members
-- **Skill Diversity**: [Technical skills, domain expertise, design, etc.]
-- **Commitment Level**: [Hours per week, availability through season]
-- **Team Dynamics**: [Collaboration style, decision-making process]
-
-### Technically Exciting ({{ site.civictech.dvf_score }} points)
-
-- **Innovation Factor**: [What's technically interesting about this project?]
-- **Learning Opportunities**: [New skills team members will develop]
-- **Technical Challenges**: [Interesting problems to solve]
-- **Maker Energy**: [Enthusiasm for building and creating]
-
-### Civic Exciting ({{ site.civictech.dvf_score }} points)
-
-- **Public Interest Story**: [Why should the community care about this?]
-- **Visible Impact**: [How will success be evident to the public?]
-- **Community Engagement**: [How are affected people involved in the process?]
-- **Systemic Change**: [Does this address root causes or improve civic processes?]
-
-### Total DVF Score: {{ site.civictech.dvf_score }}
-
-[View our complete DVF assessment]({{ site.github.repository_url }}/blob/main/docs/DVF_SCORECARD.md)
-
 ## 🌍 Problem Background
 
 ### The Challenge

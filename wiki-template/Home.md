@@ -7,7 +7,6 @@
 ### 📋 Project Essentials
 
 - **[Project Overview](Project-Overview)** - Goals, scope, and community impact
-- **[DVF Scorecard](DVF-Scorecard)** - Current assessment and progress tracking
 - **[Season Timeline](Season-Timeline)** - 12-week project roadmap and milestones
 - **[Team & Roles](Team-and-Roles)** - Who's working on what
 
@@ -39,13 +38,6 @@
 - **[Demo Day Preparation](Demo-Day-Preparation)** - Presentation and showcase planning
 
 ## Current Status
-
-**DVF Score:** [X/20] (as of [Date])
-
-- Community Partner: [X/5]
-- Talent & Team: [X/5]
-- Technically Exciting: [X/5]
-- Civic Exciting: [X/5]
 
 **Season Progress:** Week [X] of 12
 **Current Phase:** [Pitch/Breakout/Development/Testing/Demo Prep/Demo Day]

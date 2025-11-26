@@ -99,7 +99,6 @@ Expect clarifying questions about:
 #### Resources for Next Steps:
 
 - [Template_Pitching.md](link to original CTWR template)
-- [DVF_SCORECARD.md](./DVF_SCORECARD.md)
 - [USER_RESEARCH.md](./USER_RESEARCH.md)
 
 ---

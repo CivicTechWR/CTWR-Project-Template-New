@@ -70,7 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Comprehensive CivicTechWR project template with DVF framework integration
+- Comprehensive CivicTechWR project template
 - 12-week project lifecycle documentation and templates
 - GitHub Pages integration with Jekyll documentation site
 - Security best practices and repository configuration
@@ -100,7 +100,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Use tagged releases (e.g., `v1.0.0`) for stable project starts
 - Check release notes for new features and migration guides
-- Follow DVF framework scoring for project assessment
 
 **For Template Maintainers:**
 

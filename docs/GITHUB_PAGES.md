@@ -369,7 +369,7 @@ title: Home
 
 ## Solving [Community Problem] for [Target Community]
 
-**CivicTechWR Season X Project** • **DVF Score: [X/20]**
+**CivicTechWR Season X Project**
 
 ### 🎯 Project Mission
 [One sentence describing what your project does and who it helps]

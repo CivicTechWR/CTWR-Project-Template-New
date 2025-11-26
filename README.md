@@ -22,32 +22,15 @@
 
 > Tip: Run `./scripts/setup.sh --check` (new flag) for a prereq-only diagnostic before installing dependencies.
 
-This template provides everything needed for a successful CivicTechWR project: DVF framework integration, 12-week project lifecycle, comprehensive documentation, GitHub automation, security best practices, and public website hosting.
+This template provides everything needed for a successful CivicTechWR project: 12-week project lifecycle, comprehensive documentation, GitHub automation, security best practices, and public website hosting.
 
 **Essential first steps:**
 
 1. **[Complete the Getting Started Guide](GETTING_STARTED.md)** - Your roadmap to success
 2. **Fill out your Project Pitch** - Define your civic impact
-3. **Run your DVF Assessment** - Score your project across 4 key lenses
-4. **Set up your development environment** - Automated scripts included
+3. **Set up your development environment** - Automated scripts included
 
 > **For detailed guidance:** Read the **[Getting Started Guide](GETTING_STARTED.md)** - it breaks down the entire process with week-by-week instructions, common questions, and success metrics.
-
-## DVF Assessment Score: [ /20]
-
-Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across four lenses:
-
-- **Community Partner**: [ /5] - Will partners consistently participate and bring value back to CTWR?
-- **Talent & Team**: [ /5] - Is the team sized, skilled, diverse, and able to show up weekly?
-- **Technically Exciting**: [ /5] - Is there genuine maker energy here?
-- **Civic Exciting**: [ /5] - Is the public-interest story strong with visible community impact?
-
-**Project Status:**
-
-- **17-20**: CTWR-supported with regular check-ins and Demo Day slot
-- **13-16**: Worth exploring with targeted coaching
-- **8-12**: Significant risks - proceed with eager team willing to de-risk
-- **4-7**: Not supported right now
 
 ## Problem Statement
 
@@ -101,7 +84,7 @@ Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across f
 
 ## Project Timeline
 
-- **Week 1-3**: Problem validation and DVF scoring
+- **Week 1-3**: Problem validation and user research
 - **Week 4-6**: User research and prototype development
 - **Week 7-9**: Core feature development
 - **Week 10-11**: Testing and refinement
@@ -122,7 +105,7 @@ Use the [DVF Scorecard](docs/DVF_SCORECARD.md) to evaluate your project across f
 # 1. Bootstrap local environment
 ./scripts/setup.sh
 
-# 2. Provision GitHub Project w/ DVF tracking
+# 2. Provision GitHub Project for project tracking
 CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # recommend hosting in the CivicTechWR org
 
 # 3. Apply security baseline (branch protection, Dependabot, secret scanning)
@@ -139,7 +122,7 @@ CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # recommend hosting i
 
 - Enable GitHub Pages (Settings → Pages → GitHub Actions)
 - Run the project (`./scripts/setup-project.sh`) and security (`./scripts/setup-security.sh`) automation
-- Update README, DVF scorecard, wiki, and CODEOWNERS with real details
+- Update README, wiki, and CODEOWNERS with real details
 - Invite partners/volunteers to the repo and GitHub Project
 
 **For Contributors:** See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
@@ -149,7 +132,6 @@ CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # recommend hosting i
 ### Planning & Pitching
 
 - [Project Pitch Template](docs/PROJECT_PITCH.md) - 3-minute pitch format
-- [DVF Scorecard Guide](docs/DVF_SCORECARD.md) - Complete assessment framework
 - [User Research Templates](docs/USER_RESEARCH.md) - Interview guides and personas
 
 ### Development
@@ -159,7 +141,7 @@ CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # recommend hosting i
 - [Repository Security](docs/REPOSITORY_SECURITY.md) - GitHub security configuration and monitoring
 - [Accessibility Guide](docs/ACCESSIBILITY_GUIDE.md) - WCAG 2.1 compliance
 - [Contributing Guidelines](docs/CONTRIBUTING.md) - How to get involved
-- [Project Management](docs/PROJECT_MANAGEMENT.md) - GitHub Projects with DVF tracking
+- [Project Management](docs/PROJECT_MANAGEMENT.md) - GitHub Projects setup
 - [GitHub Pages Setup](docs/GITHUB_PAGES.md) - Public website hosting and deployment
 
 ### Demo Day Preparation
@@ -170,7 +152,6 @@ CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh  # recommend hosting i
 ### Project Wiki Templates
 
 - [Wiki Template Guide](wiki-template/README.md) - Complete GitHub Wiki setup
-- [DVF Scorecard Wiki](wiki-template/DVF-Scorecard.md) - Assessment tracking page
 - [Team & Roles Wiki](wiki-template/Team-and-Roles.md) - Team documentation page
 
 ## License
@@ -184,4 +165,4 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 ---
 
-**CivicTechWR Project Template** - Built for Season X • [DVF Framework Guide](docs/DVF_SCORECARD.md) • [CTWR Website](https://civictechwr.org)
+**CivicTechWR Project Template** - Built for Season X • [CTWR Website](https://civictechwr.org)

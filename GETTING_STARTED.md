@@ -6,10 +6,10 @@ Welcome to the CivicTechWR Project Template! This guide will help you navigate t
 
 1. Verify prerequisites with `./scripts/setup.sh --check` (Git, Node, gh scopes).
 2. Run `./scripts/setup.sh` to install dependencies and drop starter files.
-3. Kick off a GitHub Project with DVF fields via `CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh` (we recommend creating your repo inside the [CivicTechWR org](https://github.com/CivicTechWR)).
+3. Kick off a GitHub Project via `CTWR_PROJECT_OWNER=CivicTechWR ./scripts/setup-project.sh` (we recommend creating your repo inside the [CivicTechWR org](https://github.com/CivicTechWR)).
 4. Apply baseline security settings using `./scripts/setup-security.sh`.
 5. In **Settings → Pages**, select **GitHub Actions** so docs deploy automatically; if you host outside the CivicTechWR org, ensure the repo is public or on a plan that supports private Pages.
-6. Customize `README.md`, the DVF scorecard, and the wiki starter pages (the setup script prints a post-flight checklist to guide you).
+6. Customize `README.md` and the wiki starter pages (the setup script prints a post-flight checklist to guide you).
 
 > Ready for the full context? Keep reading for detailed guidance, tips, and 12-week planning support.
 
@@ -17,7 +17,6 @@ Welcome to the CivicTechWR Project Template! This guide will help you navigate t
 
 This template provides everything you need for a successful CivicTechWR project:
 
-- **DVF Framework Integration** - Built-in assessment tools for project evaluation
 - **12-Week Project Lifecycle** - Structured timeline from idea to Demo Day
 - **Comprehensive Documentation** - 9+ guides covering all aspects of civic tech development
 - **GitHub Integration** - Issue templates, project management, and automated workflows
@@ -41,7 +40,7 @@ cd [project-name]
 # Set up development environment
 ./scripts/setup.sh
 
-# Set up GitHub Project with DVF tracking
+# Set up GitHub Project
 ./scripts/setup-project.sh
 
 # Configure repository security
@@ -53,34 +52,16 @@ cd [project-name]
 ### 3. Start Your Project Planning
 
 1. Fill out the [Project Pitch](docs/PROJECT_PITCH.md) (Week 1)
-2. Complete your [DVF Assessment](docs/DVF_SCORECARD.md) (Week 1-3)
+2. Conduct [User Research](docs/USER_RESEARCH.md) (Week 1-3)
 3. Update the README.md with your project details
-
-## 📊 Understanding the DVF Framework
-
-The DVF (Desirability-Viability-Feasibility) Framework helps evaluate civic tech projects across four lenses:
-
-- **Community Partner** (5 points) - Will partners participate and bring value to CTWR?
-- **Talent & Team** (5 points) - Is the team sized, skilled, diverse, and committed?
-- **Technically Exciting** (5 points) - Is there genuine maker energy here?
-- **Civic Exciting** (5 points) - Is the public-interest story strong with visible impact?
-
-**Your DVF Score determines project support level:**
-
-- **17-20**: Full CTWR support with regular check-ins and Demo Day slot
-- **13-16**: Worth exploring with targeted coaching
-- **8-12**: Significant risks - proceed with willing team and de-risk plan
-- **4-7**: Not supported at this time
-
-> 📚 Want deeper context? Read our blog post on [Iterating on IDEO's DVF Framework for CivicTech](https://civictechwr.github.io/blog/Iterating-on-IDEO's-DVF-Framework-(for-CivicTech)/) to learn how CTWR adapted the model for volunteer civic projects.
 
 ## 📅 12-Week Project Timeline
 
-### Weeks 1-3: Problem Validation & DVF Scoring
+### Weeks 1-3: Problem Validation & Planning
 
 - [ ] Complete [Project Pitch](docs/PROJECT_PITCH.md)
 - [ ] Conduct [User Research](docs/USER_RESEARCH.md)
-- [ ] Score your project using [DVF Scorecard](docs/DVF_SCORECARD.md)
+- [ ] Define project scope and success metrics
 - [ ] Get community feedback at CTWR meetings
 
 ### Weeks 4-6: Research & Prototyping
@@ -115,10 +96,9 @@ The DVF (Desirability-Viability-Feasibility) Framework helps evaluate civic tech
 **Start with these documents in order:**
 
 1. **[Project Pitch](docs/PROJECT_PITCH.md)** - 3-minute pitch format for your idea
-2. **[DVF Scorecard](docs/DVF_SCORECARD.md)** - Complete assessment framework
-3. **[User Research](docs/USER_RESEARCH.md)** - Interview guides and persona templates
-4. **[Technical Design](docs/TECHNICAL_DESIGN.md)** - Architecture decisions and tech stack
-5. **[Contributing Guidelines](docs/CONTRIBUTING.md)** - How others can get involved
+2. **[User Research](docs/USER_RESEARCH.md)** - Interview guides and persona templates
+3. **[Technical Design](docs/TECHNICAL_DESIGN.md)** - Architecture decisions and tech stack
+4. **[Contributing Guidelines](docs/CONTRIBUTING.md)** - How others can get involved
 
 **Refer to these as needed:**
 
@@ -136,7 +116,7 @@ This template includes:
 
 - **6 Issue Templates** - Feature requests, bug reports, user research, partnerships, accessibility, general tasks
 - **Pull Request Template** - Standardized PR format with security and accessibility checks
-- **GitHub Project Setup** - Automated project creation with DVF tracking fields
+- **GitHub Project Setup** - Automated project creation with tracking fields
 - **CI/CD Workflows** - Template validation and maintenance automation
 
 ### Using GitHub Issues
@@ -156,7 +136,7 @@ Use the wiki templates to document your project:
 
 1. Copy files from `wiki-template/` to your GitHub Wiki
 2. Customize with your project details
-3. Keep DVF scorecard and team information updated
+3. Keep team information updated
 
 ### GitHub Pages Setup
 
@@ -208,16 +188,15 @@ Create a public website for your project:
 ### "This seems like a lot - where do I really start?"
 
 1. **Week 1**: Fill out the Project Pitch template (30 minutes)
-2. **Week 1-2**: Complete DVF assessment (1-2 hours)
+2. **Week 1-2**: Conduct initial user research (1-2 hours)
 3. **Week 2-3**: Get feedback at CTWR meeting
-4. **Week 3+**: Start with Technical Design if DVF score is 13+
+4. **Week 3+**: Start with Technical Design
 
 ### "My project doesn't need all this documentation"
 
 Start with the essentials:
 
 - Project Pitch (required for CTWR)
-- DVF Scorecard (required for CTWR)
 - Technical Design (if building software)
 - Security Guide (if handling user data)
 - GitHub Pages setup (if you need a public website)
@@ -270,7 +249,7 @@ Civic tech projects:
 
 ---
 
-**🚀 Ready to start? Begin with the [Project Pitch](docs/PROJECT_PITCH.md) and [DVF Scorecard](docs/DVF_SCORECARD.md)!**
+**🚀 Ready to start? Begin with the [Project Pitch](docs/PROJECT_PITCH.md)!**
 
 **🤝 Questions? Join us at the next CTWR Wednesday meeting or start a GitHub Discussion.**
 

@@ -18,7 +18,6 @@ Copy the content from these template files to create corresponding pages in your
 |---------------|----------------|---------|
 | `Home.md` | Home | Main wiki landing page |
 | `Project-Overview.md` | Project-Overview | Comprehensive project description |
-| `DVF-Scorecard.md` | DVF-Scorecard | DVF assessment tracking |
 | `Team-and-Roles.md` | Team-and-Roles | Team member information |
 | `Community-Partners.md` | Community-Partners | Stakeholder relationships |
 | `Season-Timeline.md` | Season-Timeline | 12-week project schedule |
@@ -32,11 +31,10 @@ Copy the content from these template files to create corresponding pages in your
 1. Replace all placeholder content (marked with [brackets])
 2. Update navigation links to match your project structure
 3. Add project-specific sections as needed
-4. Keep the DVF framework integration
 
 ### 4. Maintain Throughout Season
 
-- Update DVF scores regularly (Week 3, 6, 9, 12)
+- Update project status regularly
 - Document key decisions and changes
 - Keep team and partner information current
 - Record meeting notes and progress updates
@@ -59,7 +57,6 @@ Copy the content from these template files to create corresponding pages in your
 
 ### For CTWR Integration
 
-- ✅ DVF scorecard tracking and improvement
 - ✅ Season timeline and milestone management
 - ✅ Community partnership documentation
 - ✅ Demo Day preparation resources
@@ -91,7 +88,7 @@ Copy the content from these template files to create corresponding pages in your
 
 - **Weekly**: Update meeting notes and progress
 - **Bi-weekly**: Review and update team/role information
-- **Monthly**: Update DVF scorecard and impact metrics
+- **Monthly**: Update impact metrics
 - **Season milestones**: Major updates to overview and timeline
 
 ## Additional Wiki Pages (Optional)
@@ -124,7 +121,6 @@ Based on your project needs, consider adding:
 ### GitHub Projects
 
 - Link wiki pages to project issues and milestones
-- Use project fields to track DVF scores
 - Reference wiki documentation in issue templates
 
 ### Documentation Repository
@@ -159,5 +155,5 @@ Based on your project needs, consider adding:
 
 - **Created for:** CivicTechWR Project Template
 - **Compatible with:** GitHub Wikis
-- **Framework:** DVF-integrated civic tech workflow
+- **Framework:** Civic tech workflow with 12-week lifecycle
 - **Maintenance:** Update placeholders and customize for your project

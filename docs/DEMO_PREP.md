@@ -135,7 +135,7 @@ Follow this proven template for maximum impact:
 
 ### 4 Weeks Before Demo Day
 
-- [ ] Complete DVF scorecard assessment
+- [ ] Complete project assessment
 - [ ] Gather impact data and user feedback
 - [ ] Schedule user interviews for testimonials
 - [ ] Plan demo storyline using 8-step structure
@@ -320,7 +320,7 @@ Follow this proven template for maximum impact:
 - [ ] Write project retrospective
 - [ ] Document technical lessons learned
 - [ ] Share user research insights
-- [ ] Update DVF scorecard with final assessment
+- [ ] Complete final project assessment
 
 ---
 

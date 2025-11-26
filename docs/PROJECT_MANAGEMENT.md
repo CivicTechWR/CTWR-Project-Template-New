@@ -4,7 +4,7 @@ This guide explains how to use GitHub Projects for managing your CTWR civic tech
 
 ## Overview
 
-Each CTWR project uses a GitHub Project with DVF-integrated tracking to manage tasks, monitor progress, and ensure community accountability throughout the season.
+Each CTWR project uses a GitHub Project with tracking fields to manage tasks, monitor progress, and ensure community accountability throughout the season.
 
 ## Getting Started
 
@@ -40,11 +40,10 @@ Enter CTWR season (e.g., 'Season 6'): Season 7
 Create this project? (y/n): y
 ```
 
-The script provisions project number `123` (example), adds DVF fields, and links it to your repository so your new cybersecurity education program can track Week 1–12 milestones immediately.
+The script provisions project number `123` (example), adds tracking fields, and links it to your repository so your new cybersecurity education program can track Week 1–12 milestones immediately.
 
 This creates a GitHub Project with:
 
-- ✅ DVF tracking fields (Community Partner, Talent & Team, Technically Exciting, Civic Exciting)
 - ✅ Season workflow tracking (Week 1-12, Project phases)
 - ✅ Integration with your repository
 - ✅ Standard CTWR project structure
@@ -62,10 +61,10 @@ If you prefer manual setup or need to customize:
 
 ### Core Views
 
-**📋 Table View** - Comprehensive task and DVF tracking
+**📋 Table View** - Comprehensive task tracking
 
-- All tasks with DVF scores, assignees, and timeline
-- Sortable by priority, week, or DVF score
+- All tasks with assignees, and timeline
+- Sortable by priority or week
 - Best for detailed project management
 
 **📋 Board View** - Kanban workflow by status
@@ -74,23 +73,18 @@ If you prefer manual setup or need to customize:
 - Drag and drop for status updates
 - Best for daily/weekly standups
 
-**📊 DVF Dashboard** - Assessment tracking
+**📊 Dashboard** - Progress tracking
 
-- Filter by DVF scores and project phase
-- Track scoring improvements over time
-- Best for mid-season reviews and reporting
+- Filter by project phase
+- Track progress over time
+- Best for reviews and reporting
 
 ### Custom Fields Configuration
 
-The template includes these DVF-specific fields:
+The template includes these project-specific fields:
 
 | Field Name | Type | Options | Purpose |
 |------------|------|---------|---------|
-| **DVF Community Partner** | Single Select | 1-5 scale | Partner engagement tracking |
-| **DVF Talent Team** | Single Select | 1-5 scale | Team capacity and commitment |
-| **DVF Technically Exciting** | Single Select | 1-5 scale | Innovation and learning value |
-| **DVF Civic Exciting** | Single Select | 1-5 scale | Community impact potential |
-| **DVF Total Score** | Number | 0-20 | Calculated total DVF score |
 | **Season Week** | Single Select | Week 1-12 | Timeline tracking |
 | **Project Phase** | Single Select | Pitch → Demo Day | Season workflow stage |
 
@@ -100,16 +94,16 @@ The template includes these DVF-specific fields:
 
 **Tasks to create:**
 
-- [ ] Complete initial DVF assessment
+- [ ] Complete project pitch
 - [ ] Set up project repository
 - [ ] Create user research plan
 - [ ] Define success metrics
 - [ ] Identify community partners
 
-**DVF Tracking:**
+**Progress Tracking:**
 
-- Complete initial DVF scorecard
-- Set baseline scores in project fields
+- Complete initial project planning
+- Set baseline goals in project fields
 - Document assumptions and goals
 
 ### Week 4-6: Development Sprint
@@ -119,11 +113,11 @@ The template includes these DVF-specific fields:
 - [ ] User interviews and research
 - [ ] Technical architecture decisions
 - [ ] MVP feature development
-- [ ] Mid-season DVF review
+- [ ] Mid-season review
 
-**DVF Tracking:**
+**Progress Tracking:**
 
-- Update DVF scores based on learnings
+- Update project status based on learnings
 - Adjust project scope if needed
 - Document partner feedback
 
@@ -136,7 +130,7 @@ The template includes these DVF-specific fields:
 - [ ] Accessibility compliance
 - [ ] Security review
 
-**DVF Tracking:**
+**Progress Tracking:**
 
 - Monitor technical progress
 - Validate community impact
@@ -149,11 +143,11 @@ The template includes these DVF-specific fields:
 - [ ] Demo Day presentation prep
 - [ ] Impact metrics collection
 - [ ] User story documentation
-- [ ] Final DVF assessment
+- [ ] Final assessment
 
-**DVF Tracking:**
+**Progress Tracking:**
 
-- Final DVF scoring
+- Final project review
 - Impact measurement
 - Sustainability planning
 
@@ -172,7 +166,6 @@ The template includes these DVF-specific fields:
 
 **Use the CTWR issue template** which includes:
 
-- DVF impact assessment
 - Community benefit description
 - Acceptance criteria
 - Accessibility considerations
@@ -182,10 +175,6 @@ The template includes these DVF-specific fields:
 ```markdown
 ## Summary
 Implement keyboard navigation for service directory
-
-## DVF Impact
-- Civic Exciting: +1 (improves accessibility)
-- Technically Exciting: +0 (standard feature)
 
 ## User Story
 As a screen reader user, I want to navigate the service directory with keyboard only so that I can access city services independently.
@@ -209,7 +198,7 @@ As a screen reader user, I want to navigate the service directory with keyboard 
 1. Go to issue page
 2. Click "Projects" in sidebar
 3. Select your CTWR project
-4. Set appropriate fields (DVF scores, week, phase)
+4. Set appropriate fields (week, phase)
 
 ### Status Management
 
@@ -226,66 +215,11 @@ As a screen reader user, I want to navigate the service directory with keyboard 
 - **On Hold** - Paused pending decisions
 - **Won't Do** - Decided not to implement
 
-## DVF Integration
-
-### Scoring Guidelines
-
-**Community Partner (1-5):**
-
-- 1: No clear partner engagement
-- 3: Regular partner check-ins scheduled
-- 5: Active partner participation with decision-making authority
-
-**Talent & Team (1-5):**
-
-- 1: Solo project or unclear commitment
-- 3: 2-3 people with regular availability
-- 5: Diverse team with weekly commitment and complementary skills
-
-**Technically Exciting (1-5):**
-
-- 1: No significant technical component
-- 3: Solid technology choices with some learning
-- 5: Innovative technology with high learning value
-
-**Civic Exciting (1-5):**
-
-- 1: Limited public benefit
-- 3: Clear community value with decent story
-- 5: Compelling civic impact with measurable outcomes
-
-### When to Update DVF Scores
-
-**Week 3**: Initial assessment after pitch and breakout
-**Week 6**: Mid-season review based on learnings
-**Week 9**: Pre-demo assessment with user feedback
-**Week 12**: Final assessment for project completion
-
-### Using DVF Data
-
-**For Project Decisions:**
-
-- Scores ≤12: Focus on de-risking specific areas
-- Scores 13-16: Continue with targeted coaching
-- Scores 17-20: Leverage momentum for maximum impact
-
-**For Community Reporting:**
-
-- Track DVF improvement over time
-- Identify successful patterns for future projects
-- Demonstrate community value to sponsors
-
 ## Automation and Workflows
 
 ### GitHub Actions Integration
 
 The template includes automated workflows:
-
-**DVF Score Updates:**
-
-- Automatically calculate total DVF scores
-- Notify team when scores change significantly
-- Generate weekly DVF reports
 
 **Season Progression:**
 
@@ -306,7 +240,6 @@ Each template includes:
 
 - Pre-configured issue templates
 - Standard task breakdowns
-- DVF scoring guidelines
 - Timeline templates
 
 ## Reporting and Analytics
@@ -317,17 +250,16 @@ Use project views to facilitate team meetings:
 
 **Agenda Template:**
 
-1. **DVF Check** (5 min) - Review current scores
-2. **Progress Review** (10 min) - What's done/in progress
-3. **Blockers** (5 min) - What needs help
-4. **Week Ahead** (5 min) - Priorities and commitments
+1. **Progress Review** (10 min) - What's done/in progress
+2. **Blockers** (5 min) - What needs help
+3. **Week Ahead** (5 min) - Priorities and commitments
 
 ### Mid-Season Review (Week 6)
 
 **Review Process:**
 
 1. Export project data to CSV
-2. Compare current vs. initial DVF scores
+2. Compare current vs. initial progress
 3. Identify trends and patterns
 4. Adjust project scope if needed
 5. Update team commitments
@@ -337,7 +269,7 @@ Use project views to facilitate team meetings:
 **Metrics to Track:**
 
 - Total issues completed
-- DVF score progression
+- Project phase progression
 - Community engagement metrics
 - Team participation data
 - User feedback collection
@@ -376,18 +308,12 @@ Connect your project management to documentation:
 gh project link [PROJECT_NUMBER] --owner CivicTechWR --repo [REPO_NAME]
 ```
 
-**Missing DVF fields:**
+**Missing fields:**
 
 ```bash
 # Re-run the setup script or add manually
 ./scripts/setup-project.sh
 ```
-
-**DVF scores not calculating:**
-
-- Check that all four DVF fields are filled
-- Verify field names match exactly
-- Refresh project view
 
 ### Getting Help
 
@@ -395,7 +321,7 @@ gh project link [PROJECT_NUMBER] --owner CivicTechWR --repo [REPO_NAME]
 
 - Weekly meetings: Ask about project management
 - Slack/Discord: #project-help channel
-- Documentation: This guide and DVF scorecard
+- Documentation: This guide
 
 **GitHub Support:**
 
@@ -406,13 +332,6 @@ gh project link [PROJECT_NUMBER] --owner CivicTechWR --repo [REPO_NAME]
 ## Advanced Features
 
 ### Custom Automations
-
-**DVF Score Alerts:**
-
-```yaml
-# .github/workflows/dvf-alert.yml
-# Notify team when DVF scores drop below threshold
-```
 
 **Progress Reports:**
 
@@ -440,7 +359,6 @@ For complex projects spanning multiple repositories:
 
 **Analysis Ideas:**
 
-- DVF score correlation with project success
 - Team engagement patterns
 - Community impact measurement
 - Season-over-season improvements

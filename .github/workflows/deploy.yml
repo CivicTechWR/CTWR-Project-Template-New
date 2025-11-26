@@ -93,11 +93,6 @@ jobs:
           echo "- Wiki templates: $(find wiki-template/ -name "*.md" 2>/dev/null | wc -l)" >> TEMPLATE_STATS.md
           echo "- Setup scripts: $(find scripts/ -name "*.sh" 2>/dev/null | wc -l)" >> TEMPLATE_STATS.md
           echo "- Workflow files: $(find .github/workflows/ -name "*.yml" 2>/dev/null | wc -l)" >> TEMPLATE_STATS.md
-          echo "" >> TEMPLATE_STATS.md
-          echo "## DVF Framework Integration" >> TEMPLATE_STATS.md
-          echo "" >> TEMPLATE_STATS.md
-          echo "DVF references found in:" >> TEMPLATE_STATS.md
-          grep -l -i "dvf\|community partner\|talent.*team\|technically exciting\|civic exciting" docs/*.md wiki-template/*.md 2>/dev/null | sed 's/^/- /' >> TEMPLATE_STATS.md || echo "- No DVF references found" >> TEMPLATE_STATS.md
 
       - name: Notify on template changes
         if: github.event_name == 'push'

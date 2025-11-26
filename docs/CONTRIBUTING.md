@@ -11,7 +11,7 @@ This project follows the [CivicTechWR Code of Conduct](CODE_OF_CONDUCT.md). By p
 ### For New Contributors
 
 1. **Join our community meetings** (Wednesdays at [time/location])
-2. **Read our project documentation** (especially [DVF_SCORECARD.md](./DVF_SCORECARD.md))
+2. **Read our project documentation** (especially [PROJECT_PITCH.md](./PROJECT_PITCH.md))
 3. **Check our current issues** labeled `good first issue`
 4. **Introduce yourself** in our communication channels
 
@@ -54,7 +54,7 @@ cd [project-name]
 
 - Comment on the issue to let others know you're working on it
 - Ask questions if anything is unclear
-- Check if the issue aligns with our [current DVF priorities](./DVF_SCORECARD.md)
+- Check if the issue aligns with our current project priorities
 
 ## Development Workflow
 

@@ -133,17 +133,6 @@ body:
         - label: Ongoing service delivery
         - label: Impact measurement and evaluation
 
-  - type: textarea
-    id: dvf-impact
-    attributes:
-      label: DVF Impact
-      description: How does this partnership affect our DVF scorecard?
-      placeholder: |
-        - Community Partner score: [expected impact]
-        - Talent & Team: [skills/capacity gained]
-        - Technically Exciting: [technical validation/requirements]
-        - Civic Exciting: [community reach/impact enhanced]
-
   - type: checkboxes
     id: partnership-stage-activities
     attributes:
