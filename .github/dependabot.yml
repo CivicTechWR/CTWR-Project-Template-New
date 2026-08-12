@@ -4,6 +4,7 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    # Only security-update PRs are enabled; routine version updates are suppressed.
     open-pull-requests-limit: 0
     groups:
       security-updates:
@@ -15,6 +16,7 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    # Only security-update PRs are enabled; routine version updates are suppressed.
     open-pull-requests-limit: 0
     groups:
       security-updates:
