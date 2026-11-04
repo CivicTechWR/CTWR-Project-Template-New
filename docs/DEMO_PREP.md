@@ -151,6 +151,8 @@ Follow this proven template for maximum impact:
 
 - [ ] Final presentation run-through
 - [ ] Test all technology for live demo
+- [ ] After switching from slides to the demo, ask a teammate at the back of the room to identify one key detail, such as a map label or a result on the screen. If the event has a stream, check the attendee view too. If the detail is hard to see, zoom in or show a labeled screenshot. Use sample data for the rehearsal.
+  Optional [rehearsal worksheet](https://light-tracer.com/wp-content/uploads/2026/10/hybrid-pointing-rehearsal-record-open-v1.pdf) (CC BY 4.0 PDF) for recording the check and any fix.
 - [ ] Prepare backup plans (video, screenshots)
 - [ ] Confirm all team members can attend
 - [ ] Submit presentation to Demo Day organizers
